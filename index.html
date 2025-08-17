@@ -2,128 +2,723 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek-Issac</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- CSS -->
+    <title>Abhishek Issac | Flagship Portfolio</title>
+    <meta name="description" content="Flagship portfolio website of Abhishek Issac - Student, Python Enthusiast & Future Tech Innovator">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    
+    <!-- External CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        /* Add this style to initially hide the contact section */
-        .contact-section {
-            display: none;
-        }
-    </style>
-
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/fonts/Orbitron-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/videos/hero-bg.mp4" as="video" type="video/mp4">
+    
+    <!-- Open Graph / Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Abhishek Issac | Flagship Portfolio">
+    <meta property="og:description" content="Flagship portfolio website of Abhishek Issac - Student, Python Enthusiast & Future Tech Innovator">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630">
+    <meta property="og:url" content="https://abhishek-issac.github.io">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <div id="particles"></div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="planet-loader">
+                <div class="ring"></div>
+                <div class="planet"></div>
+            </div>
+            <p class="loading-text">Initializing Experience...</p>
+        </div>
+    </div>
 
-    <header>
-        <div class="container">
-            <ul class="header-logo">
-                <li><a href=""><h1>Abhishek-Issac</h1><img src="favicon.ico" alt="logo"></a></li>
-            </ul>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
+    <!-- Background Effects -->
+    <div id="stars-container"></div>
+    <div id="particles-js"></div>
+    
+    <!-- Cursor Effect -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#home">
+                        <span class="logo-icon"><i class="fas fa-rocket"></i></span>
+                        <span class="logo-text">ABHISHEK</span>
+                    </a>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#journey" class="nav-link">Journey</a></li>
+                        <li><a href="#interests" class="nav-link">Interests</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <img src="assets/img/profile.jpg" alt="Abhisheks logo" class="prof-img">
-            <h1>Abhishek-Issac</h1>
-            <ul class="hero-links">
-                <li><a target="_blank" href="https://instagram.com/Abhishek_issac_"><i class="fab fa-instagram"></i></a></li>
-                <li><a target="_blank" href="https://github.com/Abhishek-issac"><i class="fab fa-github"></i></a></li>
-                <li><a target="_blank" href="https://t.me/Abhisheksvlog"><i class="fab fa-telegram"></i></a></li>
-            </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <h1 class="hero-title animate__animated animate__fadeInUp">
+                            <span class="line">ABHISHEK</span>
+                            <span class="line">ISSAC</span>
+                        </h1>
+                        
+                        <div class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                            <div class="code-typing">
+                                <span class="static-text">I'm a </span>
+                                <span id="typing-text"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                            <a href="#about" class="btn btn-primary">
+                                <span>Explore My Universe</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <span>Get In Touch</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-social animate__animated animate__fadeInUp animate__delay-3s">
+                            <a href="https://instagram.com/Abhishek_issac_" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/Abhishek-issac" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://t.me/Abhisheksvlog" target="_blank" class="social-link">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/playlist?list=PL9nqZ8bkLgsmey2G03K1tplG20GuR4be5" target="_blank" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual animate__animated animate__fadeInRight">
+                        <div class="planet-container">
+                            <div class="planet">
+                                <div class="planet-surface"></div>
+                                <div class="planet-atmosphere"></div>
+                                <div class="planet-ring"></div>
+                            </div>
+                            <div class="orbit">
+                                <div class="satellite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </section>
 
-    <section class="about" id="about">
+    <!-- About Section -->
+    <section id="about" class="about section">
         <div class="container">
-            <h2>Hi, I am Abhishek Issac 👀</h2>
-            <h3>Welcome to my personal website.</h3>
-            <!-- ... Rest of the about section ... -->
-            <p>I'm from Wayanad, Ambalavayal</p>
-            <p>favorite color is neon green (though it might change sometime).</p> 
-            <p>I'm currently studying in the 9th standard at Assumption AHS Bathery.</p>\n\n\n
-            <p>People keep on saying that I am a *lazy🦥, but i dont know why. <br>The fact is that; I'm just a noob student.</p>
-            <p>I have a passion for coding of python3 <br> I believe that with some More practiceI will be able to achieve those.</p>
-            <br><br>
-            <h2>Away from the Keyboard</h2>
-            <p>Apart from all that what I love the most is to watch HACKING movies & other Crazy stuffs like 🤖 </p>
-            <br>
-            <p class"astrophile-meaning"><small>*astrophile- a person who is deeply in love with stars.</small></p>
-            <!-- ... Rest of the about section ... -->
-        </div>
-    </section>
-
-    <!-- Add this div to overlay the content and show contact info when clicked -->
-    <div id="contactOverlay" onclick="toggleContact()" class="contact-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch with me, feel free to reach out through the following methods:</p>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Discover the person behind the code</p>
+            </div>
             
-            <ul>
-                <li>Email: abhishekissac0@gmail.com</li>
-                <li>Phone: +918113828725</li>
-                <p>My Nearest Friends Contacts for emergency(purpose)</p>
-                <!-- ... Other contacts ... -->
-                <li>Abhinav TR: 9961323426</li>
-                <li>Albin Sanil: 8157832595</li>
-                <p> Parent </p>
-                <li> Dad: 9946183041 (Emergency)</li>
-                <!-- ... Other contacts ... -->
-            </ul>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-frame">
+                        <img src="https://via.placeholder.com/500x600" alt="Abhishek Issac" class="profile-img">
+                        <div class="image-overlay">
+                            <div class="social-icons">
+                                <a href="https://instagram.com/Abhishek_issac_" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://github.com/Abhishek-issac" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://t.me/Abhisheksvlog" target="_blank"><i class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Hello, I'm Abhishek Issac 👋</h3>
+                    <p>I'm a passionate student from <span class="highlight">Wayanad, Ambalavayal</span>, currently studying in the 9th standard at Assumption AHS Bathery.</p>
+                    <p>People often say I'm <span class="highlight">lazy</span>, but the truth is I'm just a curious mind exploring the vast universe of technology and coding.</p>
+                    <p>I have a deep passion for <span class="highlight">Python programming</span> and believe that with dedication and practice, I'll achieve great things in this field.</p>
+                    <p>Apart from coding, I love watching <span class="highlight">hacking movies</span> and exploring all things related to <span class="highlight">robotics and technology</span>.</p>
+                    <p class="astrophile-note"><small>*astrophile - a person who is deeply in love with stars.</small></p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Wayanad, Ambalavayal, Kerala, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>9th Standard, Assumption AHS Bathery</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Neon Green, Python, Hacking Movies</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Connect With Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- ... Rest of your existing code ... -->
-
-    <footer>
-    <div class="container">
-        <a href="https://www.youtube.com/playlist?list=PL9nqZ8bkLgsmey2G03K1tplG20GuR4be5" target="_blank">Check out my YouTube playlist!</a>
-    </div>
-</footer>
-
-    <!-- JavaScript -->
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/part-conf.js"></script>
-    <script src="assets/js/writer.js"></script>
-
-    <script>
-        // Function to toggle contact section visibility
-        function toggleContact() {
-            var contactSection = document.querySelector('.contact-section');
-            contactSection.style.display = (contactSection.style.display === 'none' || contactSection.style.display === '') ? 'block' : 'none';
-        }
-    </script>
-
-</body>
-</html>
-
-<!-- Solar System HTML and CSS -->
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-      /* ... Solar system styles ... */
-  </style>
-</head>
-<body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Technologies I'm exploring and mastering</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Programming</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>HTML/CSS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Git</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>GitHub</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Command Line</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Interests</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Robotics</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Hacking Movies</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-satellite"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Space Tech</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Explore my creative universe</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="python" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Python Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Python Automation Tool</h3>
+                        <p>A tool to automate repetitive tasks using Python scripts</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Web Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="other" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Other Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Robotics Prototype</h3>
+                        <p>A small robotics prototype built with Arduino and basic sensors</p>
+                        <div class="project-tags">
+                            <span>Arduino</span>
+                            <span>Robotics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="journey section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Journey</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">The path that led me here</p>
+            </div>
+            
+            <div class="journey-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018</div>
+                        <h3>First Introduction to Coding</h3>
+                        <p>Discovered the world of programming through basic computer classes at school.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020</div>
+                        <h3>Python Journey Begins</h3>
+                        <p>Started learning Python programming through online tutorials and practice projects.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <h3>First Python Project</h3>
+                        <p>Created my first functional Python project - a simple calculator application.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h3>Web Development Exploration</h3>
+                        <p>Started learning HTML, CSS, and JavaScript to build my first websites.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>GitHub Presence</h3>
+                        <p>Created my GitHub profile and started sharing my projects with the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Interests</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">What fuels my passion</p>
+            </div>
+            
+            <div class="interests-container">
+                <div class="interest-card" data-aos="flip-left">
+                    <div class="interest-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <p>Exploring the world of code and building innovative solutions.</p>
+                </div>
+                
+                <div class="interest-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="interest-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robotics</h3>
+                    <p>Creating and experimenting with robotic systems and automation.</p>
+                </div>
+                
+                <div class="interest-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="interest-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Hacking Movies</h3>
+                    <p>Watching and learning from movies about cybersecurity and technology.</p>
+                </div>
+                
+                <div class="interest-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="interest-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Space Technology</h3>
+                    <p>Fascinated by space exploration and the technology behind it.</p>
+                </div>
+                
+                <div class="interest-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="interest-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>Enjoying video games, especially racing and open-world adventures.</p>
+                </div>
+                
+                <div class="interest-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="interest-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music</h3>
+                    <p>Listening to various genres of music to relax and get inspired.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Let's connect and explore opportunities</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me through any of the following channels:</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>abhishekissac0@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+91 8113828725</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Wayanad, Ambalavayal, Kerala, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://instagram.com/Abhishek_issac_" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/Abhishek-issac" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/Abhisheksvlog" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/playlist?list=PL9nqZ8bkLgsmey2G03K1tplG20GuR4be5" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">
+                        <span class="logo-icon"><i class="fas fa-rocket"></i></span>
+                        <span class="logo-text">ABHISHEK</span>
+                    </a>
+                    <p>Exploring the universe of technology, one line of code at a time.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#journey">Journey</a></li>
+                            <li><a href="#interests">Interests</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="https://github.com/Abhishek-issac" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="https://instagram.com/Abhishek_issac_" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/Abhishek-issac" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://t.me/Abhisheksvlog" target="_blank" class="social-link">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/playlist?list=PL9nqZ8bkLgsmey2G03K1tplG20GuR4be5" target="_blank" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Abhishek Issac. All rights reserved.</p>
+                </div>
+                <div class="footer-credits">
+                    <p>Designed with <i class="fas fa-heart"></i> by Abhishek Issac</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
