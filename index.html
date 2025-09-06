@@ -3,722 +3,702 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Issac | Flagship Portfolio</title>
-    <meta name="description" content="Flagship portfolio website of Abhishek Issac - Student, Python Enthusiast & Future Tech Innovator">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png" type="image/png">
-    
-    <!-- External CSS Libraries -->
+    <title>About Me | Tech Enthusiast</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="assets/fonts/Orbitron-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="assets/videos/hero-bg.mp4" as="video" type="video/mp4">
-    
-    <!-- Open Graph / Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Abhishek Issac | Flagship Portfolio">
-    <meta property="og:description" content="Flagship portfolio website of Abhishek Issac - Student, Python Enthusiast & Future Tech Innovator">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630">
-    <meta property="og:url" content="https://abhishek-issac.github.io">
-    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        :root {
+            --primary-color: #ff10f0; /* Neon pink */
+            --dark-bg: #121212;
+            --darker-bg: #0a0a0a;
+            --light-text: #e0e0e0;
+            --secondary-text: #a0a0a0;
+            --card-bg: #1e1e1e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 16, 240, 0.2);
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(255, 16, 240, 0.7);
+        }
+        
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 16, 240, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 16, 240, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 16, 240, 0); }
+        }
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 16, 240, 0.1) 0%, rgba(10, 10, 10, 0) 70%);
+            z-index: -1;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 0 20px rgba(255, 16, 240, 0.5);
+            margin-bottom: 30px;
+            object-fit: cover;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            color: var(--secondary-text);
+        }
+        
+        .section {
+            margin: 60px 0;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title i {
+            font-size: 1.5rem;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-left: 3px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 16, 240, 0.2);
+        }
+        
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .card p {
+            color: var(--secondary-text);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .skill {
+            background-color: rgba(255, 16, 240, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 30px 0;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--primary-color), transparent);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            box-shadow: 0 0 10px rgba(255, 16, 240, 0.7);
+        }
+        
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-content {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .interest {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+        }
+        
+        .interest i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .interest span {
+            text-align: center;
+            color: var(--secondary-text);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255, 16, 240, 0.2);
+            color: var(--secondary-text);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: var(--secondary-text);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Funny Bio Points Section */
+        .bio-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .bio-point {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            border-left: 3px solid var(--primary-color);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bio-point:hover {
+            transform: translateY(-3px);
+        }
+        
+        .bio-point::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background-color: var(--primary-color);
+            opacity: 0.1;
+            border-radius: 0 0 0 30px;
+        }
+        
+        .bio-point-number {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            opacity: 0.7;
+        }
+        
+        .bio-point-text {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .bio-points {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader">
-            <div class="planet-loader">
-                <div class="ring"></div>
-                <div class="planet"></div>
+    <div class="container">
+        <header>
+            <div class="logo">TechNoob</div>
+            <div class="status">
+                <div class="status-dot"></div>
+                <span>Not AFK</span>
             </div>
-            <p class="loading-text">Initializing Experience...</p>
-        </div>
+        </header>
+        
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <img src="https://envs.sh/i4y.jpg" alt="Profile" class="profile-img">
+            <h1>I Am Abhishek Issac </h1>
+            <p>From Wayanad, Ambalavayal | Bio Science +1 Student | Python Enthusiast | Hacking Movies Fanatic</p>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Who Am I</h3>
+                    <p>Sflix currently at ambalavayal, currently studying Bio Science +1 at Assumption AHS Bathery. People call me lazy, but I'm just a noob student trying to find my way in the tech world.</p>
+                </div>
+                <div class="card">
+                    <h3>My Philosophy</h3>
+                    <p>"I believe that with more practice, I'll be able to achieve my goals in coding and beyond. Every expert was once a beginner, and I'm on my journey from noob to pro."</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i> Coding Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">7th Grade</div>
+                    <div class="timeline-content">
+                        <p>Started my coding journey with Python3. Discovered my passion for programming and began learning the basics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Current</div>
+                    <div class="timeline-content">
+                        <p>Continuing to practice Python3 regularly, working on small projects, and improving my problem-solving skills. Believing that consistent practice will lead to mastery.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Future Goals</div>
+                    <div class="timeline-content">
+                        <p>Aiming to develop more complex applications, contribute to open-source projects, and possibly explore cybersecurity in the future.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill">Python3</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Learning</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-laugh-beam"></i> Funny Bio Points</h2>
+            <div class="bio-points">
+                <div class="bio-point">
+                    <div class="bio-point-number">1</div>
+                    <div class="bio-point-text">Writing code when the world sleeps.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">2</div>
+                    <div class="bio-point-text">Pyrogram > People.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">3</div>
+                    <div class="bio-point-text">MongoDB is my diary.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">4</div>
+                    <div class="bio-point-text">Rooted in Android, branching in Python.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">5</div>
+                    <div class="bio-point-text">Life’s just queries and callbacks.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">6</div>
+                    <div class="bio-point-text">My world runs on async.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">7</div>
+                    <div class="bio-point-text">Debugging life, one bug at a time.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">8</div>
+                    <div class="bio-point-text">Error 404: Social life not found.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">9</div>
+                    <div class="bio-point-text">Ctrl + Alt + Upgrade.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">10</div>
+                    <div class="bio-point-text">Coding today, crashing tomorrow.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">11</div>
+                    <div class="bio-point-text">Respawning since birth.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">12</div>
+                    <div class="bio-point-text">Gamer first, human second.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">13</div>
+                    <div class="bio-point-text">Gacha luck = zero, grind = max.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">14</div>
+                    <div class="bio-point-text">Wuthering > Weathering.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">15</div>
+                    <div class="bio-point-text">Genhsin wallet warrior (in dreams).</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">16</div>
+                    <div class="bio-point-text">BGMI lobby = my home.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">17</div>
+                    <div class="bio-point-text">Minecraft > Realcraft.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">18</div>
+                    <div class="bio-point-text">Efootball on max graphics, life on low.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">19</div>
+                    <div class="bio-point-text">One more round → 3 AM.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">20</div>
+                    <div class="bio-point-text">Game Vortex: my second universe.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">21</div>
+                    <div class="bio-point-text">Snapdragon brain, MediaTek mood.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">22</div>
+                    <div class="bio-point-text">Phone specs > exam marks.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">23</div>
+                    <div class="bio-point-text">Refurbished soul, flagship heart.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">24</div>
+                    <div class="bio-point-text">Green lines scare me more than exams.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">25</div>
+                    <div class="bio-point-text">I unlock bootloaders, not hearts.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">26</div>
+                    <div class="bio-point-text">9R > 10S, every day.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">27</div>
+                    <div class="bio-point-text">Termux is my playground.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">28</div>
+                    <div class="bio-point-text">Havoc OS = peace inside.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">29</div>
+                    <div class="bio-point-text">FRP bypassed, problems not.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">30</div>
+                    <div class="bio-point-text">I install ROMs, not regrets.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">31</div>
+                    <div class="bio-point-text">Shadows speak louder than people.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">32</div>
+                    <div class="bio-point-text">I type more to bots than humans.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">33</div>
+                    <div class="bio-point-text">Silence is my playlist.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">34</div>
+                    <div class="bio-point-text">Dead battery, dead mood.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">35</div>
+                    <div class="bio-point-text">My heart is encrypted.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">36</div>
+                    <div class="bio-point-text">Too many ghosts in my memory.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">37</div>
+                    <div class="bio-point-text">Seen by everyone, understood by none.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">38</div>
+                    <div class="bio-point-text">Smiling = default wallpaper.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">39</div>
+                    <div class="bio-point-text">She’s in the ground, I’m in the clouds.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">40</div>
+                    <div class="bio-point-text">Void is my comfort zone.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">41</div>
+                    <div class="bio-point-text">Professional procrastinator.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">42</div>
+                    <div class="bio-point-text">Wi-Fi > Wife.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">43</div>
+                    <div class="bio-point-text">Don’t follow me, I’m lost too.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">44</div>
+                    <div class="bio-point-text">Downloading… still.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">45</div>
+                    <div class="bio-point-text">1% battery, 100% drama.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">46</div>
+                    <div class="bio-point-text">Life lagging, ping 999.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">47</div>
+                    <div class="bio-point-text">My phone heats faster than my coffee.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">48</div>
+                    <div class="bio-point-text">Exams = boss fights without respawn.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">49</div>
+                    <div class="bio-point-text">Mood depends on charger speed.</div>
+                </div>
+                <div class="bio-point">
+                    <div class="bio-point-number">50</div>
+                    <div class="bio-point-text">Google knows me better than anyone.</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-heart"></i> Interests</h2>
+            <div class="interests">
+                <div class="interest">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Coding</span>
+                </div>
+                <div class="interest">
+                    <i class="fas fa-film"></i>
+                    <span>Hacking Movies</span>
+                </div>
+                <div class="interest">
+                    <i class="fas fa-robot"></i>
+                    <span>Robotics</span>
+                </div>
+                <div class="interest">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+                <div class="interest">
+                    <i class="fas fa-lock"></i>
+                    <span>Cybersecurity</span>
+                </div>
+                <div class="interest">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Tech Gadgets</span>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2023 My Tech Journey | Designed with <i class="fas fa-heart" style="color: var(--primary-color);"></i> and lots of caffeine</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
     </div>
-
-    <!-- Background Effects -->
-    <div id="stars-container"></div>
-    <div id="particles-js"></div>
     
-    <!-- Cursor Effect -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="#home">
-                        <span class="logo-icon"><i class="fas fa-rocket"></i></span>
-                        <span class="logo-text">ABHISHEK</span>
-                    </a>
-                </div>
-                
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#skills" class="nav-link">Skills</a></li>
-                        <li><a href="#projects" class="nav-link">Projects</a></li>
-                        <li><a href="#journey" class="nav-link">Journey</a></li>
-                        <li><a href="#interests" class="nav-link">Interests</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-                
-                <div class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                
-                <div class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="assets/videos/hero-bg.mp4" type="video/mp4">
-            </video>
-            <div class="overlay"></div>
-        </div>
-        
-        <div class="hero-content">
-            <div class="container">
-                <div class="hero-inner">
-                    <div class="hero-text">
-                        <h1 class="hero-title animate__animated animate__fadeInUp">
-                            <span class="line">ABHISHEK</span>
-                            <span class="line">ISSAC</span>
-                        </h1>
-                        
-                        <div class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="code-typing">
-                                <span class="static-text">I'm a </span>
-                                <span id="typing-text"></span>
-                                <span class="cursor">|</span>
-                            </div>
-                        </div>
-                        
-                        <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
-                            <a href="#about" class="btn btn-primary">
-                                <span>Explore My Universe</span>
-                                <i class="fas fa-arrow-down"></i>
-                            </a>
-                            <a href="#contact" class="btn btn-outline">
-                                <span>Get In Touch</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </a>
-                        </div>
-                        
-                        <div class="hero-social animate__animated animate__fadeInUp animate__delay-3s">
-                            <a href="https://instagram.com/Abhishek_issac_" target="_blank" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://github.com/Abhishek-issac" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://t.me/Abhisheksvlog" target="_blank" class="social-link">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/playlist?list=PL9nqZ8bkLgsmey2G03K1tplG20GuR4be5" target="_blank" class="social-link">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-visual animate__animated animate__fadeInRight">
-                        <div class="planet-container">
-                            <div class="planet">
-                                <div class="planet-surface"></div>
-                                <div class="planet-atmosphere"></div>
-                                <div class="planet-ring"></div>
-                            </div>
-                            <div class="orbit">
-                                <div class="satellite"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="arrows">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Discover the person behind the code</p>
-            </div>
+    <script>
+        // Add some interactivity to the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate cards on scroll
+            const cards = document.querySelectorAll('.card, .bio-point');
             
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="image-frame">
-                        <img src="https://via.placeholder.com/500x600" alt="Abhishek Issac" class="profile-img">
-                        <div class="image-overlay">
-                            <div class="social-icons">
-                                <a href="https://instagram.com/Abhishek_issac_" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="https://github.com/Abhishek-issac" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://t.me/Abhisheksvlog" target="_blank"><i class="fab fa-telegram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-text" data-aos="fade-left">
-                    <h3>Hello, I'm Abhishek Issac 👋</h3>
-                    <p>I'm a passionate student from <span class="highlight">Wayanad, Ambalavayal</span>, currently studying in the 9th standard at Assumption AHS Bathery.</p>
-                    <p>People often say I'm <span class="highlight">lazy</span>, but the truth is I'm just a curious mind exploring the vast universe of technology and coding.</p>
-                    <p>I have a deep passion for <span class="highlight">Python programming</span> and believe that with dedication and practice, I'll achieve great things in this field.</p>
-                    <p>Apart from coding, I love watching <span class="highlight">hacking movies</span> and exploring all things related to <span class="highlight">robotics and technology</span>.</p>
-                    <p class="astrophile-note"><small>*astrophile - a person who is deeply in love with stars.</small></p>
-                    
-                    <div class="personal-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Wayanad, Ambalavayal, Kerala, India</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>9th Standard, Assumption AHS Bathery</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-heart"></i>
-                            <span>Neon Green, Python, Hacking Movies</span>
-                        </div>
-                    </div>
-                    
-                    <a href="#contact" class="btn btn-primary">
-                        <span>Connect With Me</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Skills</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Technologies I'm exploring and mastering</p>
-            </div>
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
             
-            <div class="skills-container">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Programming</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Python</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 75%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>HTML/CSS</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 65%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>JavaScript</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 40%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-git-alt"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Git</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 60%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>GitHub</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 70%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-terminal"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Command Line</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 50%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Interests</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Robotics</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-film"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Hacking Movies</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">
-                                <i class="fas fa-satellite"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Space Tech</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Projects</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Explore my creative universe</p>
-            </div>
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
             
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="other">Other</button>
-            </div>
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
             
-            <div class="projects-grid">
-                <div class="project-card" data-category="python" data-aos="zoom-in">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/600x400" alt="Python Project">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="project-zoom"><i class="fas fa-search-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Python Automation Tool</h3>
-                        <p>A tool to automate repetitive tasks using Python scripts</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Automation</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="web" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/600x400" alt="Web Project">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="project-zoom"><i class="fas fa-search-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="other" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/600x400" alt="Other Project">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="project-zoom"><i class="fas fa-search-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Robotics Prototype</h3>
-                        <p>A small robotics prototype built with Arduino and basic sensors</p>
-                        <div class="project-tags">
-                            <span>Arduino</span>
-                            <span>Robotics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Journey Section -->
-    <section id="journey" class="journey section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Journey</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">The path that led me here</p>
-            </div>
+            // Add typing effect to the hero section
+            const heroText = document.querySelector('.hero p');
+            const text = heroText.textContent;
+            heroText.textContent = '';
             
-            <div class="journey-timeline">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2018</div>
-                        <h3>First Introduction to Coding</h3>
-                        <p>Discovered the world of programming through basic computer classes at school.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020</div>
-                        <h3>Python Journey Begins</h3>
-                        <p>Started learning Python programming through online tutorials and practice projects.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2021</div>
-                        <h3>First Python Project</h3>
-                        <p>Created my first functional Python project - a simple calculator application.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022</div>
-                        <h3>Web Development Exploration</h3>
-                        <p>Started learning HTML, CSS, and JavaScript to build my first websites.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023</div>
-                        <h3>GitHub Presence</h3>
-                        <p>Created my GitHub profile and started sharing my projects with the world.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interests Section -->
-    <section id="interests" class="interests section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Interests</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">What fuels my passion</p>
-            </div>
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    heroText.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 30);
+                }
+            }
             
-            <div class="interests-container">
-                <div class="interest-card" data-aos="flip-left">
-                    <div class="interest-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Programming</h3>
-                    <p>Exploring the world of code and building innovative solutions.</p>
-                </div>
-                
-                <div class="interest-card" data-aos="flip-left" data-aos-delay="100">
-                    <div class="interest-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Robotics</h3>
-                    <p>Creating and experimenting with robotic systems and automation.</p>
-                </div>
-                
-                <div class="interest-card" data-aos="flip-left" data-aos-delay="200">
-                    <div class="interest-icon">
-                        <i class="fas fa-film"></i>
-                    </div>
-                    <h3>Hacking Movies</h3>
-                    <p>Watching and learning from movies about cybersecurity and technology.</p>
-                </div>
-                
-                <div class="interest-card" data-aos="flip-left" data-aos-delay="300">
-                    <div class="interest-icon">
-                        <i class="fas fa-satellite"></i>
-                    </div>
-                    <h3>Space Technology</h3>
-                    <p>Fascinated by space exploration and the technology behind it.</p>
-                </div>
-                
-                <div class="interest-card" data-aos="flip-left" data-aos-delay="400">
-                    <div class="interest-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>Gaming</h3>
-                    <p>Enjoying video games, especially racing and open-world adventures.</p>
-                </div>
-                
-                <div class="interest-card" data-aos="flip-left" data-aos-delay="500">
-                    <div class="interest-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h3>Music</h3>
-                    <p>Listening to various genres of music to relax and get inspired.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Let's connect and explore opportunities</p>
-            </div>
+            setTimeout(typeWriter, 500);
             
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Contact Information</h3>
-                    <p>Feel free to reach out to me through any of the following channels:</p>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>abhishekissac0@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p>+91 8113828725</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Wayanad, Ambalavayal, Kerala, India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://instagram.com/Abhishek_issac_" target="_blank" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://github.com/Abhishek-issac" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://t.me/Abhisheksvlog" target="_blank" class="social-link">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/playlist?list=PL9nqZ8bkLgsmey2G03K1tplG20GuR4be5" target="_blank" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                    <div id="formMessage" class="form-message"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#home">
-                        <span class="logo-icon"><i class="fas fa-rocket"></i></span>
-                        <span class="logo-text">ABHISHEK</span>
-                    </a>
-                    <p>Exploring the universe of technology, one line of code at a time.</p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="#journey">Journey</a></li>
-                            <li><a href="#interests">Interests</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="https://github.com/Abhishek-issac" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <div class="social-links">
-                            <a href="https://instagram.com/Abhishek_issac_" target="_blank" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://github.com/Abhishek-issac" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://t.me/Abhisheksvlog" target="_blank" class="social-link">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/playlist?list=PL9nqZ8bkLgsmey2G03K1tplG20GuR4be5" target="_blank" class="social-link">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            // Add glow effect to the profile image on hover
+            const profileImg = document.querySelector('.profile-img');
+            profileImg.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 0 30px rgba(255, 16, 240, 0.8)';
+            });
             
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>&copy; 2023 Abhishek Issac. All rights reserved.</p>
-                </div>
-                <div class="footer-credits">
-                    <p>Designed with <i class="fas fa-heart"></i> by Abhishek Issac</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <a href="#" id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- External JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
-    <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/custom.js"></script>
+            profileImg.addEventListener('mouseleave', function() {
+                this.style.boxShadow = '0 0 20px rgba(255, 16, 240, 0.5)';
+            });
+        });
+    </script>
 </body>
 </html>
