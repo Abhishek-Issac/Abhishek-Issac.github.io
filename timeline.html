@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Developer journey and timeline of Abhishek Issac — key milestones in coding and technology.">
+  <title>Journey — Abhishek Issac</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="page-transition"><div class="loader-ring" style="position: relative;"></div></div>
+  <div class="bg-grid"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="main-nav glass-dark" id="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">AI</div>
+        <div class="nav-logo-text">Abhishek<span>.</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="projects.html" class="nav-link"><i class="fas fa-rocket"></i> Projects</a>
+        <a href="timeline.html" class="nav-link active"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" title="Switch Theme" aria-label="Switch theme"><i class="fas fa-palette"></i></button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html" class="mobile-nav-link"><i class="fas fa-user"></i> About</a>
+      <a href="skills.html" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a>
+      <a href="projects.html" class="mobile-nav-link"><i class="fas fa-rocket"></i> Projects</a>
+      <a href="timeline.html" class="mobile-nav-link active"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+      <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span class="current">Journey</span>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: var(--space-xl);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label animate-on-scroll">My Path</span>
+        <h2 class="animate-on-scroll" data-delay="100">Developer Journey</h2>
+        <p class="animate-on-scroll" data-delay="200">
+          A detailed timeline of key milestones in my growth as a developer
+        </p>
+      </div>
+
+      <div class="timeline" style="max-width: 850px; margin: 0 auto;">
+        <div class="timeline-item animate-on-scroll" data-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025 &mdash; Present</div>
+          <div class="timeline-card card">
+            <h4 class="timeline-card-title">Production-Grade Architecture & Database Migration</h4>
+            <div class="timeline-card-subtitle">Advanced Full-Stack Development</div>
+            <p class="timeline-card-description">
+              Architecting complex systems with dual-write database support for seamless migration
+              from MongoDB to PostgreSQL. Implementing Redis caching layers, Docker multi-service
+              deployments, and production-grade error handling. Working with advanced concepts like
+              TOCTOU race conditions, upsert patterns, and semaphore-based concurrency control.
+            </p>
+            <div class="timeline-card-tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag tag-secondary">Redis</span>
+              <span class="tag tag-accent">DigitalOcean</span>
+              <span class="tag">asyncpg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Late 2024</div>
+          <div class="timeline-card card">
+            <h4 class="timeline-card-title">SeriesPiroBot &amp; Large-Scale Bot Systems</h4>
+            <div class="timeline-card-subtitle">Telegram Bot Ecosystem</div>
+            <p class="timeline-card-description">
+              Built and launched SeriesPiroBot serving thousands of users. Implemented sophisticated
+              features like IMDb poster integration with Cinemagoer library, multi-language support,
+              quality-based content filtering, inline search, admin dashboards, and automated content
+              management. Also built Cavin VC Guard for voice chat moderation.
+            </p>
+            <div class="timeline-card-tags">
+              <span class="tag">Pyrogram</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag tag-secondary">IMDb API</span>
+              <span class="tag tag-accent">Cinemagoer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Mid 2024</div>
+          <div class="timeline-card card">
+            <h4 class="timeline-card-title">Automated Forwarding &amp; Group Management</h4>
+            <div class="timeline-card-subtitle">Telegram Automation</div>
+            <p class="timeline-card-description">
+              Developed 4sale-forward &mdash; an automated message forwarding bot with APScheduler
+              for scheduled auto-forwarding every 5 minutes. Explored Telethon for userbot
+              functionality with multi-account support, text filtering, and configurable delays
+              to handle Telegram flood waits gracefully.
+            </p>
+            <div class="timeline-card-tags">
+              <span class="tag">APScheduler</span>
+              <span class="tag">Telethon</span>
+              <span class="tag tag-secondary">AsyncIO</span>
+              <span class="tag tag-accent">Semaphore</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-delay="400">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Early 2024</div>
+          <div class="timeline-card card">
+            <h4 class="timeline-card-title">Linux VPS &amp; Server Administration</h4>
+            <div class="timeline-card-subtitle">DevOps Journey Begins</div>
+            <p class="timeline-card-description">
+              Set up my first DigitalOcean Ubuntu VPS. Learned server administration,
+              SSH key management, process management with systemd and tmux, Docker containerization,
+              and nginx reverse proxy configuration. Deployed multiple bots and services
+              with automatic restart and monitoring.
+            </p>
+            <div class="timeline-card-tags">
+              <span class="tag">Ubuntu</span>
+              <span class="tag">Docker</span>
+              <span class="tag tag-secondary">systemd</span>
+              <span class="tag tag-accent">SSH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-delay="500">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 &mdash; 2024</div>
+          <div class="timeline-card card">
+            <h4 class="timeline-card-title">Python &amp; Telegram Bot Foundations</h4>
+            <div class="timeline-card-subtitle">Core Learning Phase</div>
+            <p class="timeline-card-description">
+              Deep dive into Python programming. Learned Pyrogram framework and built first
+              Telegram bots for group management, message forwarding, and file handling.
+              Explored MongoDB for the first time, learned async programming patterns,
+              and built increasingly complex bot features.
+            </p>
+            <div class="timeline-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pyrogram</span>
+              <span class="tag tag-secondary">MongoDB</span>
+              <span class="tag tag-accent">Motor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-delay="600">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-card card">
+            <h4 class="timeline-card-title">Exploring Mobile &amp; New Languages</h4>
+            <div class="timeline-card-subtitle">Broadening Horizons</div>
+            <p class="timeline-card-description">
+              Started exploring Android development with Kotlin and Android Studio. Began learning
+              Go language for building high-performance Telegram bot clients using gotgbot library.
+              Experimented with web scraping, API integrations, and Instagram data analysis tools.
+            </p>
+            <div class="timeline-card-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Go</span>
+              <span class="tag tag-secondary">gotgbot</span>
+              <span class="tag tag-accent">Android SDK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-delay="700">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 &mdash; 2023</div>
+          <div class="timeline-card card">
+            <h4 class="timeline-card-title">First Steps in Programming</h4>
+            <div class="timeline-card-subtitle">Where It All Began</div>
+            <p class="timeline-card-description">
+              Started my coding journey with Scratch &mdash; building interactive games and animations.
+              Learned HTML, CSS, and basic JavaScript. Built my first simple web pages and discovered
+              the world of open source through GitHub. The curiosity about how things work behind the
+              scenes ignited a passion that continues to grow.
+            </p>
+            <div class="timeline-card-tags">
+              <span class="tag">Scratch</span>
+              <span class="tag">HTML</span>
+              <span class="tag tag-secondary">CSS</span>
+              <span class="tag tag-accent">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote -->
+      <div class="mt-2xl">
+        <div class="quote-card card animate-on-scroll">
+          <p class="quote-text">
+            "Every expert was once a beginner. The journey of a thousand lines of code
+            begins with a single print('Hello World')."
+          </p>
+          <div class="quote-author">&mdash; Abhishek Issac</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2025 Abhishek Issac. Built with passion and code.</p>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top float-element" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+  <div class="theme-switcher-panel">
+    <button class="theme-switcher-toggle" aria-label="Toggle theme panel"><i class="fas fa-palette"></i></button>
+    <div class="theme-switcher-title">Choose Theme</div>
+    <div class="theme-options">
+      <button class="theme-option active" data-theme="neon"><div class="theme-option-preview theme-preview-neon"><span></span><span></span><span></span></div><span class="theme-option-name">Neon</span></button>
+      <button class="theme-option" data-theme="cyberpunk"><div class="theme-option-preview theme-preview-cyberpunk"><span></span><span></span><span></span></div><span class="theme-option-name">Cyberpunk</span></button>
+      <button class="theme-option" data-theme="ocean"><div class="theme-option-preview theme-preview-ocean"><span></span><span></span><span></span></div><span class="theme-option-name">Ocean</span></button>
+      <button class="theme-option" data-theme="ember"><div class="theme-option-preview theme-preview-ember"><span></span><span></span><span></span></div><span class="theme-option-name">Ember</span></button>
+      <button class="theme-option" data-theme="aurora"><div class="theme-option-preview theme-preview-aurora"><span></span><span></span><span></span></div><span class="theme-option-name">Aurora</span></button>
+      <button class="theme-option" data-theme="matrix"><div class="theme-option-preview theme-preview-matrix"><span></span><span></span><span></span></div><span class="theme-option-name">Matrix</span></button>
+    </div>
+  </div>
+
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/effects.js"></script>
+</body>
+</html>

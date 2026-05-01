@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Abhishek Issac — Telegram Bots, Web Apps, Android Apps, and Open Source tools.">
+  <title>Projects — Abhishek Issac</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="page-transition">
+    <div class="loader-ring" style="position: relative;"></div>
+  </div>
+  <div class="bg-grid"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="main-nav glass-dark" id="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">AI</div>
+        <div class="nav-logo-text">Abhishek<span>.</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="projects.html" class="nav-link active"><i class="fas fa-rocket"></i> Projects</a>
+        <a href="timeline.html" class="nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" title="Switch Theme" aria-label="Switch theme">
+          <i class="fas fa-palette"></i>
+        </button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html" class="mobile-nav-link"><i class="fas fa-user"></i> About</a>
+      <a href="skills.html" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a>
+      <a href="projects.html" class="mobile-nav-link active"><i class="fas fa-rocket"></i> Projects</a>
+      <a href="timeline.html" class="mobile-nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+      <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span class="current">Projects</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: var(--space-xl);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label animate-on-scroll">Portfolio</span>
+        <h2 class="animate-on-scroll" data-delay="100">All Projects</h2>
+        <p class="animate-on-scroll" data-delay="200">
+          A comprehensive showcase of everything I've built &mdash; from Telegram bots to web apps and tools
+        </p>
+      </div>
+
+      <!-- Filter -->
+      <div class="projects-filter animate-on-scroll" data-delay="300">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="bot">Telegram Bots</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="tool">Tools & Scripts</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+
+      <!-- Featured Project -->
+      <div class="card featured-project animate-on-scroll" data-delay="100">
+        <div class="featured-project-image">
+          <div style="width: 100%; height: 100%; min-height: 350px; background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 50%, #0a0a2e 100%); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+            <i class="fas fa-film" style="font-size: 5rem; color: var(--primary); opacity: 0.4;"></i>
+            <span style="font-family: var(--font-display); font-size: 1.5rem; color: var(--primary); opacity: 0.6;">SeriesPiroBot</span>
+          </div>
+          <div class="featured-project-badge">Featured</div>
+        </div>
+        <div class="featured-project-content">
+          <span class="section-label">Flagship Project</span>
+          <h3 style="color: var(--text-primary); margin-bottom: var(--space-md);">SeriesPiroBot</h3>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--space-lg);">
+            The ultimate Telegram bot for series discovery and streaming. SeriesPiroBot serves thousands
+            of users with instant search capabilities, smart IMDb poster integration, multi-language support,
+            quality-based filtering, and a comprehensive admin dashboard.
+          </p>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--space-lg);">
+            Built from the ground up with Python and Pyrogram, backed by MongoDB for data persistence,
+            and featuring an intelligent caching layer with Redis for blazing-fast performance.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: var(--space-xl);">
+            <span class="tag">Python</span>
+            <span class="tag">Pyrogram</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag tag-secondary">Redis</span>
+            <span class="tag tag-secondary">IMDb API</span>
+            <span class="tag tag-accent">Docker</span>
+          </div>
+          <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+            <a href="https://t.me/SeriesPiroBot" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fab fa-telegram"></i> Try Bot
+            </a>
+            <a href="https://t.me/AbhishekSflix" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fas fa-info-circle"></i> More Info
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Projects Grid -->
+      <div class="projects-grid" style="margin-top: var(--space-2xl);">
+        <!-- 4sale-forward -->
+        <div class="project-card animate-on-scroll" data-category="bot" data-delay="100">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #0d1a0d 0%, #1a2e1a 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-forward-fast" style="font-size: 3.5rem; color: #00ff88; opacity: 0.4;"></i>
+            </div>
+            <div class="project-card-overlay">
+              <a href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Telegram Bot</div>
+            <h4 class="project-card-title">4sale-forward</h4>
+            <p class="project-card-description">
+              Automated Telegram message forwarding bot with scheduled autoforward every 5 minutes,
+              admin bot command menu, and deprecated Pyrogram API fixes.
+              Supports multiple source and destination channels.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pyrogram</span>
+              <span class="tag tag-accent">APScheduler</span>
+              <span class="tag tag-secondary">Autoforward</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener" class="project-card-link">
+                Source Code <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cavin-Game -->
+        <div class="project-card animate-on-scroll" data-category="game" data-delay="200">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a0d2e 0%, #2e1a3e 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-dice" style="font-size: 3.5rem; color: #ff10f0; opacity: 0.4;"></i>
+            </div>
+            <div class="project-card-overlay">
+              <a href="https://github.com/Abhishek-Issac/Cavin-Game" target="_blank" rel="noopener" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Game / Bot</div>
+            <h4 class="project-card-title">Cavin Game Bot</h4>
+            <p class="project-card-description">
+              Interactive Telegram game bot with dual-write database support (MongoDB + PostgreSQL),
+              TOCTOU race condition fixes, and robust upsert logic for user management.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag tag-secondary">MongoDB</span>
+              <span class="tag tag-accent">Dual-Write</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/Abhishek-Issac/Cavin-Game" target="_blank" rel="noopener" class="project-card-link">
+                Source Code <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cavin-vcguard -->
+        <div class="project-card animate-on-scroll" data-category="bot" data-delay="300">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #0d0d2e 0%, #1a1a4e 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-shield-halved" style="font-size: 3.5rem; color: #7b2ff7; opacity: 0.4;"></i>
+            </div>
+            <div class="project-card-overlay">
+              <a href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Telegram Bot</div>
+            <h4 class="project-card-title">Cavin VC Guard</h4>
+            <p class="project-card-description">
+              Voice chat moderation bot for Telegram groups. Monitors participants,
+              enforces group rules in voice chats, and provides admin controls
+              for managing VC sessions.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pyrogram</span>
+              <span class="tag tag-accent">Voice Chat API</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener" class="project-card-link">
+                Source Code <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="project-card animate-on-scroll" data-category="web" data-delay="400">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #0d1a2e 0%, #060d1b 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-globe" style="font-size: 3.5rem; color: #00f0ff; opacity: 0.4;"></i>
+            </div>
+            <div class="project-card-overlay">
+              <a href="https://abhishek-issac.github.io" target="_blank" rel="noopener" class="project-overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io" target="_blank" rel="noopener" class="project-overlay-btn"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Web Application</div>
+            <h4 class="project-card-title">Personal Portfolio</h4>
+            <p class="project-card-description">
+              NASA-level tech portfolio featuring particle effects, 6 color themes,
+              GitHub API integration, animated skill bars, project filtering,
+              and responsive design &mdash; all in vanilla HTML/CSS/JS.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag tag-secondary">Canvas API</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://abhishek-issac.github.io" target="_blank" rel="noopener" class="project-card-link">
+                View Live <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Userbot -->
+        <div class="project-card animate-on-scroll" data-category="tool" data-delay="500">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a0d 0%, #2e2e1a 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-user-secret" style="font-size: 3.5rem; color: #ffd700; opacity: 0.4;"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Tool</div>
+            <h4 class="project-card-title">Telegram Userbot</h4>
+            <p class="project-card-description">
+              Multi-account Telegram userbot for group chat management with text filtering,
+              semaphore-based concurrency control, configurable delays to avoid flood waits,
+              and rotating account support.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Telethon</span>
+              <span class="tag tag-accent">AsyncIO</span>
+              <span class="tag tag-secondary">Semaphore</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-card-link" style="color: var(--text-muted);">
+                <i class="fas fa-lock"></i> Private Repository
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DayMatrix -->
+        <div class="project-card animate-on-scroll" data-category="mobile" data-delay="600">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #2e1a0d 0%, #3e2e1a 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-calendar-check" style="font-size: 3.5rem; color: #ff6b35; opacity: 0.4;"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Android App</div>
+            <h4 class="project-card-title">DayMatrix</h4>
+            <p class="project-card-description">
+              Productivity Android application for daily planning and task management.
+              Features time blocking, habit tracking, and dramatic day visualization
+              with Material Design UI components.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag tag-accent">Android SDK</span>
+              <span class="tag tag-secondary">Material Design</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-card-link" style="color: var(--text-muted);">
+                <i class="fas fa-lock"></i> In Development
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram Unfollower Tracker -->
+        <div class="project-card animate-on-scroll" data-category="tool" data-delay="700">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #2e0d1a 0%, #3e1a2e 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fab fa-instagram" style="font-size: 3.5rem; color: #E4405F; opacity: 0.4;"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Tool / Script</div>
+            <h4 class="project-card-title">Instagram Unfollower Tracker</h4>
+            <p class="project-card-description">
+              Bash script that parses Instagram data export HTML files to identify
+              users who unfollowed you. Compares followers and following lists,
+              outputs unfollower profile URLs.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Bash</span>
+              <span class="tag tag-secondary">HTML Parsing</span>
+              <span class="tag tag-accent">grep/awk</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-card-link" style="color: var(--text-muted);">
+                <i class="fas fa-terminal"></i> Script
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Antispam Bot -->
+        <div class="project-card animate-on-scroll" data-category="bot" data-delay="800">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #0d2e1a 0%, #1a3e2e 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-ban" style="font-size: 3.5rem; color: #ff3366; opacity: 0.4;"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Telegram Bot</div>
+            <h4 class="project-card-title">Antispam Bot</h4>
+            <p class="project-card-description">
+              Rebranded and enhanced antispam bot for Telegram groups with automated
+              spam detection, user verification, welcome messages, and comprehensive
+              group moderation features.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pyrogram</span>
+              <span class="tag tag-secondary">MongoDB</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-card-link" style="color: var(--text-muted);">
+                <i class="fas fa-lock"></i> Private
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Mirror Script -->
+        <div class="project-card animate-on-scroll" data-category="tool" data-delay="100">
+          <div class="project-card-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%); display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-code-branch" style="font-size: 3.5rem; color: #f0f0f0; opacity: 0.4;"></i>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-category">Tool / Script</div>
+            <h4 class="project-card-title">GitHub Repo Mirror</h4>
+            <p class="project-card-description">
+              Bash script for mirroring GitHub repositories across accounts and
+              organizations. Handles authentication, branch syncing, and
+              automated backup workflows.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Bash</span>
+              <span class="tag tag-secondary">Git</span>
+              <span class="tag tag-accent">Automation</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-card-link" style="color: var(--text-muted);">
+                <i class="fas fa-terminal"></i> Script
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center mt-2xl animate-on-scroll">
+        <div class="card" style="padding: var(--space-2xl); max-width: 600px; margin: 0 auto;">
+          <h3 style="color: var(--text-primary); margin-bottom: var(--space-md);">Want to collaborate?</h3>
+          <p style="margin-bottom: var(--space-xl);">
+            I'm always open to new project ideas and collaborations. Let's build something amazing together.
+          </p>
+          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
+            <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2025 Abhishek Issac. Built with passion and code.</p>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top float-element" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Theme Switcher Panel -->
+  <div class="theme-switcher-panel">
+    <button class="theme-switcher-toggle" aria-label="Toggle theme panel"><i class="fas fa-palette"></i></button>
+    <div class="theme-switcher-title">Choose Theme</div>
+    <div class="theme-options">
+      <button class="theme-option active" data-theme="neon"><div class="theme-option-preview theme-preview-neon"><span></span><span></span><span></span></div><span class="theme-option-name">Neon</span></button>
+      <button class="theme-option" data-theme="cyberpunk"><div class="theme-option-preview theme-preview-cyberpunk"><span></span><span></span><span></span></div><span class="theme-option-name">Cyberpunk</span></button>
+      <button class="theme-option" data-theme="ocean"><div class="theme-option-preview theme-preview-ocean"><span></span><span></span><span></span></div><span class="theme-option-name">Ocean</span></button>
+      <button class="theme-option" data-theme="ember"><div class="theme-option-preview theme-preview-ember"><span></span><span></span><span></span></div><span class="theme-option-name">Ember</span></button>
+      <button class="theme-option" data-theme="aurora"><div class="theme-option-preview theme-preview-aurora"><span></span><span></span><span></span></div><span class="theme-option-name">Aurora</span></button>
+      <button class="theme-option" data-theme="matrix"><div class="theme-option-preview theme-preview-matrix"><span></span><span></span><span></span></div><span class="theme-option-name">Matrix</span></button>
+    </div>
+  </div>
+
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/effects.js"></script>
+</body>
+</html>

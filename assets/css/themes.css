@@ -1,0 +1,374 @@
+/* ============================================================
+   THEMES.CSS — Theme Variations: Neon, Cyberpunk, Ocean, Ember
+   ============================================================ */
+
+/* ==================== THEME: NEON (Default) ==================== */
+/* The default theme is defined in main.css :root */
+
+/* ==================== THEME: CYBERPUNK ==================== */
+[data-theme="cyberpunk"] {
+  --primary: #ff00ff;
+  --primary-rgb: 255, 0, 255;
+  --primary-dark: #cc00cc;
+  --secondary: #00ffff;
+  --secondary-rgb: 0, 255, 255;
+  --accent: #ffff00;
+  --accent-rgb: 255, 255, 0;
+
+  --bg-primary: #0d0221;
+  --bg-secondary: #150530;
+  --bg-tertiary: #1a0840;
+  --bg-card: #12042a;
+  --bg-card-hover: #1e0845;
+  --bg-overlay: rgba(13, 2, 33, 0.9);
+
+  --text-primary: #f0e6ff;
+  --text-secondary: #b8a0d8;
+  --text-muted: #7a60a0;
+
+  --border-color: rgba(255, 0, 255, 0.15);
+  --border-hover: rgba(255, 0, 255, 0.4);
+}
+
+[data-theme="cyberpunk"] .nav-logo-icon {
+  background: linear-gradient(135deg, #ff00ff, #ffff00);
+}
+
+[data-theme="cyberpunk"] .hero-gradient-orb--primary { background: #ff00ff; }
+[data-theme="cyberpunk"] .hero-gradient-orb--secondary { background: #00ffff; }
+[data-theme="cyberpunk"] .hero-gradient-orb--accent { background: #ffff00; }
+
+[data-theme="cyberpunk"] .btn-primary {
+  background: linear-gradient(135deg, #ff00ff, #ffff00);
+}
+
+[data-theme="cyberpunk"] .progress-bar-fill {
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+}
+
+[data-theme="cyberpunk"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff00ff, #ffff00);
+}
+
+/* ==================== THEME: OCEAN DEEP ==================== */
+[data-theme="ocean"] {
+  --primary: #00d4ff;
+  --primary-rgb: 0, 212, 255;
+  --primary-dark: #00a5c9;
+  --secondary: #00ff94;
+  --secondary-rgb: 0, 255, 148;
+  --accent: #0066ff;
+  --accent-rgb: 0, 102, 255;
+
+  --bg-primary: #040d1a;
+  --bg-secondary: #081a2e;
+  --bg-tertiary: #0c2440;
+  --bg-card: #071828;
+  --bg-card-hover: #0e2a45;
+  --bg-overlay: rgba(4, 13, 26, 0.9);
+
+  --text-primary: #d0e8f8;
+  --text-secondary: #8ab4d0;
+  --text-muted: #5a8aaa;
+
+  --border-color: rgba(0, 212, 255, 0.12);
+  --border-hover: rgba(0, 212, 255, 0.35);
+}
+
+[data-theme="ocean"] .nav-logo-icon {
+  background: linear-gradient(135deg, #00d4ff, #00ff94);
+}
+
+[data-theme="ocean"] .hero-gradient-orb--primary { background: #00d4ff; }
+[data-theme="ocean"] .hero-gradient-orb--secondary { background: #00ff94; }
+[data-theme="ocean"] .hero-gradient-orb--accent { background: #0066ff; }
+
+[data-theme="ocean"] .btn-primary {
+  background: linear-gradient(135deg, #00d4ff, #0066ff);
+}
+
+[data-theme="ocean"] .progress-bar-fill {
+  background: linear-gradient(90deg, #00d4ff, #00ff94);
+}
+
+[data-theme="ocean"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00d4ff, #0066ff);
+}
+
+/* ==================== THEME: EMBER BLAZE ==================== */
+[data-theme="ember"] {
+  --primary: #ff6b35;
+  --primary-rgb: 255, 107, 53;
+  --primary-dark: #e55a2b;
+  --secondary: #ffd700;
+  --secondary-rgb: 255, 215, 0;
+  --accent: #ff1744;
+  --accent-rgb: 255, 23, 68;
+
+  --bg-primary: #140a00;
+  --bg-secondary: #1e1000;
+  --bg-tertiary: #2a1600;
+  --bg-card: #1a0e00;
+  --bg-card-hover: #2e1800;
+  --bg-overlay: rgba(20, 10, 0, 0.9);
+
+  --text-primary: #ffe8d0;
+  --text-secondary: #c8a888;
+  --text-muted: #8a7060;
+
+  --border-color: rgba(255, 107, 53, 0.15);
+  --border-hover: rgba(255, 107, 53, 0.4);
+}
+
+[data-theme="ember"] .nav-logo-icon {
+  background: linear-gradient(135deg, #ff6b35, #ffd700);
+}
+
+[data-theme="ember"] .hero-gradient-orb--primary { background: #ff6b35; }
+[data-theme="ember"] .hero-gradient-orb--secondary { background: #ffd700; }
+[data-theme="ember"] .hero-gradient-orb--accent { background: #ff1744; }
+
+[data-theme="ember"] .btn-primary {
+  background: linear-gradient(135deg, #ff6b35, #ff1744);
+}
+
+[data-theme="ember"] .progress-bar-fill {
+  background: linear-gradient(90deg, #ff6b35, #ffd700);
+}
+
+[data-theme="ember"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff6b35, #ff1744);
+}
+
+/* ==================== THEME: AURORA ==================== */
+[data-theme="aurora"] {
+  --primary: #a855f7;
+  --primary-rgb: 168, 85, 247;
+  --primary-dark: #9333ea;
+  --secondary: #06b6d4;
+  --secondary-rgb: 6, 182, 212;
+  --accent: #ec4899;
+  --accent-rgb: 236, 72, 153;
+
+  --bg-primary: #0a0015;
+  --bg-secondary: #120025;
+  --bg-tertiary: #1a0035;
+  --bg-card: #0f0020;
+  --bg-card-hover: #1e0040;
+  --bg-overlay: rgba(10, 0, 21, 0.9);
+
+  --text-primary: #f0e0ff;
+  --text-secondary: #c0a0e0;
+  --text-muted: #8060a0;
+
+  --border-color: rgba(168, 85, 247, 0.15);
+  --border-hover: rgba(168, 85, 247, 0.4);
+}
+
+[data-theme="aurora"] .nav-logo-icon {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+[data-theme="aurora"] .hero-gradient-orb--primary { background: #a855f7; }
+[data-theme="aurora"] .hero-gradient-orb--secondary { background: #06b6d4; }
+[data-theme="aurora"] .hero-gradient-orb--accent { background: #ec4899; }
+
+[data-theme="aurora"] .btn-primary {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+[data-theme="aurora"] .progress-bar-fill {
+  background: linear-gradient(90deg, #a855f7, #06b6d4);
+}
+
+[data-theme="aurora"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #a855f7, #ec4899);
+}
+
+/* ==================== THEME: MATRIX ==================== */
+[data-theme="matrix"] {
+  --primary: #00ff41;
+  --primary-rgb: 0, 255, 65;
+  --primary-dark: #00cc34;
+  --secondary: #39ff14;
+  --secondary-rgb: 57, 255, 20;
+  --accent: #00e676;
+  --accent-rgb: 0, 230, 118;
+
+  --bg-primary: #000a00;
+  --bg-secondary: #001200;
+  --bg-tertiary: #001a00;
+  --bg-card: #000f00;
+  --bg-card-hover: #002200;
+  --bg-overlay: rgba(0, 10, 0, 0.9);
+
+  --text-primary: #c0ffc8;
+  --text-secondary: #60cc70;
+  --text-muted: #308040;
+
+  --border-color: rgba(0, 255, 65, 0.12);
+  --border-hover: rgba(0, 255, 65, 0.35);
+}
+
+[data-theme="matrix"] .nav-logo-icon {
+  background: linear-gradient(135deg, #00ff41, #39ff14);
+}
+
+[data-theme="matrix"] .hero-gradient-orb--primary { background: #00ff41; }
+[data-theme="matrix"] .hero-gradient-orb--secondary { background: #39ff14; }
+[data-theme="matrix"] .hero-gradient-orb--accent { background: #00e676; }
+
+[data-theme="matrix"] .btn-primary {
+  background: linear-gradient(135deg, #00ff41, #00e676);
+  color: #000;
+}
+
+[data-theme="matrix"] .progress-bar-fill {
+  background: linear-gradient(90deg, #00ff41, #39ff14);
+}
+
+[data-theme="matrix"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00ff41, #00e676);
+}
+
+[data-theme="matrix"] .gradient-text {
+  background: linear-gradient(135deg, #00ff41, #39ff14, #00e676);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==================== THEME SWITCHER UI ==================== */
+.theme-switcher-panel {
+  position: fixed;
+  top: 50%;
+  right: -300px;
+  transform: translateY(-50%);
+  width: 280px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+  padding: var(--space-xl);
+  z-index: 1001;
+  transition: right var(--transition-base);
+  box-shadow: var(--shadow-lg);
+}
+
+.theme-switcher-panel.open {
+  right: 0;
+}
+
+.theme-switcher-toggle {
+  position: absolute;
+  left: -48px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-right: none;
+  border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+  color: var(--primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.theme-switcher-toggle:hover {
+  background: rgba(var(--primary-rgb), 0.1);
+}
+
+.theme-switcher-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.theme-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-primary);
+}
+
+.theme-option:hover {
+  background: rgba(var(--primary-rgb), 0.05);
+  border-color: var(--border-color);
+}
+
+.theme-option.active {
+  background: rgba(var(--primary-rgb), 0.1);
+  border-color: var(--primary);
+}
+
+.theme-option-preview {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.theme-option-preview span {
+  flex: 1;
+  height: 100%;
+}
+
+.theme-option-name {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Neon preview */
+.theme-preview-neon span:nth-child(1) { background: #00f0ff; }
+.theme-preview-neon span:nth-child(2) { background: #7b2ff7; }
+.theme-preview-neon span:nth-child(3) { background: #ff10f0; }
+
+/* Cyberpunk preview */
+.theme-preview-cyberpunk span:nth-child(1) { background: #ff00ff; }
+.theme-preview-cyberpunk span:nth-child(2) { background: #00ffff; }
+.theme-preview-cyberpunk span:nth-child(3) { background: #ffff00; }
+
+/* Ocean preview */
+.theme-preview-ocean span:nth-child(1) { background: #00d4ff; }
+.theme-preview-ocean span:nth-child(2) { background: #0066ff; }
+.theme-preview-ocean span:nth-child(3) { background: #00ff94; }
+
+/* Ember preview */
+.theme-preview-ember span:nth-child(1) { background: #ff6b35; }
+.theme-preview-ember span:nth-child(2) { background: #ff1744; }
+.theme-preview-ember span:nth-child(3) { background: #ffd700; }
+
+/* Aurora preview */
+.theme-preview-aurora span:nth-child(1) { background: #a855f7; }
+.theme-preview-aurora span:nth-child(2) { background: #ec4899; }
+.theme-preview-aurora span:nth-child(3) { background: #06b6d4; }
+
+/* Matrix preview */
+.theme-preview-matrix span:nth-child(1) { background: #00ff41; }
+.theme-preview-matrix span:nth-child(2) { background: #39ff14; }
+.theme-preview-matrix span:nth-child(3) { background: #00e676; }
