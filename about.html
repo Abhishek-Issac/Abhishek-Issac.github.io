@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Abhishek Issac — Developer, Bot Creator, and Tech Enthusiast from Kerala, India.">
+  <title>About — Abhishek Issac</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="page-transition">
+    <div class="loader-ring" style="position: relative;"></div>
+  </div>
+  <div class="bg-grid"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="main-nav glass-dark" id="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">AI</div>
+        <div class="nav-logo-text">Abhishek<span>.</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html" class="nav-link active"><i class="fas fa-user"></i> About</a>
+        <a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="projects.html" class="nav-link"><i class="fas fa-rocket"></i> Projects</a>
+        <a href="timeline.html" class="nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" title="Switch Theme" aria-label="Switch theme"><i class="fas fa-palette"></i></button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html" class="mobile-nav-link active"><i class="fas fa-user"></i> About</a>
+      <a href="skills.html" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a>
+      <a href="projects.html" class="mobile-nav-link"><i class="fas fa-rocket"></i> Projects</a>
+      <a href="timeline.html" class="mobile-nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+      <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span class="current">About</span>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section" style="padding-top: var(--space-xl);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label animate-on-scroll">Who Am I</span>
+        <h2 class="animate-on-scroll" data-delay="100">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-container animate-on-scroll">
+          <div class="about-image">
+            <img src="images/profile.jpeg" alt="Abhishek Issac"
+                 onerror="this.style.background='linear-gradient(135deg, #0a0a1a, #1a1a3e)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center';">
+            <div class="about-image-decoration"></div>
+          </div>
+          <div class="about-info-cards mt-xl">
+            <div class="about-info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <div><div class="info-label">Location</div><div class="info-value">Kerala, India</div></div>
+            </div>
+            <div class="about-info-card">
+              <i class="fas fa-laptop-code"></i>
+              <div><div class="info-label">Focus</div><div class="info-value">Bot Development</div></div>
+            </div>
+            <div class="about-info-card">
+              <i class="fas fa-graduation-cap"></i>
+              <div><div class="info-label">Education</div><div class="info-value">Computer Science</div></div>
+            </div>
+            <div class="about-info-card">
+              <i class="fas fa-language"></i>
+              <div><div class="info-label">Languages</div><div class="info-value">English, Malayalam</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="animate-on-scroll" data-delay="200">
+          <span class="section-label">My Story</span>
+          <h3 style="margin-bottom: var(--space-lg); color: var(--text-primary);">
+            Developer, Builder, Tech Enthusiast
+          </h3>
+          <div class="about-text">
+            <p>
+              I'm <span class="about-highlight">Abhishek Issac</span>, a self-taught developer from
+              <span class="about-highlight">Kerala, India</span>. My coding journey began with simple
+              Scratch projects and basic HTML pages, and has evolved into building production-grade
+              Telegram bots that serve thousands of users.
+            </p>
+            <p>
+              My core expertise is in <span class="about-highlight">Python</span>, particularly with
+              <span class="about-highlight">Pyrogram</span> and <span class="about-highlight">Telethon</span>
+              for Telegram bot development. I've built everything from automated message forwarding systems
+              to full-featured series streaming bots with IMDb integration.
+            </p>
+            <p>
+              On the database side, I work extensively with <span class="about-highlight">MongoDB</span>
+              and <span class="about-highlight">PostgreSQL</span>, including complex migration projects
+              and dual-write architectures. I deploy my projects on
+              <span class="about-highlight">DigitalOcean Ubuntu VPS</span> servers using
+              <span class="about-highlight">Docker</span>.
+            </p>
+            <p>
+              Beyond the backend, I've ventured into Android development with
+              <span class="about-highlight">Kotlin</span>, web development with vanilla
+              <span class="about-highlight">HTML/CSS/JavaScript</span>, and even explored
+              <span class="about-highlight">Go</span> for building high-performance bot clients.
+            </p>
+            <p>
+              When I'm not coding, I'm an avid anime and series watcher, a mobile tech enthusiast
+              who loves tinkering with custom ROMs, and a gamer who enjoys Genshin Impact and
+              Wuthering Waves. I believe technology should be accessible and fun.
+            </p>
+          </div>
+
+          <div class="flex gap-md mt-xl flex-wrap">
+            <a href="contact.html" class="btn btn-primary ripple-effect"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+            <a href="projects.html" class="btn btn-outline"><i class="fas fa-folder-open"></i> View Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terminal -->
+      <div class="terminal animate-on-scroll terminal-animate mt-2xl" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div class="terminal-header">
+          <span class="terminal-dot terminal-dot--red"></span>
+          <span class="terminal-dot terminal-dot--yellow"></span>
+          <span class="terminal-dot terminal-dot--green"></span>
+          <span class="terminal-title">abhishek@dev ~ about</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">cat /etc/developer-profile</div>
+          <div class="terminal-output">
+            Name: Abhishek Issac<br>
+            Location: Kerala, India<br>
+            Role: Full-Stack Developer & Bot Creator<br>
+            Primary: Python, Telegram Bot API<br>
+            Databases: MongoDB, PostgreSQL, Redis, SQLite<br>
+            DevOps: Docker, Linux, DigitalOcean<br>
+            Learning: Go, Kotlin, Android SDK<br>
+            Status: Always building something new
+          </div>
+          <br>
+          <div class="terminal-line">uptime</div>
+          <div class="terminal-output">3+ years of passionate coding <span class="cursor-blink" style="color: var(--primary);">_</span></div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="mt-2xl">
+        <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">By the Numbers</h3>
+        <div class="grid-4 stagger-children" style="max-width: 900px; margin: 0 auto;">
+          <div class="card stat-card">
+            <div class="stat-number" data-count="15" data-suffix="+">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-number" data-count="10" data-suffix="+">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-number" data-count="500" data-suffix="+">0</div>
+            <div class="stat-label">Commits</div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-number" data-count="3" data-suffix="+">0</div>
+            <div class="stat-label">Years Coding</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div class="mt-2xl">
+        <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">Interests & Hobbies</h3>
+        <div class="interests-grid stagger-children">
+          <div class="interest-card card">
+            <div class="interest-card-icon" style="background: rgba(255, 0, 0, 0.1); color: #ff4444;"><i class="fas fa-tv"></i></div>
+            <div class="interest-card-title">Anime & Series</div>
+            <div class="interest-card-subtitle">Binge-watching enthusiast</div>
+          </div>
+          <div class="interest-card card">
+            <div class="interest-card-icon" style="background: rgba(0, 200, 83, 0.1); color: #00c853;"><i class="fas fa-gamepad"></i></div>
+            <div class="interest-card-title">Gaming</div>
+            <div class="interest-card-subtitle">Genshin, Wuthering Waves</div>
+          </div>
+          <div class="interest-card card">
+            <div class="interest-card-icon" style="background: rgba(33, 150, 243, 0.1); color: #2196F3;"><i class="fas fa-mobile-alt"></i></div>
+            <div class="interest-card-title">Mobile Tech</div>
+            <div class="interest-card-subtitle">Custom ROMs & reviews</div>
+          </div>
+          <div class="interest-card card">
+            <div class="interest-card-icon" style="background: rgba(255, 152, 0, 0.1); color: #FF9800;"><i class="fas fa-terminal"></i></div>
+            <div class="interest-card-title">Linux Tinkering</div>
+            <div class="interest-card-subtitle">Server administration</div>
+          </div>
+          <div class="interest-card card">
+            <div class="interest-card-icon" style="background: rgba(156, 39, 176, 0.1); color: #9C27B0;"><i class="fas fa-robot"></i></div>
+            <div class="interest-card-title">Bot Building</div>
+            <div class="interest-card-subtitle">Automation everything</div>
+          </div>
+          <div class="interest-card card">
+            <div class="interest-card-icon" style="background: rgba(0, 188, 212, 0.1); color: #00BCD4;"><i class="fas fa-book-open"></i></div>
+            <div class="interest-card-title">Tech Articles</div>
+            <div class="interest-card-subtitle">Always learning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2025 Abhishek Issac. Built with passion and code.</p>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top float-element" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+  <div class="theme-switcher-panel">
+    <button class="theme-switcher-toggle" aria-label="Toggle theme panel"><i class="fas fa-palette"></i></button>
+    <div class="theme-switcher-title">Choose Theme</div>
+    <div class="theme-options">
+      <button class="theme-option active" data-theme="neon"><div class="theme-option-preview theme-preview-neon"><span></span><span></span><span></span></div><span class="theme-option-name">Neon</span></button>
+      <button class="theme-option" data-theme="cyberpunk"><div class="theme-option-preview theme-preview-cyberpunk"><span></span><span></span><span></span></div><span class="theme-option-name">Cyberpunk</span></button>
+      <button class="theme-option" data-theme="ocean"><div class="theme-option-preview theme-preview-ocean"><span></span><span></span><span></span></div><span class="theme-option-name">Ocean</span></button>
+      <button class="theme-option" data-theme="ember"><div class="theme-option-preview theme-preview-ember"><span></span><span></span><span></span></div><span class="theme-option-name">Ember</span></button>
+      <button class="theme-option" data-theme="aurora"><div class="theme-option-preview theme-preview-aurora"><span></span><span></span><span></span></div><span class="theme-option-name">Aurora</span></button>
+      <button class="theme-option" data-theme="matrix"><div class="theme-option-preview theme-preview-matrix"><span></span><span></span><span></span></div><span class="theme-option-name">Matrix</span></button>
+    </div>
+  </div>
+
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/effects.js"></script>
+</body>
+</html>

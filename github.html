@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GitHub profile and repositories of Abhishek Issac — open source projects and contributions.">
+  <title>GitHub — Abhishek Issac</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="page-transition"><div class="loader-ring" style="position: relative;"></div></div>
+  <div class="bg-grid"></div>
+  <div class="noise-overlay"></div>
+
+  <nav class="main-nav glass-dark" id="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">AI</div>
+        <div class="nav-logo-text">Abhishek<span>.</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="projects.html" class="nav-link"><i class="fas fa-rocket"></i> Projects</a>
+        <a href="timeline.html" class="nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+        <a href="github.html" class="nav-link active"><i class="fab fa-github"></i> GitHub</a>
+        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" title="Switch Theme" aria-label="Switch theme"><i class="fas fa-palette"></i></button>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html" class="mobile-nav-link"><i class="fas fa-user"></i> About</a>
+      <a href="skills.html" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a>
+      <a href="projects.html" class="mobile-nav-link"><i class="fas fa-rocket"></i> Projects</a>
+      <a href="timeline.html" class="mobile-nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
+      <a href="github.html" class="mobile-nav-link active"><i class="fab fa-github"></i> GitHub</a>
+      <a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span class="separator">/</span>
+      <span class="current">GitHub</span>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: var(--space-xl);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label animate-on-scroll">Open Source</span>
+        <h2 class="animate-on-scroll" data-delay="100">GitHub Profile</h2>
+        <p class="animate-on-scroll" data-delay="200">
+          My open-source contributions, repositories, and coding activity
+        </p>
+      </div>
+
+      <!-- GitHub Profile Card -->
+      <div class="card animate-on-scroll" data-delay="100" style="max-width: 800px; margin: 0 auto var(--space-2xl);">
+        <div style="display: flex; align-items: center; gap: var(--space-xl); padding: var(--space-2xl); flex-wrap: wrap;">
+          <div style="flex-shrink: 0;">
+            <img src="https://github.com/Abhishek-Issac.png" alt="GitHub Avatar"
+                 style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--primary);"
+                 onerror="this.style.background='linear-gradient(135deg, var(--primary), var(--accent))'; this.style.display='flex'; this.alt='AI';">
+          </div>
+          <div style="flex: 1; min-width: 200px;">
+            <h3 style="color: var(--text-primary); margin-bottom: var(--space-sm);">
+              Abhishek Issac
+              <span class="badge badge-success" style="margin-left: 8px;">Pro</span>
+            </h3>
+            <p style="color: var(--primary); font-family: var(--font-mono); font-size: 0.9rem; margin-bottom: var(--space-md);">
+              @Abhishek-Issac
+            </p>
+            <p style="margin-bottom: var(--space-lg);">
+              Full-Stack Developer | Telegram Bot Creator | Python Enthusiast
+            </p>
+            <div style="display: flex; gap: var(--space-lg); flex-wrap: wrap;">
+              <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="fab fa-github"></i> Follow
+              </a>
+              <a href="https://github.com/Abhishek-Issac?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+                <i class="fas fa-book-bookmark"></i> Repositories
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Stats -->
+      <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">Profile Stats</h3>
+      <div class="github-stats" id="github-stats" style="margin-bottom: var(--space-2xl);">
+        <div class="card github-stat-card animate-on-scroll" data-delay="100" data-github-stat="public_repos">
+          <i class="fas fa-book-bookmark"></i>
+          <div class="stat-number" data-count="10" data-suffix="+">0</div>
+          <div class="stat-label">Public Repos</div>
+        </div>
+        <div class="card github-stat-card animate-on-scroll" data-delay="200" data-github-stat="followers">
+          <i class="fas fa-users"></i>
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-label">Followers</div>
+        </div>
+        <div class="card github-stat-card animate-on-scroll" data-delay="300" data-github-stat="following">
+          <i class="fas fa-user-plus"></i>
+          <div class="stat-number" data-count="10">0</div>
+          <div class="stat-label">Following</div>
+        </div>
+        <div class="card github-stat-card animate-on-scroll" data-delay="400">
+          <i class="fas fa-code-commit"></i>
+          <div class="stat-number" data-count="500" data-suffix="+">0</div>
+          <div class="stat-label">Total Commits</div>
+        </div>
+      </div>
+
+      <!-- Language Stats -->
+      <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">Most Used Languages</h3>
+      <div class="grid-3 stagger-children" style="max-width: 900px; margin: 0 auto var(--space-2xl);">
+        <div class="card" style="padding: var(--space-xl);">
+          <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+            <span class="language-dot python"></span>
+            <span style="font-weight: 500; color: var(--text-primary);">Python</span>
+            <span style="margin-left: auto; font-family: var(--font-mono); color: var(--primary);">65%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar-fill" data-width="65"></div></div>
+        </div>
+        <div class="card" style="padding: var(--space-xl);">
+          <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+            <span class="language-dot html"></span>
+            <span style="font-weight: 500; color: var(--text-primary);">HTML</span>
+            <span style="margin-left: auto; font-family: var(--font-mono); color: var(--primary);">15%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar-fill" data-width="15"></div></div>
+        </div>
+        <div class="card" style="padding: var(--space-xl);">
+          <div style="display: flex; align-items: center; gap: var(--space-md); margin-bottom: var(--space-md);">
+            <span class="language-dot javascript"></span>
+            <span style="font-weight: 500; color: var(--text-primary);">JavaScript</span>
+            <span style="margin-left: auto; font-family: var(--font-mono); color: var(--primary);">10%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar-fill" data-width="10"></div></div>
+        </div>
+      </div>
+
+      <!-- Pinned Repos -->
+      <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">Pinned Repositories</h3>
+      <div class="github-repos" style="margin-bottom: var(--space-2xl);">
+        <div class="github-repo-card card animate-on-scroll" data-delay="100">
+          <div class="github-repo-header">
+            <i class="fas fa-book-bookmark" style="color: var(--text-muted);"></i>
+            <a href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener" class="github-repo-name">4sale-forward</a>
+          </div>
+          <p class="github-repo-description">
+            Automated Telegram message forwarding bot with scheduled autoforward every 5 minutes,
+            admin bot command menu, and Pyrogram API integration.
+          </p>
+          <div class="github-repo-meta">
+            <span><span class="language-dot python"></span> Python</span>
+            <span><i class="fas fa-star"></i> 0</span>
+            <span><i class="fas fa-code-branch"></i> 0</span>
+          </div>
+        </div>
+
+        <div class="github-repo-card card animate-on-scroll" data-delay="200">
+          <div class="github-repo-header">
+            <i class="fas fa-book-bookmark" style="color: var(--text-muted);"></i>
+            <a href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener" class="github-repo-name">Cavin-vcguard</a>
+          </div>
+          <p class="github-repo-description">
+            Voice chat guard bot for Telegram groups. Monitors and manages
+            voice chat participants with admin controls and automated moderation.
+          </p>
+          <div class="github-repo-meta">
+            <span><span class="language-dot python"></span> Python</span>
+            <span><i class="fas fa-star"></i> 0</span>
+            <span><i class="fas fa-code-branch"></i> 0</span>
+          </div>
+        </div>
+
+        <div class="github-repo-card card animate-on-scroll" data-delay="300">
+          <div class="github-repo-header">
+            <i class="fas fa-book-bookmark" style="color: var(--text-muted);"></i>
+            <a href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io" target="_blank" rel="noopener" class="github-repo-name">Abhishek-Issac.github.io</a>
+          </div>
+          <p class="github-repo-description">
+            Personal portfolio website with particle effects, 6 color themes,
+            GitHub API integration, and responsive design — built with vanilla HTML/CSS/JS.
+          </p>
+          <div class="github-repo-meta">
+            <span><span class="language-dot html"></span> HTML</span>
+            <span><i class="fas fa-star"></i> 0</span>
+            <span><i class="fas fa-code-branch"></i> 0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Used -->
+      <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">Technologies I Work With</h3>
+      <div class="tech-stack-grid stagger-children" style="max-width: 900px; margin: 0 auto var(--space-2xl);">
+        <div class="tech-stack-item">
+          <i class="fab fa-python" style="font-size: 2rem; color: #3776AB;"></i>
+          <span>Python</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fas fa-database" style="font-size: 2rem; color: #47A248;"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fas fa-database" style="font-size: 2rem; color: #336791;"></i>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-docker" style="font-size: 2rem; color: #2496ED;"></i>
+          <span>Docker</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-linux" style="font-size: 2rem; color: #FCC624;"></i>
+          <span>Linux</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-telegram" style="font-size: 2rem; color: #26A5E4;"></i>
+          <span>Telegram API</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-html5" style="font-size: 2rem; color: #E34F26;"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-css3-alt" style="font-size: 2rem; color: #1572B6;"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-js" style="font-size: 2rem; color: #F7DF1E;"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-git-alt" style="font-size: 2rem; color: #F05032;"></i>
+          <span>Git</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fas fa-server" style="font-size: 2rem; color: #00C7B7;"></i>
+          <span>Redis</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-golang" style="font-size: 2rem; color: #00ADD8;"></i>
+          <span>Go</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-android" style="font-size: 2rem; color: #3DDC84;"></i>
+          <span>Kotlin</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fas fa-terminal" style="font-size: 2rem; color: #4EAA25;"></i>
+          <span>Bash</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-digital-ocean" style="font-size: 2rem; color: #0080FF;"></i>
+          <span>DigitalOcean</span>
+        </div>
+        <div class="tech-stack-item">
+          <i class="fab fa-github" style="font-size: 2rem; color: #fff;"></i>
+          <span>GitHub</span>
+        </div>
+      </div>
+
+      <!-- Activity Overview -->
+      <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">Activity Overview</h3>
+      <div class="grid-2 stagger-children" style="max-width: 800px; margin: 0 auto var(--space-2xl);">
+        <div class="card" style="padding: var(--space-xl);">
+          <h4 style="color: var(--text-primary); margin-bottom: var(--space-lg);">
+            <i class="fas fa-code" style="color: var(--primary); margin-right: 8px;"></i>
+            Main Focus Areas
+          </h4>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-sm);">
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span class="status-dot"></span>
+              Telegram Bot Development
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span class="status-dot"></span>
+              Database Architecture
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span class="status-dot"></span>
+              Server Administration
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span class="status-dot"></span>
+              Web Development
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <span class="status-dot"></span>
+              Open Source Projects
+            </li>
+          </ul>
+        </div>
+        <div class="card" style="padding: var(--space-xl);">
+          <h4 style="color: var(--text-primary); margin-bottom: var(--space-lg);">
+            <i class="fas fa-chart-line" style="color: var(--secondary); margin-right: 8px;"></i>
+            Development Stats
+          </h4>
+          <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+            <div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                <span>Python</span><span style="color: var(--primary);">65%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-bar-fill" data-width="65"></div></div>
+            </div>
+            <div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                <span>Shell / Bash</span><span style="color: var(--primary);">15%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-bar-fill" data-width="15"></div></div>
+            </div>
+            <div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                <span>HTML/CSS/JS</span><span style="color: var(--primary);">12%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-bar-fill" data-width="12"></div></div>
+            </div>
+            <div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                <span>Go / Kotlin</span><span style="color: var(--primary);">8%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-bar-fill" data-width="8"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Repos from API -->
+      <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">
+        Latest Repositories <span style="font-size: 0.7em; color: var(--text-muted);">(live from GitHub API)</span>
+      </h3>
+      <div class="github-repos" id="github-repos">
+        <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+          <div class="loading-dots"><span></span><span></span><span></span></div>
+          <p class="mt-md">Loading repositories from GitHub...</p>
+        </div>
+      </div>
+
+      <!-- Contribution Guide -->
+      <div class="mt-2xl animate-on-scroll">
+        <div class="card" style="padding: var(--space-2xl); max-width: 700px; margin: 0 auto;">
+          <div class="terminal" style="margin-bottom: var(--space-xl);">
+            <div class="terminal-header">
+              <span class="terminal-dot terminal-dot--red"></span>
+              <span class="terminal-dot terminal-dot--yellow"></span>
+              <span class="terminal-dot terminal-dot--green"></span>
+              <span class="terminal-title">contribute.sh</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">git clone https://github.com/Abhishek-Issac/&lt;repo&gt;.git</div>
+              <div class="terminal-output">Cloning into '&lt;repo&gt;'...</div>
+              <br>
+              <div class="terminal-line">cd &lt;repo&gt; && python3 -m venv venv</div>
+              <div class="terminal-output">Creating virtual environment...</div>
+              <br>
+              <div class="terminal-line">pip install -r requirements.txt</div>
+              <div class="terminal-output">Successfully installed all dependencies</div>
+              <br>
+              <div class="terminal-line">python3 bot.py</div>
+              <div class="terminal-output">Bot started successfully! <span class="cursor-blink" style="color: var(--primary);">_</span></div>
+            </div>
+          </div>
+          <h4 style="color: var(--text-primary); margin-bottom: var(--space-md); text-align: center;">
+            Want to contribute?
+          </h4>
+          <p style="text-align: center; margin-bottom: var(--space-lg);">
+            I welcome contributions to my open-source projects! Feel free to fork any repository,
+            make your changes, and submit a pull request. Issues and feature requests are also welcome.
+          </p>
+          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+            <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fab fa-github"></i> View All Repos
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2025 Abhishek Issac. Built with passion and code.</p>
+        <div class="footer-bottom-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top float-element" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+  <div class="theme-switcher-panel">
+    <button class="theme-switcher-toggle" aria-label="Toggle theme panel"><i class="fas fa-palette"></i></button>
+    <div class="theme-switcher-title">Choose Theme</div>
+    <div class="theme-options">
+      <button class="theme-option active" data-theme="neon"><div class="theme-option-preview theme-preview-neon"><span></span><span></span><span></span></div><span class="theme-option-name">Neon</span></button>
+      <button class="theme-option" data-theme="cyberpunk"><div class="theme-option-preview theme-preview-cyberpunk"><span></span><span></span><span></span></div><span class="theme-option-name">Cyberpunk</span></button>
+      <button class="theme-option" data-theme="ocean"><div class="theme-option-preview theme-preview-ocean"><span></span><span></span><span></span></div><span class="theme-option-name">Ocean</span></button>
+      <button class="theme-option" data-theme="ember"><div class="theme-option-preview theme-preview-ember"><span></span><span></span><span></span></div><span class="theme-option-name">Ember</span></button>
+      <button class="theme-option" data-theme="aurora"><div class="theme-option-preview theme-preview-aurora"><span></span><span></span><span></span></div><span class="theme-option-name">Aurora</span></button>
+      <button class="theme-option" data-theme="matrix"><div class="theme-option-preview theme-preview-matrix"><span></span><span></span><span></span></div><span class="theme-option-name">Matrix</span></button>
+    </div>
+  </div>
+
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/effects.js"></script>
+</body>
+</html>
