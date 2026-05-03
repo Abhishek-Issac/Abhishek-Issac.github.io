@@ -1,1263 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Abhishek Issac — Full-Stack Developer, Telegram Bot Creator, Python Enthusiast. Explore my portfolio showcasing projects, skills, and journey in tech.">
-  <meta name="keywords" content="Abhishek Issac, Developer, Portfolio, Python, Telegram Bots, Full-Stack, MongoDB, PostgreSQL, Linux">
-  <meta name="author" content="Abhishek Issac">
-  <meta name="theme-color" content="#00f0ff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhishek Issac — Telegram bot architect, Python developer, Android tinkerer & custom-ROM enthusiast from Kerala, India." />
+  <meta name="keywords" content="Abhishek Issac, Developer, Portfolio, Python, Telegram Bots, Pyrogram, MongoDB, PostgreSQL, Custom ROMs, Magisk, KernelSU, Termux, Kerala, India" />
+  <meta name="author" content="Abhishek Issac" />
+  <meta name="theme-color" content="#fafaf6" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Abhishek Issac — Developer Portfolio">
-  <meta property="og:description" content="Full-Stack Developer, Telegram Bot Creator, Python Enthusiast">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://abhishek-issac.github.io">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abhishek Issac — A Tech Nerd from Kerala" />
+  <meta property="og:description" content="Bots, automation, deep system tweaking, custom ROMs. Built for the curious." />
+  <meta property="og:url" content="https://abhishek-issac.github.io" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/93928612?v=4" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  <title>Abhishek Issac — Developer Portfolio</title>
+  <title>Abhishek Issac — A Tech Nerd from Kerala</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Premium fonts: serif display + tight sans + coding mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,350;9..144,400;9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/navigation.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/themes.css">
-  <link rel="stylesheet" href="assets/css/pages.css">
-
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Premium theme -->
+  <link rel="stylesheet" href="assets/css/premium.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
-<body>
-  <!-- Page Loader -->
-  <div class="page-transition">
-    <div class="loader-ring" style="position: relative;"></div>
-  </div>
+<body class="premium">
 
-  <!-- Background Grid -->
-  <div class="bg-grid"></div>
+  <!-- ================== SIDE RAILS (decorative animated) ================== -->
+  <aside class="pg-rail left" aria-hidden="true"></aside>
+  <aside class="pg-rail right" aria-hidden="true"></aside>
 
-  <!-- Noise Overlay -->
-  <div class="noise-overlay"></div>
+  <div class="pg-content">
 
-  <!-- ==================== NAVIGATION ==================== -->
-  <nav class="main-nav glass-dark" id="main-nav">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">AI</div>
-        <div class="nav-logo-text">Abhishek<span>.</span></div>
+    <!-- ================== NAVIGATION ================== -->
+    <header class="pg-nav" role="banner">
+      <a class="pg-logo" href="#top">
+        <span class="pg-logo-mark">A<span>I</span></span>
+        <span><strong>Abhishek</strong>&nbsp;<span>Issac</span></span>
       </a>
-
-      <div class="nav-links">
-        <a href="#hero" class="nav-link active"><i class="fas fa-home"></i> Home</a>
-        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
-        <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
-        <a href="#projects" class="nav-link"><i class="fas fa-rocket"></i> Projects</a>
-        <a href="#timeline" class="nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
-        <a href="#github" class="nav-link"><i class="fab fa-github"></i> GitHub</a>
-        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
-      </div>
-
-      <div class="nav-actions">
-        <button class="theme-toggle" title="Switch Theme" aria-label="Switch theme">
-          <i class="fas fa-palette"></i>
-        </button>
-        <a href="#contact" class="nav-cta">
-          <i class="fas fa-paper-plane"></i> Hire Me
-        </a>
-      </div>
-
-      <button class="hamburger" aria-label="Toggle menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile Nav -->
-  <div class="mobile-nav-overlay"></div>
-  <div class="mobile-nav">
-    <div class="mobile-nav-links">
-      <a href="#hero" class="mobile-nav-link active"><i class="fas fa-home"></i> Home</a>
-      <a href="#about" class="mobile-nav-link"><i class="fas fa-user"></i> About</a>
-      <a href="#skills" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a>
-      <a href="#projects" class="mobile-nav-link"><i class="fas fa-rocket"></i> Projects</a>
-      <a href="#timeline" class="mobile-nav-link"><i class="fas fa-clock-rotate-left"></i> Journey</a>
-      <a href="#github" class="mobile-nav-link"><i class="fab fa-github"></i> GitHub</a>
-      <a href="#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
-    </div>
-    <div class="mobile-nav-divider"></div>
-    <div class="mobile-nav-footer">
-      <a href="#contact" class="btn btn-primary w-full" style="justify-content: center;">
-        <i class="fas fa-paper-plane"></i> Get In Touch
+      <nav class="pg-nav-links" aria-label="Primary">
+        <a href="#about">about</a>
+        <a href="#stack">stack</a>
+        <a href="#projects">projects</a>
+        <a href="#github">github</a>
+        <a href="#interests">interests</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <a class="pg-nav-cta" href="https://t.me/abhisheksvlog" target="_blank" rel="noopener">
+        say hi · t.me/abhisheksvlog
       </a>
-      <div class="mobile-nav-socials">
-        <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="mobile-social-link"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/AbhishekIssac" target="_blank" rel="noopener" class="mobile-social-link"><i class="fab fa-telegram"></i></a>
-        <a href="https://instagram.com/abhishek_issac_" target="_blank" rel="noopener" class="mobile-social-link"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </div>
+    </header>
 
-  <!-- ==================== HERO SECTION ==================== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-effects">
-      <canvas id="particle-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></canvas>
-      <div class="hero-gradient-orb hero-gradient-orb--primary float"></div>
-      <div class="hero-gradient-orb hero-gradient-orb--secondary float float-delay-2"></div>
-      <div class="hero-gradient-orb hero-gradient-orb--accent float float-delay-4"></div>
-    </div>
+    <main id="top" class="pg-wrap">
 
-    <div class="hero-content">
-      <div class="hero-profile fade-in-up" style="transition-delay: 0.1s;">
-        <img src="images/profile.jpeg" alt="Abhishek Issac" class="hero-profile-img"
-             onerror="this.style.background='linear-gradient(135deg, var(--primary), var(--accent))'; this.alt='AI'; this.style.display='flex'; this.style.fontSize='3rem'; this.style.fontFamily='var(--font-display)'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.color='#fff';">
-        <div class="hero-profile-ring"></div>
-        <div class="hero-profile-ring-2"></div>
-      </div>
-
-      <div class="hero-badge fade-in-up" style="transition-delay: 0.2s;">
-        <span class="status-dot"></span>
-        Available for Projects
-      </div>
-
-      <h1 class="hero-title fade-in-up" style="transition-delay: 0.3s;">
-        <span class="line">Hi, I'm</span>
-        <span class="line gradient-text">Abhishek Issac</span>
-      </h1>
-
-      <div class="hero-typewriter fade-in-up" style="transition-delay: 0.4s;">
-        <span class="section-label" style="margin-bottom: 0;">
-          <span class="typewriter-text"></span><span class="cursor cursor-blink">|</span>
-        </span>
-      </div>
-
-      <p class="hero-subtitle fade-in-up" style="transition-delay: 0.5s;">
-        Passionate developer from <strong>Kerala, India</strong> crafting powerful
-        <span class="about-highlight">Telegram bots</span>,
-        <span class="about-highlight">full-stack applications</span>, and
-        <span class="about-highlight">open-source tools</span>
-        that push the boundaries of what's possible.
-      </p>
-
-      <div class="hero-actions fade-in-up" style="transition-delay: 0.6s;">
-        <a href="#projects" class="btn btn-primary btn-lg ripple-effect">
-          <i class="fas fa-rocket"></i> View My Work
-        </a>
-        <a href="#contact" class="btn btn-outline btn-lg">
-          <i class="fas fa-envelope"></i> Contact Me
-        </a>
-        <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </div>
-
-      <div class="hero-stats fade-in-up" style="transition-delay: 0.7s;">
-        <div class="hero-stat">
-          <div class="hero-stat-number" data-count="15" data-suffix="+">0+</div>
-          <div class="hero-stat-label">Projects Built</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-number" data-count="10" data-suffix="+">0+</div>
-          <div class="hero-stat-label">Technologies</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-number" data-count="500" data-suffix="+">0+</div>
-          <div class="hero-stat-label">Commits</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-number" data-count="3" data-suffix="+">0+</div>
-          <div class="hero-stat-label">Years Coding</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== ABOUT SECTION ==================== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label animate-on-scroll">Who Am I</span>
-        <h2 class="animate-on-scroll" data-delay="100">About Me</h2>
-        <p class="animate-on-scroll" data-delay="200">
-          A snapshot of who I am, what drives me, and the technologies I love
-        </p>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-image-container animate-on-scroll">
-          <div class="about-image">
-            <img src="images/profile.jpeg" alt="Abhishek Issac at work"
-                 onerror="this.style.background='linear-gradient(135deg, #0a0a1a, #1a1a3e)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.alt='Photo placeholder';">
-            <div class="about-image-decoration"></div>
-          </div>
-          <div class="about-info-cards mt-xl">
-            <div class="about-info-card">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <div class="info-label">Location</div>
-                <div class="info-value">Kerala, India</div>
-              </div>
-            </div>
-            <div class="about-info-card">
-              <i class="fas fa-laptop-code"></i>
-              <div>
-                <div class="info-label">Specialty</div>
-                <div class="info-value">Bot Development</div>
-              </div>
-            </div>
-            <div class="about-info-card">
-              <i class="fas fa-graduation-cap"></i>
-              <div>
-                <div class="info-label">Education</div>
-                <div class="info-value">Computer Science</div>
-              </div>
-            </div>
-            <div class="about-info-card">
-              <i class="fas fa-language"></i>
-              <div>
-                <div class="info-label">Languages</div>
-                <div class="info-value">English, Malayalam</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="animate-on-scroll" data-delay="200">
-          <span class="section-label">My Story</span>
-          <h3 style="margin-bottom: var(--space-lg); color: var(--text-primary);">
-            Developer, Builder, Tech Enthusiast
-          </h3>
-          <div class="about-text">
-            <p>
-              I'm <span class="about-highlight">Abhishek Issac</span>, a passionate developer based in
-              <span class="about-highlight">Kerala, India</span>. My journey into programming started with
-              curiosity about how things work behind the scenes &mdash; and that curiosity has evolved into a
-              deep passion for building software that solves real problems.
-            </p>
-            <p>
-              My primary expertise lies in <span class="about-highlight">Python</span> and
-              <span class="about-highlight">Telegram Bot development</span> using frameworks like
-              Pyrogram and Telethon. I've built and deployed multiple bots that handle thousands of users,
-              from series streaming platforms to group management tools and automated forwarding systems.
-            </p>
-            <p>
-              Beyond bots, I work with <span class="about-highlight">MongoDB</span>,
-              <span class="about-highlight">PostgreSQL</span>, <span class="about-highlight">Redis</span>,
-              and <span class="about-highlight">Docker</span>, managing production workloads on
-              <span class="about-highlight">DigitalOcean Ubuntu VPS</span> servers. I'm constantly exploring
-              new technologies &mdash; from Android app development with Kotlin to Go-based Telegram libraries,
-              web scraping, and API integrations.
-            </p>
-            <p>
-              When I'm not coding, you'll find me exploring the latest in mobile tech, watching anime and series,
-              gaming, or tinkering with phone hardware and custom ROMs. I believe in learning by doing and sharing
-              knowledge with the community.
-            </p>
-          </div>
-
-          <div class="flex gap-md mt-xl flex-wrap">
-            <a href="#contact" class="btn btn-primary ripple-effect">
-              <i class="fas fa-paper-plane"></i> Let's Connect
-            </a>
-            <a href="#projects" class="btn btn-outline">
-              <i class="fas fa-folder-open"></i> View Projects
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TERMINAL / INTRO ==================== -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
-      <div class="terminal animate-on-scroll terminal-animate" style="max-width: 800px; margin: 0 auto;">
-        <div class="terminal-header">
-          <span class="terminal-dot terminal-dot--red"></span>
-          <span class="terminal-dot terminal-dot--yellow"></span>
-          <span class="terminal-dot terminal-dot--green"></span>
-          <span class="terminal-title">abhishek@dev ~ portfolio</span>
-        </div>
-        <div class="terminal-body">
-          <div class="terminal-line">whoami</div>
-          <div class="terminal-output">Abhishek Issac &mdash; Developer from Kerala, India</div>
-          <br>
-          <div class="terminal-line">cat skills.txt</div>
-          <div class="terminal-output">Python | Pyrogram | Telethon | MongoDB | PostgreSQL | Docker | Linux | HTML/CSS/JS | Go | Kotlin</div>
-          <br>
-          <div class="terminal-line">ls projects/</div>
-          <div class="terminal-output">SeriesPiroBot/ 4sale-forward/ Cavin-Game/ Cavin-vcguard/ portfolio/</div>
-          <br>
-          <div class="terminal-line">echo $PASSION</div>
-          <div class="terminal-output">Building tools that make a difference <span class="cursor-blink" style="color: var(--primary);">_</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== SKILLS SECTION ==================== -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label animate-on-scroll">What I Know</span>
-        <h2 class="animate-on-scroll" data-delay="100">Technical Skills</h2>
-        <p class="animate-on-scroll" data-delay="200">
-          Technologies and tools I use to bring ideas to life
-        </p>
-      </div>
-
-      <div class="skills-grid">
-        <!-- Python & Backend -->
-        <div class="card skill-category animate-on-scroll" data-delay="100">
-          <div class="skill-category-header">
-            <div class="skill-category-icon python"><i class="fab fa-python"></i></div>
-            <div>
-              <div class="skill-category-title">Python & Backend</div>
-              <div class="skill-category-count">Core expertise</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Python</span>
-                <span class="skill-item-level">95%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="95"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Pyrogram / Telethon</span>
-                <span class="skill-item-level">92%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="92"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Flask / FastAPI</span>
-                <span class="skill-item-level">78%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="78"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">AsyncIO</span>
-                <span class="skill-item-level">88%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="88"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Databases -->
-        <div class="card skill-category animate-on-scroll" data-delay="200">
-          <div class="skill-category-header">
-            <div class="skill-category-icon db"><i class="fas fa-database"></i></div>
-            <div>
-              <div class="skill-category-title">Databases</div>
-              <div class="skill-category-count">Data management</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">MongoDB</span>
-                <span class="skill-item-level">90%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">PostgreSQL</span>
-                <span class="skill-item-level">82%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="82"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Redis</span>
-                <span class="skill-item-level">75%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="75"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">SQLite</span>
-                <span class="skill-item-level">80%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="80"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Web Development -->
-        <div class="card skill-category animate-on-scroll" data-delay="300">
-          <div class="skill-category-header">
-            <div class="skill-category-icon web"><i class="fas fa-globe"></i></div>
-            <div>
-              <div class="skill-category-title">Web Development</div>
-              <div class="skill-category-count">Frontend & backend</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">HTML / CSS</span>
-                <span class="skill-item-level">88%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">JavaScript</span>
-                <span class="skill-item-level">78%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="78"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Go (gotgbot)</span>
-                <span class="skill-item-level">60%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="60"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Telegram Web Apps</span>
-                <span class="skill-item-level">72%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="72"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- DevOps & Infrastructure -->
-        <div class="card skill-category animate-on-scroll" data-delay="400">
-          <div class="skill-category-header">
-            <div class="skill-category-icon devops"><i class="fas fa-server"></i></div>
-            <div>
-              <div class="skill-category-title">DevOps & Infra</div>
-              <div class="skill-category-count">Deployment & ops</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Linux / Ubuntu</span>
-                <span class="skill-item-level">88%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Docker</span>
-                <span class="skill-item-level">80%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="80"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">DigitalOcean VPS</span>
-                <span class="skill-item-level">85%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="85"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Git / GitHub</span>
-                <span class="skill-item-level">85%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="85"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile & Apps -->
-        <div class="card skill-category animate-on-scroll" data-delay="500">
-          <div class="skill-category-header">
-            <div class="skill-category-icon mobile"><i class="fas fa-mobile-alt"></i></div>
-            <div>
-              <div class="skill-category-title">Mobile & Apps</div>
-              <div class="skill-category-count">App development</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Kotlin (Android)</span>
-                <span class="skill-item-level">55%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="55"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Android SDK</span>
-                <span class="skill-item-level">50%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="50"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Scratch</span>
-                <span class="skill-item-level">90%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Termux / CLI Tools</span>
-                <span class="skill-item-level">85%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="85"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools & Platforms -->
-        <div class="card skill-category animate-on-scroll" data-delay="600">
-          <div class="skill-category-header">
-            <div class="skill-category-icon tools"><i class="fas fa-wrench"></i></div>
-            <div>
-              <div class="skill-category-title">Tools & Platforms</div>
-              <div class="skill-category-count">Ecosystem</div>
-            </div>
-          </div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Telegram Bot API</span>
-                <span class="skill-item-level">95%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="95"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">IMDb / Cinemagoer</span>
-                <span class="skill-item-level">80%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="80"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">Bash / Shell Scripting</span>
-                <span class="skill-item-level">82%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="82"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-item-header">
-                <span class="skill-item-name">APScheduler</span>
-                <span class="skill-item-level">78%</span>
-              </div>
-              <div class="progress-bar"><div class="progress-bar-fill" data-width="78"></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Stack Icons -->
-      <div class="mt-2xl">
-        <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">Tech Stack</h3>
-        <div class="tech-stack-grid stagger-children">
-          <div class="tech-stack-item"><i class="fab fa-python" style="color: #3776AB;"></i><span>Python</span></div>
-          <div class="tech-stack-item"><i class="fab fa-html5" style="color: #E34C26;"></i><span>HTML5</span></div>
-          <div class="tech-stack-item"><i class="fab fa-css3-alt" style="color: #1572B6;"></i><span>CSS3</span></div>
-          <div class="tech-stack-item"><i class="fab fa-js-square" style="color: #F7DF1E;"></i><span>JavaScript</span></div>
-          <div class="tech-stack-item"><i class="fab fa-golang" style="color: #00ADD8;"></i><span>Go</span></div>
-          <div class="tech-stack-item"><i class="fas fa-leaf" style="color: #00ED64;"></i><span>MongoDB</span></div>
-          <div class="tech-stack-item"><i class="fas fa-database" style="color: #336791;"></i><span>PostgreSQL</span></div>
-          <div class="tech-stack-item"><i class="fab fa-docker" style="color: #2496ED;"></i><span>Docker</span></div>
-          <div class="tech-stack-item"><i class="fab fa-linux" style="color: #FCC624;"></i><span>Linux</span></div>
-          <div class="tech-stack-item"><i class="fab fa-telegram" style="color: #26A5E4;"></i><span>Telegram API</span></div>
-          <div class="tech-stack-item"><i class="fab fa-git-alt" style="color: #F05032;"></i><span>Git</span></div>
-          <div class="tech-stack-item"><i class="fab fa-github" style="color: #fff;"></i><span>GitHub</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== PROJECTS SECTION ==================== -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label animate-on-scroll">My Work</span>
-        <h2 class="animate-on-scroll" data-delay="100">Featured Projects</h2>
-        <p class="animate-on-scroll" data-delay="200">
-          A collection of projects that showcase my skills and passion
-        </p>
-      </div>
-
-      <!-- Filter Buttons -->
-      <div class="projects-filter animate-on-scroll" data-delay="300">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="bot">Telegram Bots</button>
-        <button class="filter-btn" data-filter="web">Web Apps</button>
-        <button class="filter-btn" data-filter="tool">Tools</button>
-        <button class="filter-btn" data-filter="game">Games</button>
-      </div>
-
-      <!-- Projects Grid -->
-      <div class="projects-grid">
-        <!-- SeriesPiroBot -->
-        <div class="project-card animate-on-scroll" data-category="bot" data-delay="100">
-          <div class="project-card-image">
-            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a3e 0%, #0d0d2b 100%); display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-film" style="font-size: 4rem; color: var(--primary); opacity: 0.5;"></i>
-            </div>
-            <div class="project-card-overlay">
-              <a href="https://t.me/SeriesPiroBot" target="_blank" rel="noopener" class="project-overlay-btn" title="Try Bot">
-                <i class="fab fa-telegram"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-category">Telegram Bot</div>
-            <h4 class="project-card-title">SeriesPiroBot</h4>
-            <p class="project-card-description">
-              All-in-one Telegram bot for exploring and streaming series with instant search,
-              customizable UI, admin dashboard, and smart poster fetching via IMDb integration.
-            </p>
-            <div class="project-card-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Pyrogram</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag tag-secondary">IMDb API</span>
-            </div>
-            <div class="project-card-footer">
-              <a href="https://t.me/SeriesPiroBot" target="_blank" rel="noopener" class="project-card-link">
-                Try it <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4sale-forward -->
-        <div class="project-card animate-on-scroll" data-category="bot" data-delay="200">
-          <div class="project-card-image">
-            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a2e1a 0%, #0d1b0d 100%); display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-forward" style="font-size: 4rem; color: var(--success); opacity: 0.5;"></i>
-            </div>
-            <div class="project-card-overlay">
-              <a href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener" class="project-overlay-btn" title="View Code">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-category">Telegram Bot</div>
-            <h4 class="project-card-title">4sale-forward</h4>
-            <p class="project-card-description">
-              Automated Telegram message forwarding bot with admin controls,
-              scheduled autoforward, and smart channel management. Built with Pyrogram.
-            </p>
-            <div class="project-card-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Pyrogram</span>
-              <span class="tag tag-accent">APScheduler</span>
-            </div>
-            <div class="project-card-footer">
-              <a href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener" class="project-card-link">
-                View Code <i class="fas fa-arrow-right"></i>
-              </a>
-              <span class="project-card-stars"><i class="fas fa-star"></i></span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cavin-Game -->
-        <div class="project-card animate-on-scroll" data-category="game" data-delay="300">
-          <div class="project-card-image">
-            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #2e1a2e 0%, #1b0d1b 100%); display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-gamepad" style="font-size: 4rem; color: var(--secondary); opacity: 0.5;"></i>
-            </div>
-            <div class="project-card-overlay">
-              <a href="https://github.com/Abhishek-Issac/Cavin-Game" target="_blank" rel="noopener" class="project-overlay-btn" title="View Code">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-category">Game / Bot</div>
-            <h4 class="project-card-title">Cavin Game Bot</h4>
-            <p class="project-card-description">
-              Interactive Telegram game bot with PostgreSQL backend, user management,
-              ban system, and dual-write database support for seamless migration.
-            </p>
-            <div class="project-card-tags">
-              <span class="tag">Python</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag tag-secondary">MongoDB</span>
-            </div>
-            <div class="project-card-footer">
-              <a href="https://github.com/Abhishek-Issac/Cavin-Game" target="_blank" rel="noopener" class="project-card-link">
-                View Code <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cavin-vcguard -->
-        <div class="project-card animate-on-scroll" data-category="bot" data-delay="400">
-          <div class="project-card-image">
-            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a2e 0%, #0d0d1b 100%); display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-shield-halved" style="font-size: 4rem; color: var(--accent); opacity: 0.5;"></i>
-            </div>
-            <div class="project-card-overlay">
-              <a href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener" class="project-overlay-btn" title="View Code">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-category">Telegram Bot</div>
-            <h4 class="project-card-title">Cavin VC Guard</h4>
-            <p class="project-card-description">
-              Voice chat guard bot for Telegram groups. Monitors and manages
-              voice chat participants with admin controls and automated moderation.
-            </p>
-            <div class="project-card-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Pyrogram</span>
-              <span class="tag tag-accent">Voice Chat</span>
-            </div>
-            <div class="project-card-footer">
-              <a href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener" class="project-card-link">
-                View Code <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Website -->
-        <div class="project-card animate-on-scroll" data-category="web" data-delay="500">
-          <div class="project-card-image">
-            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #0d1a2e 0%, #060d1b 100%); display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-globe" style="font-size: 4rem; color: var(--primary); opacity: 0.5;"></i>
-            </div>
-            <div class="project-card-overlay">
-              <a href="https://abhishek-issac.github.io" target="_blank" rel="noopener" class="project-overlay-btn" title="View Live">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io" target="_blank" rel="noopener" class="project-overlay-btn" title="View Code">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-category">Web Application</div>
-            <h4 class="project-card-title">Personal Portfolio</h4>
-            <p class="project-card-description">
-              This very website! A NASA-level tech portfolio with particle effects,
-              6 color themes, scroll animations, GitHub integration, and responsive design.
-            </p>
-            <div class="project-card-tags">
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag tag-secondary">Canvas API</span>
-            </div>
-            <div class="project-card-footer">
-              <a href="https://abhishek-issac.github.io" target="_blank" rel="noopener" class="project-card-link">
-                View Live <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- DayMatrix -->
-        <div class="project-card animate-on-scroll" data-category="tool" data-delay="600">
-          <div class="project-card-image">
-            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #2e2e1a 0%, #1b1b0d 100%); display: flex; align-items: center; justify-content: center;">
-              <i class="fas fa-calendar-days" style="font-size: 4rem; color: var(--warning); opacity: 0.5;"></i>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <div class="project-card-category">Android App</div>
-            <h4 class="project-card-title">DayMatrix</h4>
-            <p class="project-card-description">
-              Productivity-focused Android application for daily planning and time management,
-              built with Kotlin and Material Design principles.
-            </p>
-            <div class="project-card-tags">
-              <span class="tag">Kotlin</span>
-              <span class="tag tag-accent">Android</span>
-              <span class="tag">Material UI</span>
-            </div>
-            <div class="project-card-footer">
-              <span class="project-card-link" style="color: var(--text-muted);">
-                <i class="fas fa-lock"></i> Private
+      <!-- ================== HERO ================== -->
+      <section class="pg-hero">
+        <div class="pg-hero-grid">
+          <div>
+            <span class="pg-eyebrow pg-reveal">Portfolio · MMXXVI · Kerala, India</span>
+            <h1 class="pg-name pg-reveal" data-delay="100">
+              Abhishek <em>Issac</em>.
+            </h1>
+            <div class="pg-roles pg-reveal" data-delay="200">
+              <span class="pg-mono">$</span>
+              <span data-typewriter
+                    data-roles="Telegram Bot Architect|Python Developer|Custom ROM Tinkerer|Pyrogram Engineer|Mongo + Postgres Plumber|Black sheep in a white farm">
+                <span class="pg-tw-text">Telegram Bot Architect</span>
               </span>
+              <span class="cursor"></span>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== INTERESTS SECTION ==================== -->
-  <section class="section" id="interests">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label animate-on-scroll">Beyond Code</span>
-        <h2 class="animate-on-scroll" data-delay="100">Interests & Hobbies</h2>
-        <p class="animate-on-scroll" data-delay="200">
-          What keeps me inspired and creative outside of programming
-        </p>
-      </div>
-
-      <div class="interests-grid stagger-children">
-        <div class="interest-card card">
-          <div class="interest-card-icon" style="background: rgba(255, 0, 0, 0.1); color: #ff4444;">
-            <i class="fas fa-tv"></i>
-          </div>
-          <div class="interest-card-title">Anime & Series</div>
-          <div class="interest-card-subtitle">Binge-watching enthusiast</div>
-        </div>
-        <div class="interest-card card">
-          <div class="interest-card-icon" style="background: rgba(0, 200, 83, 0.1); color: #00c853;">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          <div class="interest-card-title">Gaming</div>
-          <div class="interest-card-subtitle">Genshin, Wuthering Waves</div>
-        </div>
-        <div class="interest-card card">
-          <div class="interest-card-icon" style="background: rgba(33, 150, 243, 0.1); color: #2196F3;">
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <div class="interest-card-title">Mobile Tech</div>
-          <div class="interest-card-subtitle">Custom ROMs & reviews</div>
-        </div>
-        <div class="interest-card card">
-          <div class="interest-card-icon" style="background: rgba(255, 152, 0, 0.1); color: #FF9800;">
-            <i class="fas fa-terminal"></i>
-          </div>
-          <div class="interest-card-title">Linux Tinkering</div>
-          <div class="interest-card-subtitle">Server administration</div>
-        </div>
-        <div class="interest-card card">
-          <div class="interest-card-icon" style="background: rgba(156, 39, 176, 0.1); color: #9C27B0;">
-            <i class="fas fa-robot"></i>
-          </div>
-          <div class="interest-card-title">Bot Building</div>
-          <div class="interest-card-subtitle">Automation everything</div>
-        </div>
-        <div class="interest-card card">
-          <div class="interest-card-icon" style="background: rgba(0, 188, 212, 0.1); color: #00BCD4;">
-            <i class="fas fa-book-open"></i>
-          </div>
-          <div class="interest-card-title">Tech Articles</div>
-          <div class="interest-card-subtitle">Always learning</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TIMELINE SECTION ==================== -->
-  <section class="section" id="timeline">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label animate-on-scroll">My Journey</span>
-        <h2 class="animate-on-scroll" data-delay="100">Developer Timeline</h2>
-        <p class="animate-on-scroll" data-delay="200">
-          Key milestones in my journey as a developer and tech enthusiast
-        </p>
-      </div>
-
-      <div class="timeline" style="max-width: 800px; margin: 0 auto;">
-        <div class="timeline-item animate-on-scroll" data-delay="100">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2025 &mdash; Present</div>
-          <div class="timeline-card card">
-            <h4 class="timeline-card-title">Advanced Bot Development & Database Migration</h4>
-            <div class="timeline-card-subtitle">Full-Stack Bot Architecture</div>
-            <p class="timeline-card-description">
-              Architecting production-grade Telegram bots with dual-write database support,
-              migrating from MongoDB to PostgreSQL, implementing Redis caching layers,
-              and deploying multi-service Docker setups on DigitalOcean.
+            <p class="pg-tagline pg-reveal" data-delay="300">
+              I build bots, automate things, and do deep system tweaking. From Telegram channels with
+              <strong>millions of users</strong> to custom ROMs running crDroid A16 with KernelSU on a
+              <em class="pg-serif">Poco X3 Pro</em> — if it runs code, I’ve probably broken and fixed it twice.
             </p>
-            <div class="timeline-card-tags">
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Docker</span>
-              <span class="tag tag-secondary">Redis</span>
-              <span class="tag tag-accent">DigitalOcean</span>
+            <div class="pg-cta-row pg-reveal" data-delay="400">
+              <a class="pg-btn pg-btn-primary" href="#projects">view selected work →</a>
+              <a class="pg-btn pg-btn-ghost" href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener">
+                github · @Abhishek-Issac
+              </a>
+              <a class="pg-btn pg-btn-ghost" href="https://t.me/abhisheksvlog" target="_blank" rel="noopener">
+                telegram · paid bot edits
+              </a>
+            </div>
+          </div>
+
+          <div class="pg-hero-card pg-reveal" data-delay="200" data-tilt>
+            <img
+              class="pg-avatar"
+              src="https://avatars.githubusercontent.com/u/93928612?v=4&s=600"
+              alt="Abhishek Issac avatar"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="pg-id-row">
+              <span class="dot-live">available · accepting paid bot edits</span>
+              <span>↳ kerala / ist</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item animate-on-scroll" data-delay="200">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024 &mdash; 2025</div>
-          <div class="timeline-card card">
-            <h4 class="timeline-card-title">SeriesPiroBot & Telegram Ecosystem</h4>
-            <div class="timeline-card-subtitle">Bot Development & Community Building</div>
-            <p class="timeline-card-description">
-              Built and launched SeriesPiroBot &mdash; a comprehensive series discovery bot
-              used by thousands. Implemented IMDb integration, smart search, admin panels,
-              and automated content management systems.
-            </p>
-            <div class="timeline-card-tags">
-              <span class="tag">Pyrogram</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag tag-secondary">IMDb API</span>
-            </div>
+        <!-- Stats strip -->
+        <div class="pg-stats-strip pg-reveal" data-delay="500">
+          <div class="pg-stat">
+            <div class="pg-stat-num"><em id="gh-public-repos">129</em></div>
+            <div class="pg-stat-label">public repos</div>
+          </div>
+          <div class="pg-stat">
+            <div class="pg-stat-num"><em id="gh-stars">—</em></div>
+            <div class="pg-stat-label">stars earned</div>
+          </div>
+          <div class="pg-stat">
+            <div class="pg-stat-num"><em id="gh-years">5</em>y</div>
+            <div class="pg-stat-label">on github · since 2021</div>
+          </div>
+          <div class="pg-stat">
+            <div class="pg-stat-num"><em>1M+</em></div>
+            <div class="pg-stat-label">users on telegram bots</div>
           </div>
         </div>
+      </section>
 
-        <div class="timeline-item animate-on-scroll" data-delay="300">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2023 &mdash; 2024</div>
-          <div class="timeline-card card">
-            <h4 class="timeline-card-title">Python & Telegram Bot Foundation</h4>
-            <div class="timeline-card-subtitle">Learning & First Projects</div>
-            <p class="timeline-card-description">
-              Dove deep into Python programming, learned Pyrogram and Telethon frameworks.
-              Built first Telegram bots for group management, message forwarding,
-              and file handling. Set up first Linux VPS.
-            </p>
-            <div class="timeline-card-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Telethon</span>
-              <span class="tag tag-accent">Linux</span>
-            </div>
+      <!-- ================== ABOUT ================== -->
+      <section class="pg-section" id="about">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/01 · about</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">A self-taught <em>tech nerd</em>.</h2>
           </div>
-        </div>
-
-        <div class="timeline-item animate-on-scroll" data-delay="400">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2022 &mdash; 2023</div>
-          <div class="timeline-card card">
-            <h4 class="timeline-card-title">First Steps in Programming</h4>
-            <div class="timeline-card-subtitle">The Beginning</div>
-            <p class="timeline-card-description">
-              Started my coding journey with Scratch and basic web development.
-              Learned HTML, CSS, and JavaScript fundamentals. Built simple games
-              and interactive projects. Discovered the world of open source.
-            </p>
-            <div class="timeline-card-tags">
-              <span class="tag">Scratch</span>
-              <span class="tag">HTML/CSS</span>
-              <span class="tag tag-secondary">JavaScript</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== GITHUB SECTION ==================== -->
-  <section class="section" id="github">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label animate-on-scroll">Open Source</span>
-        <h2 class="animate-on-scroll" data-delay="100">GitHub Activity</h2>
-        <p class="animate-on-scroll" data-delay="200">
-          My open-source contributions and repositories
-        </p>
-      </div>
-
-      <!-- GitHub Stats -->
-      <div class="github-stats" id="github-stats">
-        <div class="card github-stat-card animate-on-scroll" data-delay="100" data-github-stat="public_repos">
-          <i class="fas fa-book-bookmark"></i>
-          <div class="stat-number" data-count="10" data-suffix="+">0</div>
-          <div class="stat-label">Public Repos</div>
-        </div>
-        <div class="card github-stat-card animate-on-scroll" data-delay="200" data-github-stat="followers">
-          <i class="fas fa-users"></i>
-          <div class="stat-number" data-count="5">0</div>
-          <div class="stat-label">Followers</div>
-        </div>
-        <div class="card github-stat-card animate-on-scroll" data-delay="300" data-github-stat="following">
-          <i class="fas fa-user-plus"></i>
-          <div class="stat-number" data-count="10">0</div>
-          <div class="stat-label">Following</div>
-        </div>
-        <div class="card github-stat-card animate-on-scroll" data-delay="400">
-          <i class="fas fa-code-commit"></i>
-          <div class="stat-number" data-count="500" data-suffix="+">0</div>
-          <div class="stat-label">Total Commits</div>
-        </div>
-      </div>
-
-      <!-- GitHub Repos (dynamically loaded) -->
-      <h3 class="text-center mb-xl animate-on-scroll" style="color: var(--text-primary);">
-        Latest Repositories
-      </h3>
-      <div class="github-repos" id="github-repos">
-        <div class="card" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
-          <div class="loading-dots">
-            <span></span><span></span><span></span>
-          </div>
-          <p class="mt-md">Loading repositories from GitHub...</p>
-        </div>
-      </div>
-
-      <div class="text-center mt-xl animate-on-scroll">
-        <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
-          <i class="fab fa-github"></i> View Full Profile
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== CONTACT SECTION ==================== -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label animate-on-scroll">Get In Touch</span>
-        <h2 class="animate-on-scroll" data-delay="100">Contact Me</h2>
-        <p class="animate-on-scroll" data-delay="200">
-          Have a project in mind or just want to chat? Reach out!
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info animate-on-scroll">
-          <h3 style="color: var(--text-primary); margin-bottom: var(--space-lg);">Let's build something amazing together</h3>
-          <p style="max-width: none;">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part
-            of something great. Whether you need a Telegram bot, a web application, or any other
-            development work, feel free to reach out.
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            Anyone can spot I’m a tech nerd easily. I’m the kid who turns a friend’s
+            bricked OnePlus 10T back on at 1 AM, then writes a Pyrogram bot that
+            mass-rebroadcasts movies to a million people before sunrise.
           </p>
+        </div>
 
-          <div class="contact-item">
-            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <div class="contact-item-label">Location</div>
-              <div class="contact-item-value">Kerala, India</div>
+        <div class="pg-about-grid">
+          <div class="pg-prose pg-reveal" data-delay="100">
+            <p>
+              I’m <strong>Abhishek Issac</strong> — sixteen, based in
+              <span class="pg-highlight">Kerala, India</span>, somewhere between Wayanad’s two
+              cell towers and a Kollam couriered package. I’ve been writing code since I was
+              twelve, mostly in Python, mostly via <em class="pg-serif">Termux</em> on a phone,
+              long before I owned a real laptop.
+            </p>
+            <p>
+              My speciality is <strong>Telegram automation</strong> at scale —
+              <em class="pg-serif">Pyrogram</em>, MongoDB caching with TTLs, PostgreSQL for the
+              long-term, asynchronous everything. I’ve shipped bots for movies,
+              voice-chat security, force-subscribe gates, file batching, scorecard
+              generators and small games — many of them still running on Easypanel,
+              Heroku, Koyeb, or my own DigitalOcean box.
+            </p>
+            <p>
+              When I’m not pushing commits I’m flashing a custom ROM (currently
+              <strong>crDroid Android 16</strong> with KernelSU root), benchmarking phones I
+              shouldn’t be buying, beating <em class="pg-serif">Wuthering Waves</em> on an SD860,
+              or cramming for my <strong>+1 BioScience</strong> exams. I’m really bad at
+              knowing people — “a black sheep in a white farm” — but I’m really good at
+              knowing systems.
+            </p>
+            <p>
+              I read code the way other people read novels, and I’d rather minify a
+              two-thousand-line plugin than write a five-line cover letter. This site is
+              that minify.
+            </p>
+          </div>
+
+          <div class="pg-facts pg-reveal" data-delay="200">
+            <div class="pg-fact"><div class="pg-fact-label">name</div><div class="pg-fact-value">Abhishek Issac</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">based in</div><div class="pg-fact-value">Kerala · India</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">age</div><div class="pg-fact-value">16</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">studies</div><div class="pg-fact-value">+1 BioScience</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">speaks</div><div class="pg-fact-value">Malayalam · English</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">daily phone</div><div class="pg-fact-value">Poco X3 Pro</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">main shell</div><div class="pg-fact-value">Termux + Ubuntu</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">timezone</div><div class="pg-fact-value">Asia/Kolkata · IST</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">writing in</div><div class="pg-fact-value">Python · Pyrogram</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">favourite db</div><div class="pg-fact-value">Mongo &nbsp;⇆&nbsp; Postgres</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== TERMINAL / IDENTITY CARD ================== -->
+      <section class="pg-section" style="padding-top: 0;">
+        <div class="pg-grid-2">
+          <div class="pg-terminal pg-reveal" data-delay="100">
+            <div class="pg-terminal-bar">
+              <span class="pg-tdot r"></span>
+              <span class="pg-tdot y"></span>
+              <span class="pg-tdot g"></span>
+              <span class="pg-tname">abhishek@kerala — ~/portfolio · zsh</span>
+            </div>
+<pre><span class="c"># whoami.py — a quick introduction</span>
+<span class="k">from</span> <span class="v">life</span> <span class="k">import</span> <span class="n">Person</span>, <span class="n">Telegram</span>, <span class="n">Android</span>
+
+<span class="v">me</span> = <span class="n">Person</span>(
+    <span class="p">name</span>=<span class="s">"Abhishek Issac"</span>,
+    <span class="p">from_</span>=<span class="s">"Kerala, India"</span>,
+    <span class="p">age</span>=<span class="n">16</span>,
+    <span class="p">stack</span>=[<span class="s">"python"</span>, <span class="s">"pyrogram"</span>, <span class="s">"mongo"</span>, <span class="s">"postgres"</span>],
+    <span class="p">phones</span>=[<span class="s">"poco x3 pro"</span>, <span class="s">"redmi note 10s"</span>, <span class="s">"moto e5"</span>],
+    <span class="p">rom</span>=<span class="s">"crDroid A16 + KernelSU"</span>,
+    <span class="p">vibes</span>=<span class="s">"a black sheep in a white farm"</span>,
+)
+
+<span class="k">while</span> <span class="v">curious</span>:
+    <span class="v">me</span>.<span class="n">build</span>(<span class="s">"telegram bot"</span>)
+    <span class="v">me</span>.<span class="n">flash</span>(<span class="s">"another rom"</span>)
+    <span class="v">me</span>.<span class="n">break_</span>(<span class="s">"a phone, then fix it"</span>)
+    <span class="v">me</span>.<span class="n">study</span>(<span class="s">"+1 bioscience, somehow"</span>)
+
+<span class="c"># exit code: 0 — still going.</span></pre>
+          </div>
+
+          <div class="pg-prose pg-reveal" data-delay="200" style="align-self: center;">
+            <p class="pg-quote">
+              I build bots, automate things, and work on android custom ROMs.
+              I use Termux, Python, Pyrogram, and do deep system tweaking.
+              <span class="pg-quote-by">— Abhishek, in his own words</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== MARQUEE BAND ================== -->
+    </main>
+
+    <div class="pg-marquee" aria-hidden="true">
+      <div class="pg-marquee-track">
+        <span>Python</span><span class="star">✦</span>
+        <span>Pyrogram</span><span class="star">✦</span>
+        <span>MongoDB</span><span class="star">✦</span>
+        <span>PostgreSQL</span><span class="star">✦</span>
+        <span>Termux</span><span class="star">✦</span>
+        <span>crDroid · KernelSU</span><span class="star">✦</span>
+        <span>Magisk</span><span class="star">✦</span>
+        <span>Docker</span><span class="star">✦</span>
+        <span>Easypanel</span><span class="star">✦</span>
+        <span>Heroku · Koyeb</span><span class="star">✦</span>
+        <span>HTML · CSS · JS</span><span class="star">✦</span>
+        <span>SQLite</span><span class="star">✦</span>
+        <span>Redis</span><span class="star">✦</span>
+        <span>Linux</span><span class="star">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span>Python</span><span class="star">✦</span>
+        <span>Pyrogram</span><span class="star">✦</span>
+        <span>MongoDB</span><span class="star">✦</span>
+        <span>PostgreSQL</span><span class="star">✦</span>
+        <span>Termux</span><span class="star">✦</span>
+        <span>crDroid · KernelSU</span><span class="star">✦</span>
+        <span>Magisk</span><span class="star">✦</span>
+        <span>Docker</span><span class="star">✦</span>
+        <span>Easypanel</span><span class="star">✦</span>
+        <span>Heroku · Koyeb</span><span class="star">✦</span>
+        <span>HTML · CSS · JS</span><span class="star">✦</span>
+        <span>SQLite</span><span class="star">✦</span>
+        <span>Redis</span><span class="star">✦</span>
+        <span>Linux</span><span class="star">✦</span>
+      </div>
+    </div>
+
+    <main class="pg-wrap">
+
+      <!-- ================== STACK ================== -->
+      <section class="pg-section" id="stack">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/02 · stack</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Tools I’ve <em>actually</em> shipped with.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            Not a logo wall. These are languages, libraries and platforms I’ve used
+            in production code that real users have hit at 3 AM.
+          </p>
+        </div>
+
+        <div class="pg-grid-3">
+          <div class="pg-card pg-reveal" data-tilt>
+            <span class="pg-card-num">/lang</span>
+            <h3>Languages</h3>
+            <p>Python first and always. Some Go and HTML/CSS/JS for the web layer, plus shell glue for ops.</p>
+            <div class="pg-tags" style="margin-top:14px;">
+              <span class="pg-tag gold">Python 3</span>
+              <span class="pg-tag">Golang</span>
+              <span class="pg-tag">JavaScript</span>
+              <span class="pg-tag">HTML5</span>
+              <span class="pg-tag">CSS3</span>
+              <span class="pg-tag">Bash</span>
+              <span class="pg-tag">Dockerfile</span>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="contact-item-icon"><i class="fab fa-telegram"></i></div>
-            <div>
-              <div class="contact-item-label">Telegram</div>
-              <div class="contact-item-value">
-                <a href="https://t.me/AbhishekIssac" target="_blank" rel="noopener">@AbhishekIssac</a>
-              </div>
+          <div class="pg-card pg-reveal" data-delay="100" data-tilt>
+            <span class="pg-card-num">/bots</span>
+            <h3>Telegram</h3>
+            <p>A million-user ecosystem of movie hubs, force-sub gates, batch generators and VC guards.</p>
+            <div class="pg-tags" style="margin-top:14px;">
+              <span class="pg-tag gold">Pyrogram</span>
+              <span class="pg-tag">Telethon</span>
+              <span class="pg-tag">Aiogram</span>
+              <span class="pg-tag">MTProto raw</span>
+              <span class="pg-tag">Userbots</span>
+              <span class="pg-tag">Bot API</span>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
-            <div>
-              <div class="contact-item-label">GitHub</div>
-              <div class="contact-item-value">
-                <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener">Abhishek-Issac</a>
-              </div>
+          <div class="pg-card pg-reveal" data-delay="200" data-tilt>
+            <span class="pg-card-num">/data</span>
+            <h3>Storage</h3>
+            <p>MongoDB for fast caching with TTLs, PostgreSQL for the persistent truth, Redis for queues.</p>
+            <div class="pg-tags" style="margin-top:14px;">
+              <span class="pg-tag gold">MongoDB · Motor</span>
+              <span class="pg-tag green">PostgreSQL · asyncpg</span>
+              <span class="pg-tag">Redis</span>
+              <span class="pg-tag">SQLite</span>
+              <span class="pg-tag">JSONB</span>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="contact-item-icon"><i class="fab fa-instagram"></i></div>
-            <div>
-              <div class="contact-item-label">Instagram</div>
-              <div class="contact-item-value">
-                <a href="https://instagram.com/abhishek_issac_" target="_blank" rel="noopener">@abhishek_issac_</a>
-              </div>
+          <div class="pg-card pg-reveal" data-tilt>
+            <span class="pg-card-num">/host</span>
+            <h3>Hosting & Ops</h3>
+            <p>Whatever runs cheapest with the least pain. Easypanel + Koyeb for bots, GitHub Pages for sites.</p>
+            <div class="pg-tags" style="margin-top:14px;">
+              <span class="pg-tag">Easypanel</span>
+              <span class="pg-tag">Koyeb</span>
+              <span class="pg-tag">Heroku</span>
+              <span class="pg-tag">Render</span>
+              <span class="pg-tag">DigitalOcean</span>
+              <span class="pg-tag">Docker</span>
+              <span class="pg-tag">GitHub Pages</span>
             </div>
           </div>
 
-          <div class="contact-socials">
-            <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="social-link github" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://t.me/AbhishekIssac" target="_blank" rel="noopener" class="social-link telegram" title="Telegram">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="https://instagram.com/abhishek_issac_" target="_blank" rel="noopener" class="social-link instagram" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA" target="_blank" rel="noopener" class="social-link youtube" title="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
+          <div class="pg-card pg-reveal" data-delay="100" data-tilt>
+            <span class="pg-card-num">/android</span>
+            <h3>Android Tinkering</h3>
+            <p>Custom ROMs, root kernels, Magisk modules, EDL unbricks and Termux as a primary IDE.</p>
+            <div class="pg-tags" style="margin-top:14px;">
+              <span class="pg-tag gold">crDroid A16</span>
+              <span class="pg-tag green">KernelSU</span>
+              <span class="pg-tag">Magisk</span>
+              <span class="pg-tag">TWRP / OrangeFox</span>
+              <span class="pg-tag">PixelOS</span>
+              <span class="pg-tag">Fastboot · EDL</span>
+              <span class="pg-tag">Termux</span>
+            </div>
+          </div>
+
+          <div class="pg-card pg-reveal" data-delay="200" data-tilt>
+            <span class="pg-card-num">/tools</span>
+            <h3>Day-to-day</h3>
+            <p>Where the actual typing happens. Mostly a phone, sometimes a laptop, never a JetBrains license.</p>
+            <div class="pg-tags" style="margin-top:14px;">
+              <span class="pg-tag">VS Code</span>
+              <span class="pg-tag">Termux</span>
+              <span class="pg-tag">Git · GitHub</span>
+              <span class="pg-tag">tmux</span>
+              <span class="pg-tag">curl + jq</span>
+              <span class="pg-tag">FFmpeg</span>
+              <span class="pg-tag">regex</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== PROJECTS ================== -->
+      <section class="pg-section" id="projects">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/03 · selected work</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Things that ship, <em>at scale</em>.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            A selection of public projects. The private ones are kept private on purpose —
+            no names, no leaks. These are the ones you can actually star and clone.
+          </p>
+        </div>
+
+        <article class="pg-project pg-reveal">
+          <div>
+            <div class="pg-project-num">001 / telegram bot</div>
+            <h3>Cavin <em>Game</em></h3>
+            <div class="pg-project-meta">
+              <span>Python · Pyrogram</span><span>MongoDB → Postgres</span><span>multi-group</span>
+            </div>
+          </div>
+          <div>
+            <p>
+              A Telegram-based <strong>Word Grid</strong> challenge bot. Real-time word-guessing
+              sessions across many groups, persistent player stats, daily-refilling
+              <em>hint currency</em>, broadcast tools and a “Lightning Round” achievement for
+              clearing a grid in under 120 seconds. I migrated the whole stack from MongoDB
+              to PostgreSQL while keeping a sync bridge so nothing went down.
+            </p>
+            <a class="pg-project-link" href="https://github.com/Abhishek-Issac/Cavin-Game" target="_blank" rel="noopener">view code →</a>
+          </div>
+        </article>
+
+        <article class="pg-project pg-reveal">
+          <div>
+            <div class="pg-project-num">002 / telegram security</div>
+            <h3>Cavin <em>VC Guard</em></h3>
+            <div class="pg-project-meta">
+              <span>Pyrogram · MTProto raw</span><span>Bot + Userbot</span><span>Mongo TTL cache</span>
+            </div>
+          </div>
+          <div>
+            <p>
+              Automated voice-chat moderator for Telegram. A dual-client architecture
+              (Bot + Userbot) monitors group calls in real time and enforces join rules,
+              streaming permissions and anti-abuse policies. Falls back gracefully from
+              Userbot mute to Bot-API restrict, deduplicates joins in memory, and writes
+              every decision to a private audit log channel.
+            </p>
+            <a class="pg-project-link" href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener">view code →</a>
+          </div>
+        </article>
+
+        <article class="pg-project pg-reveal">
+          <div>
+            <div class="pg-project-num">003 / automation</div>
+            <h3>4Sale <em>Forwarder</em></h3>
+            <div class="pg-project-meta">
+              <span>Python · Pyrogram</span><span>multi-channel</span><span>regex parsing</span>
+            </div>
+          </div>
+          <div>
+            <p>
+              A high-throughput forwarder that watches source channels, normalizes captions
+              and quality tags through a battery of regexes, deduplicates against a Mongo
+              index, and rebroadcasts cleanly to destination channels — keeping the people
+              I take care of well-fed without manual work.
+            </p>
+            <a class="pg-project-link" href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener">view code →</a>
+          </div>
+        </article>
+
+        <article class="pg-project pg-reveal">
+          <div>
+            <div class="pg-project-num">004 / web</div>
+            <h3>This <em>Site</em></h3>
+            <div class="pg-project-meta">
+              <span>HTML · CSS · JS</span><span>no frameworks</span><span>GitHub Pages</span>
+            </div>
+          </div>
+          <div>
+            <p>
+              The portfolio you’re reading. Hand-written HTML, a tiny premium-themed CSS
+              system, a vanilla JS file that talks live to the GitHub API, and a GitHub
+              Action that rebuilds the contributions snake every night. Zero frameworks,
+              zero build step, zero excuses.
+            </p>
+            <a class="pg-project-link" href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io" target="_blank" rel="noopener">view code →</a>
+            <a class="pg-project-link" href="https://abhishek-issac.github.io" target="_blank" rel="noopener">view live →</a>
+          </div>
+        </article>
+
+        <article class="pg-project pg-reveal">
+          <div>
+            <div class="pg-project-num">005 / experiments</div>
+            <h3>The other <em>129 repos</em></h3>
+            <div class="pg-project-meta">
+              <span>mostly Python</span><span>some Go &amp; Docker</span><span>2021 → today</span>
+            </div>
+          </div>
+          <div>
+            <p>
+              Forks I learned from, half-finished file-share bots, music players, request-
+              join handlers, stranger-things experiments. Some are great, some are
+              <em>“y”</em>, <em>“ygbhj”</em> and <em>“God”</em> — names I now refuse to explain.
+              They’re all on my GitHub if you want a tour through how I learned this craft.
+            </p>
+            <a class="pg-project-link" href="https://github.com/Abhishek-Issac?tab=repositories" target="_blank" rel="noopener">browse all repos →</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ================== GITHUB SECTION ================== -->
+      <section class="pg-section" id="github">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/04 · github</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Live from <em>@Abhishek-Issac</em>.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            Everything below is fetched at page-load from the GitHub REST API or rebuilt
+            nightly by a GitHub Action. Private repo names are excluded by design.
+          </p>
+        </div>
+
+        <div class="pg-github-stats pg-reveal" style="grid-template-columns: 1fr;">
+          <img
+            alt="GitHub current streak for Abhishek-Issac"
+            loading="lazy"
+            src="https://streak-stats.demolab.com?user=Abhishek-Issac&hide_border=true&background=ffffff&stroke=e7e4dc&ring=b48848&fire=b48848&currStreakNum=14141a&sideNums=14141a&currStreakLabel=14141a&sideLabels=4a4a52&dates=8a8a90"
+          />
+        </div>
+
+        <!-- Snake -->
+        <div class="pg-snake pg-reveal" data-delay="100" id="snake">
+          <div class="pg-snake-head">
+            <span>contribution snake · auto-updated by github actions</span>
+            <span>@Abhishek-Issac</span>
+          </div>
+          <picture>
+            <source media="(prefers-color-scheme: dark)"
+                    srcset="https://raw.githubusercontent.com/Abhishek-Issac/Abhishek-Issac.github.io/output/github-snake-dark.svg" />
+            <img
+              id="pg-snake-img"
+              alt="Abhishek-Issac's GitHub contribution graph as a snake game"
+              src="https://raw.githubusercontent.com/Abhishek-Issac/Abhishek-Issac.github.io/output/github-snake.svg"
+              onerror="this.onerror=null; document.getElementById('pg-snake-fallback').style.display='block'; this.style.display='none';"
+            />
+          </picture>
+          <div id="pg-snake-fallback" style="display:none; padding: 30px 18px; text-align: center; font-family: var(--pg-font-mono); font-size: 13px; color: var(--pg-muted); border: 1px dashed var(--pg-line); border-radius: 10px;">
+            🐍 snake.svg will appear here after the first GitHub Action run (every 12h, or run manually from the Actions tab).
           </div>
         </div>
 
-        <div class="card contact-form animate-on-scroll" data-delay="200">
-          <h4 style="color: var(--text-primary); margin-bottom: var(--space-xl);">Send a Message</h4>
-          <form id="contact-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+        <!-- Live counters + langs -->
+        <div class="pg-grid-2" style="margin-top: 22px;">
+          <div class="pg-card pg-reveal">
+            <span class="pg-card-num">/profile</span>
+            <h3>by the numbers</h3>
+            <div class="pg-stats-strip" style="margin: 16px 0 0; border: 0;">
+              <div class="pg-stat" style="padding: 16px 0; border-right: 1px solid var(--pg-line);">
+                <div class="pg-stat-num"><em id="gh-followers">—</em></div>
+                <div class="pg-stat-label">followers</div>
               </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+              <div class="pg-stat" style="padding: 16px 0; border-right: 1px solid var(--pg-line);">
+                <div class="pg-stat-num"><em id="gh-following">—</em></div>
+                <div class="pg-stat-label">following</div>
+              </div>
+              <div class="pg-stat" style="padding: 16px 0; border-right: 1px solid var(--pg-line);">
+                <div class="pg-stat-num"><em>129</em></div>
+                <div class="pg-stat-label">public</div>
+              </div>
+              <div class="pg-stat" style="padding: 16px 0;">
+                <div class="pg-stat-num"><em>2021</em></div>
+                <div class="pg-stat-label">joined</div>
               </div>
             </div>
-            <div class="form-group">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?">
+          </div>
+
+          <div class="pg-card pg-reveal" data-delay="100">
+            <span class="pg-card-num">/langs</span>
+            <h3>language mix</h3>
+            <div class="pg-tags" id="gh-langs" style="margin-top: 14px;">
+              <span class="pg-tag gold">Python · 70%</span>
+              <span class="pg-tag">Dockerfile</span>
+              <span class="pg-tag">Shell</span>
+              <span class="pg-tag">JavaScript</span>
+              <span class="pg-tag">HTML</span>
+              <span class="pg-tag">PHP</span>
             </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg w-full ripple-effect" style="justify-content: center;">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ==================== QUOTE SECTION ==================== -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
-      <div class="quote-card card animate-on-scroll">
-        <p class="quote-text">
-          "The best way to predict the future is to invent it. Code is poetry written in logic."
-        </p>
-        <div class="quote-author">&mdash; Inspired by Alan Kay</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#hero" class="footer-brand-logo">
-            <div class="nav-logo-icon" style="width: 36px; height: 36px; font-size: 1rem;">AI</div>
-            <span class="footer-brand-text">Abhishek<span>.</span></span>
+        <!-- Public repos (live) -->
+        <h3 class="pg-serif pg-reveal" style="margin: 36px 0 16px; font-weight: 400; font-size: 24px; letter-spacing: -.01em;">
+          recently active public repos
+        </h3>
+        <div class="pg-repo-list pg-reveal" data-delay="100" id="gh-repo-list">
+          <a class="pg-repo" href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener">
+            <span class="pg-repo-name">loading public repos…</span>
+            <span class="pg-repo-desc">fetching from the GitHub API. private repo names are filtered out.</span>
+            <span class="pg-repo-meta"><span>·</span><span>★ —</span><span>updated —</span></span>
           </a>
-          <p>
-            Full-Stack Developer & Telegram Bot Creator based in Kerala, India.
-            Building tools that make a difference, one line of code at a time.
+        </div>
+      </section>
+
+      <!-- ================== INTERESTS / DEVICES / PERSONAL ================== -->
+      <section class="pg-section" id="interests">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/05 · interests</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Outside the <em>terminal</em>.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            Phones I’ve owned, games I burn nights on, and a few details that don’t fit
+            anywhere else. Treat this as the changelog of a person.
           </p>
-          <div class="contact-socials" style="margin-top: var(--space-lg);">
-            <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="social-link github" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://t.me/AbhishekIssac" target="_blank" rel="noopener" class="social-link telegram" title="Telegram">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="https://instagram.com/abhishek_issac_" target="_blank" rel="noopener" class="social-link instagram" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
+        </div>
+
+        <div class="pg-grid-2">
+          <div class="pg-reveal">
+            <h3 class="pg-serif" style="font-weight: 400; font-size: 26px; margin: 0 0 14px;">phones I’ve actually used</h3>
+            <ul class="pg-list">
+              <li><span class="pg-li-num">01</span><span class="pg-li-name">Poco X3 Pro</span><span class="pg-li-meta">SD860 · 6/128 · daily driver</span></li>
+              <li><span class="pg-li-num">02</span><span class="pg-li-name">Redmi Note 10s</span><span class="pg-li-meta">8/128 · spare</span></li>
+              <li><span class="pg-li-num">03</span><span class="pg-li-name">Redmi Note 9 Pro Max</span><span class="pg-li-meta">household lineup</span></li>
+              <li><span class="pg-li-num">04</span><span class="pg-li-name">Redmi Note 13 Pro</span><span class="pg-li-meta">studied for hours</span></li>
+              <li><span class="pg-li-num">05</span><span class="pg-li-name">OnePlus 10R / 10T</span><span class="pg-li-meta">friend’s · I unbrick the bricks</span></li>
+              <li><span class="pg-li-num">06</span><span class="pg-li-name">Moto G52 / E5</span><span class="pg-li-meta">family fleet · 24/7 wifi</span></li>
+              <li><span class="pg-li-num">07</span><span class="pg-li-name">iPhone 11 / 15</span><span class="pg-li-meta">benchmarked, never bought</span></li>
+              <li><span class="pg-li-num">08</span><span class="pg-li-name">Redmi 7A</span><span class="pg-li-meta">bootloop survivor</span></li>
+            </ul>
+          </div>
+
+          <div class="pg-reveal" data-delay="150">
+            <h3 class="pg-serif" style="font-weight: 400; font-size: 26px; margin: 0 0 14px;">games &amp; series</h3>
+            <ul class="pg-list">
+              <li><span class="pg-li-num">01</span><span class="pg-li-name">Wuthering Waves</span><span class="pg-li-meta">SD860 · medium 60fps</span></li>
+              <li><span class="pg-li-num">02</span><span class="pg-li-name">Genshin Impact</span><span class="pg-li-meta">on and off · main account</span></li>
+              <li><span class="pg-li-num">03</span><span class="pg-li-name">BGMI / PUBG Mobile</span><span class="pg-li-meta">DDR-bus L3 + GameEnhancer</span></li>
+              <li><span class="pg-li-num">04</span><span class="pg-li-name">Arknights</span><span class="pg-li-meta">currently fritzing on Enfield</span></li>
+              <li><span class="pg-li-num">05</span><span class="pg-li-name">Minecraft · Roblox · Free Fire</span><span class="pg-li-meta">retired, mostly</span></li>
+              <li><span class="pg-li-num">06</span><span class="pg-li-name">Stranger Things · Dark</span><span class="pg-li-meta">slow-burn rewatcher</span></li>
+              <li><span class="pg-li-num">07</span><span class="pg-li-name">Hotstar / Prime / Netflix</span><span class="pg-li-meta">+ a homemade movie hub</span></li>
+              <li><span class="pg-li-num">08</span><span class="pg-li-name">Anime &amp; series in general</span><span class="pg-li-meta">binge enthusiast</span></li>
+            </ul>
           </div>
         </div>
 
-        <div>
-          <h5 class="footer-column-title">Navigation</h5>
-          <div class="footer-links">
-            <a href="#hero" class="footer-link">Home</a>
-            <a href="#about" class="footer-link">About</a>
-            <a href="#skills" class="footer-link">Skills</a>
-            <a href="#projects" class="footer-link">Projects</a>
-            <a href="#timeline" class="footer-link">Journey</a>
+        <div class="pg-grid-3" style="margin-top: 36px;">
+          <div class="pg-card pg-reveal" data-tilt>
+            <span class="pg-card-num">/rom</span>
+            <h3>Custom ROMs</h3>
+            <p>
+              Currently on <strong>crDroid Android 16</strong> with KernelSU. I’ve flashed
+              PixelOS, AOSP, MIUI/HyperOS variants, and recovered more bootloops than I
+              can count. EDL mode is my second home.
+            </p>
+          </div>
+          <div class="pg-card pg-reveal" data-delay="100" data-tilt>
+            <span class="pg-card-num">/network</span>
+            <h3>Networking at home</h3>
+            <p>
+              Two cell towers in Wayanad, one stubborn concrete wall, and a D-Link DIR-600M
+              repurposed as a repeater for my Archer C20. 30 Mbps over 4G is my benchmark.
+            </p>
+          </div>
+          <div class="pg-card pg-reveal" data-delay="200" data-tilt>
+            <span class="pg-card-num">/study</span>
+            <h3>School Life</h3>
+            <p>
+              <strong>+1 BioScience</strong> at the time of writing — biology in the
+              morning, regex in the evening. I’ve “studied full cybersecurity on YouTube,”
+              which is a slightly different curriculum.
+            </p>
           </div>
         </div>
+      </section>
 
-        <div>
-          <h5 class="footer-column-title">Projects</h5>
-          <div class="footer-links">
-            <a href="https://t.me/SeriesPiroBot" target="_blank" rel="noopener" class="footer-link">SeriesPiroBot</a>
-            <a href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener" class="footer-link">4sale-forward</a>
-            <a href="https://github.com/Abhishek-Issac/Cavin-Game" target="_blank" rel="noopener" class="footer-link">Cavin Game</a>
-            <a href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener" class="footer-link">Cavin VC Guard</a>
+      <!-- ================== TIMELINE ================== -->
+      <section class="pg-section" id="journey">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/06 · journey</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">A short, <em>non-linear</em> timeline.</h2>
           </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            Most of these dates are approximate — I learned by jumping between things,
+            not by following a syllabus.
+          </p>
         </div>
 
-        <div>
-          <h5 class="footer-column-title">Connect</h5>
-          <div class="footer-links">
-            <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" class="footer-link">GitHub</a>
-            <a href="https://t.me/AbhishekIssac" target="_blank" rel="noopener" class="footer-link">Telegram</a>
-            <a href="https://instagram.com/abhishek_issac_" target="_blank" rel="noopener" class="footer-link">Instagram</a>
-            <a href="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA" target="_blank" rel="noopener" class="footer-link">YouTube</a>
+        <div class="pg-timeline">
+          <div class="pg-tli pg-reveal">
+            <div class="pg-tli-date">EARLY · ~2019</div>
+            <h4>First lines of code, on a phone.</h4>
+            <p>Started writing tiny Python scripts inside Termux, before I had a real computer. Half of it was copy-paste; the other half was confusion-driven learning.</p>
           </div>
+          <div class="pg-tli pg-reveal gold">
+            <div class="pg-tli-date">NOV · 2021</div>
+            <h4>Joined GitHub as @Abhishek-Issac.</h4>
+            <p>Account created on 2021-11-08. Pushed shell scripts, half-broken file-share bots, and a frankly absurd number of forks I used to read other people’s code.</p>
+          </div>
+          <div class="pg-tli pg-reveal">
+            <div class="pg-tli-date">2022</div>
+            <h4>Pyrogram pilled.</h4>
+            <p>First real Telegram bots — an EvaMaria fork, an autobatch generator, and a series-fetcher that taught me regex the hard way.</p>
+          </div>
+          <div class="pg-tli pg-reveal">
+            <div class="pg-tli-date">2023</div>
+            <h4>Mongo, Motor, and millions.</h4>
+            <p>Channels and bots crossed enough users that I had to actually <em>think</em> about caching, TTLs, indexes and rate-limiting. Telegram’s flood errors became my mortal enemy.</p>
+          </div>
+          <div class="pg-tli pg-reveal gold">
+            <div class="pg-tli-date">2024</div>
+            <h4>Postgres + production hygiene.</h4>
+            <p>Migrated Cavin Game from MongoDB to PostgreSQL with a sync bridge. Wrote my first proper backup/restore commands, JSONB settings, score-log tables.</p>
+          </div>
+          <div class="pg-tli pg-reveal">
+            <div class="pg-tli-date">2025</div>
+            <h4>Custom ROMs as a lifestyle.</h4>
+            <p>crDroid A16 + KernelSU on the Poco X3 Pro becomes my daily setup. Magisk modules for school apps. EDL flashes for friends’ bricked OnePluses at midnight.</p>
+          </div>
+          <div class="pg-tli pg-reveal gold">
+            <div class="pg-tli-date">2026 · NOW</div>
+            <h4>+1 BioScience &nbsp;&middot;&nbsp; this site.</h4>
+            <p>Cramming biology in one window, refactoring bots in another, redesigning my portfolio in a third. Still 16. Still going.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== PHILOSOPHY BAND ================== -->
+    </main>
+
+    <section class="pg-band">
+      <div class="pg-wrap pg-band-inner">
+        <div class="pg-reveal">
+          <div class="pg-sec-num">/07 · how I work</div>
+          <h2 class="pg-sec-title" style="margin-top: 14px;">Build small. <em>Ship fast.</em> Refactor in public.</h2>
+        </div>
+        <div class="pg-prose pg-reveal" data-delay="150">
+          <p>
+            I don’t believe in waiting for the perfect architecture. I’d rather have a working
+            <em>version one</em> in production tonight than a beautiful diagram on Monday. The
+            commit graph is my notebook.
+          </p>
+          <p>
+            I optimize for two things: <strong>uptime for the users I take care of</strong>,
+            and <strong>readability for the future me</strong> who has to debug this at 2 AM
+            on a phone keyboard. Everything else is negotiable.
+          </p>
+          <p>
+            Ask me about codes. I’m awful at small talk and I have a million users in
+            Telegram bots, groups and channels — that should give you a sense of where my
+            attention has been for the last few years.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Abhishek Issac. Built with passion and code.</p>
-        <div class="footer-bottom-links">
-          <a href="#hero" class="footer-link">Back to Top</a>
+    <main class="pg-wrap">
+
+      <!-- ================== NOW / CURRENTLY ================== -->
+      <section class="pg-section" id="now">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/08 · now</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">What I’m on, <em>this week</em>.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            A loose “now page” inspired by nownownow.com. Updated by hand whenever
+            life shifts gears.
+          </p>
         </div>
-      </div>
-    </div>
-  </footer>
+        <div class="pg-grid-3">
+          <div class="pg-card pg-reveal">
+            <span class="pg-card-num">/code</span>
+            <h3>building</h3>
+            <p>
+              Tightening up Cavin VC Guard, fighting a $PORT bind issue on Easypanel,
+              and quietly refactoring my movie-hub forwarders to share one Mongo cache.
+            </p>
+          </div>
+          <div class="pg-card pg-reveal" data-delay="100">
+            <span class="pg-card-num">/learn</span>
+            <h3>learning</h3>
+            <p>
+              A bit more <strong>Go</strong>, a lot more PostgreSQL internals, and how
+              to write Pyrogram handlers that fail loudly instead of silently.
+            </p>
+          </div>
+          <div class="pg-card pg-reveal" data-delay="200">
+            <span class="pg-card-num">/play</span>
+            <h3>playing</h3>
+            <p>
+              Wuthering Waves on the Poco X3 Pro at medium settings. Arknights on the side.
+              Re-watching <em>Stranger Things</em> for the third time, no regrets.
+            </p>
+          </div>
+          <div class="pg-card pg-reveal">
+            <span class="pg-card-num">/study</span>
+            <h3>studying</h3>
+            <p>
+              NCERT +1 BioScience — ten chapters underlined, three understood,
+              one panic attack scheduled for the night before the exam.
+            </p>
+          </div>
+          <div class="pg-card pg-reveal" data-delay="100">
+            <span class="pg-card-num">/wear</span>
+            <h3>running on</h3>
+            <p>
+              crDroid A16 + KernelSU root, Termux as IDE, JetBrains Mono everywhere,
+              GitHub on the home screen and a router on the way home from Kollam.
+            </p>
+          </div>
+          <div class="pg-card pg-reveal" data-delay="200">
+            <span class="pg-card-num">/open-to</span>
+            <h3>open to</h3>
+            <p>
+              Paid bot edits, weird automation problems, kind humans, and contests where I
+              can lose gracefully. DM me on Telegram before you DM me anywhere else.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <!-- Scroll to Top -->
-  <button class="scroll-top float-element" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+      <!-- ================== CONTACT ================== -->
+      <section class="pg-section" id="contact">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/09 · contact</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Easier than you think to <em>reach me</em>.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            Telegram is fastest. GitHub is best for code. Instagram is mostly memes.
+          </p>
+        </div>
+        <div class="pg-contact pg-reveal">
+          <a href="https://t.me/abhisheksvlog" target="_blank" rel="noopener">
+            <span class="pg-mono">tg</span>
+            <div>
+              <div class="pg-contact-label">telegram · primary</div>
+              <div class="pg-contact-value">@abhisheksvlog</div>
+            </div>
+            <span class="pg-contact-arrow">open →</span>
+          </a>
+          <a href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener">
+            <span class="pg-mono">gh</span>
+            <div>
+              <div class="pg-contact-label">github · code</div>
+              <div class="pg-contact-value">github.com/Abhishek-Issac</div>
+            </div>
+            <span class="pg-contact-arrow">open →</span>
+          </a>
+          <a href="https://instagram.com/abhishek_issac_" target="_blank" rel="noopener">
+            <span class="pg-mono">ig</span>
+            <div>
+              <div class="pg-contact-label">instagram · personal</div>
+              <div class="pg-contact-value">@abhishek_issac_</div>
+            </div>
+            <span class="pg-contact-arrow">open →</span>
+          </a>
+          <a href="https://t.me/SflixBots" target="_blank" rel="noopener">
+            <span class="pg-mono">tg</span>
+            <div>
+              <div class="pg-contact-label">telegram · movie hub group</div>
+              <div class="pg-contact-value">t.me/SflixBots</div>
+            </div>
+            <span class="pg-contact-arrow">open →</span>
+          </a>
+        </div>
+      </section>
 
-  <!-- Theme Switcher Panel -->
-  <div class="theme-switcher-panel">
-    <button class="theme-switcher-toggle" aria-label="Toggle theme panel">
-      <i class="fas fa-palette"></i>
-    </button>
-    <div class="theme-switcher-title">Choose Theme</div>
-    <div class="theme-options">
-      <button class="theme-option active" data-theme="neon">
-        <div class="theme-option-preview theme-preview-neon"><span></span><span></span><span></span></div>
-        <span class="theme-option-name">Neon (Default)</span>
-      </button>
-      <button class="theme-option" data-theme="cyberpunk">
-        <div class="theme-option-preview theme-preview-cyberpunk"><span></span><span></span><span></span></div>
-        <span class="theme-option-name">Cyberpunk</span>
-      </button>
-      <button class="theme-option" data-theme="ocean">
-        <div class="theme-option-preview theme-preview-ocean"><span></span><span></span><span></span></div>
-        <span class="theme-option-name">Ocean Deep</span>
-      </button>
-      <button class="theme-option" data-theme="ember">
-        <div class="theme-option-preview theme-preview-ember"><span></span><span></span><span></span></div>
-        <span class="theme-option-name">Ember Blaze</span>
-      </button>
-      <button class="theme-option" data-theme="aurora">
-        <div class="theme-option-preview theme-preview-aurora"><span></span><span></span><span></span></div>
-        <span class="theme-option-name">Aurora</span>
-      </button>
-      <button class="theme-option" data-theme="matrix">
-        <div class="theme-option-preview theme-preview-matrix"><span></span><span></span><span></span></div>
-        <span class="theme-option-name">Matrix</span>
-      </button>
-    </div>
+      <!-- ================== FOOTER ================== -->
+      <footer class="pg-footer" role="contentinfo">
+        <div>© <span id="pg-year">2026</span> · Abhishek Issac · Kerala, India</div>
+        <div>handcrafted in vanilla HTML / CSS / JS · no frameworks</div>
+        <div>
+          <a href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io" target="_blank" rel="noopener">source</a>
+          &nbsp;·&nbsp;
+          <a href="about.html">extended about</a>
+          &nbsp;·&nbsp;
+          <a href="projects.html">all projects</a>
+        </div>
+      </footer>
+    </main>
   </div>
 
-  <!-- Scripts -->
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/effects.js"></script>
-
-  <!-- Initialize Particles -->
-  <script>
-    window.addEventListener('load', () => {
-      const savedTheme = localStorage.getItem('portfolio-theme') || 'neon';
-      const colors = {
-        neon: 'rgba(0, 240, 255, ',
-        cyberpunk: 'rgba(255, 0, 255, ',
-        ocean: 'rgba(0, 212, 255, ',
-        ember: 'rgba(255, 107, 53, ',
-        aurora: 'rgba(168, 85, 247, ',
-        matrix: 'rgba(0, 255, 65, ',
-      };
-      const color = colors[savedTheme] || colors.neon;
-
-      window.particleSystem = new ParticleSystem('particle-canvas', {
-        particleCount: 60,
-        particleColor: color,
-        lineColor: color,
-        speed: 0.3,
-        connectionDistance: 120,
-      });
-
-      new FloatingShapes('hero');
-    });
-  </script>
+  <script src="assets/js/premium.js" defer></script>
 </body>
 </html>
