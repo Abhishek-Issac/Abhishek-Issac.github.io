@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abhishek Issac — Telegram bot architect, Python developer, Android tinkerer & custom-ROM enthusiast from Kerala, India." />
-  <meta name="keywords" content="Abhishek Issac, Developer, Portfolio, Python, Telegram Bots, Pyrogram, MongoDB, PostgreSQL, Custom ROMs, Magisk, KernelSU, Termux, Kerala, India" />
+  <meta name="description" content="Abhishek Issac — sixteen-year-old developer from Kerala, India. Telegram bots in Python &amp; Pyrogram, custom-ROM tinkering, and small-team automation work." />
+  <meta name="keywords" content="Abhishek Issac, Developer, Portfolio, Python, Pyrogram, Telegram Bots, MongoDB, PostgreSQL, Custom ROMs, OxygenOS, KernelSU, Termux, Kerala, India" />
   <meta name="author" content="Abhishek Issac" />
   <meta name="theme-color" content="#fafaf6" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Abhishek Issac — A Tech Nerd from Kerala" />
-  <meta property="og:description" content="Bots, automation, deep system tweaking, custom ROMs. Built for the curious." />
+  <meta property="og:title" content="Abhishek Issac — Developer · Kerala, India" />
+  <meta property="og:description" content="Bots, automation, custom ROMs. Sixteen, +1 BioScience, Python first." />
   <meta property="og:url" content="https://abhishek-issac.github.io" />
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/93928612?v=4" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <title>Abhishek Issac — A Tech Nerd from Kerala</title>
+  <title>Abhishek Issac — Developer · Kerala, India</title>
 
   <!-- Premium fonts: serif display + tight sans + coding mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,9 +31,26 @@
 </head>
 <body class="premium">
 
+  <!-- ================== PAGE-LOAD SPLASH ================== -->
+  <div class="pg-splash" aria-hidden="true">
+    <div class="pg-splash-inner">
+      <span class="pg-splash-mark">A<span style="color: var(--pg-accent);">I</span></span>
+      <span>~/abhishek-issac &nbsp;·&nbsp; loading portfolio…</span>
+    </div>
+  </div>
+
+  <!-- ================== SCROLL PROGRESS BAR ================== -->
+  <div class="pg-progress" aria-hidden="true"><span></span></div>
+
   <!-- ================== SIDE RAILS (decorative animated) ================== -->
   <aside class="pg-rail left" aria-hidden="true"></aside>
   <aside class="pg-rail right" aria-hidden="true"></aside>
+
+  <!-- ================== FLOATING NOW PILL ================== -->
+  <div class="pg-now-pill" aria-hidden="true">
+    <span class="pulse"></span>
+    <span>now · cramming +1 bio &amp; refactoring bots</span>
+  </div>
 
   <div class="pg-content">
 
@@ -46,9 +63,12 @@
       <nav class="pg-nav-links" aria-label="Primary">
         <a href="#about">about</a>
         <a href="#stack">stack</a>
+        <a href="#skills">skills</a>
+        <a href="#services">services</a>
         <a href="#projects">projects</a>
         <a href="#github">github</a>
-        <a href="#interests">interests</a>
+        <a href="#school">school</a>
+        <a href="#devices">devices</a>
         <a href="#contact">contact</a>
       </nav>
       <a class="pg-nav-cta" href="https://t.me/abhisheksvlog" target="_blank" rel="noopener">
@@ -62,22 +82,23 @@
       <section class="pg-hero">
         <div class="pg-hero-grid">
           <div>
-            <span class="pg-eyebrow pg-reveal">Portfolio · MMXXVI · Kerala, India</span>
+            <span class="pg-eyebrow pg-reveal">Portfolio · 2026 · Kerala, India</span>
             <h1 class="pg-name pg-reveal" data-delay="100">
               Abhishek <em>Issac</em>.
             </h1>
             <div class="pg-roles pg-reveal" data-delay="200">
               <span class="pg-mono">$</span>
               <span data-typewriter
-                    data-roles="Telegram Bot Architect|Python Developer|Custom ROM Tinkerer|Pyrogram Engineer|Mongo + Postgres Plumber|Black sheep in a white farm">
-                <span class="pg-tw-text">Telegram Bot Architect</span>
+                    data-roles="Python &amp; Pyrogram developer|Telegram bot builder|Custom-ROM tinkerer|Mongo + Postgres tooling|+1 BioScience student|Sixteen, from Kerala">
+                <span class="pg-tw-text">Python &amp; Pyrogram developer</span>
               </span>
               <span class="cursor"></span>
             </div>
             <p class="pg-tagline pg-reveal" data-delay="300">
-              I build bots, automate things, and do deep system tweaking. From Telegram channels with
-              <strong>millions of users</strong> to custom ROMs running crDroid A16 with KernelSU on a
-              <em class="pg-serif">Poco X3 Pro</em> — if it runs code, I’ve probably broken and fixed it twice.
+              I build small, careful tools — Telegram bots, automation scripts, custom ROM tweaks —
+              mostly in <em class="pg-serif">Python</em> from a phone running
+              <em class="pg-serif">Termux</em>. Sixteen years old, studying <strong>+1 BioScience</strong>
+              from <strong>Wayanad, Kerala</strong>, and writing code in the gaps.
             </p>
             <div class="pg-cta-row pg-reveal" data-delay="400">
               <a class="pg-btn pg-btn-primary" href="#projects">view selected work →</a>
@@ -85,7 +106,7 @@
                 github · @Abhishek-Issac
               </a>
               <a class="pg-btn pg-btn-ghost" href="https://t.me/abhisheksvlog" target="_blank" rel="noopener">
-                telegram · paid bot edits
+                telegram · @abhisheksvlog
               </a>
             </div>
           </div>
@@ -99,13 +120,13 @@
               decoding="async"
             />
             <div class="pg-id-row">
-              <span class="dot-live">available · accepting paid bot edits</span>
+              <span class="dot-live">available · open to small paid bot work</span>
               <span>↳ kerala / ist</span>
             </div>
           </div>
         </div>
 
-        <!-- Stats strip -->
+        <!-- Stats strip: live numbers from the GitHub API -->
         <div class="pg-stats-strip pg-reveal" data-delay="500">
           <div class="pg-stat">
             <div class="pg-stat-num"><em id="gh-public-repos">129</em></div>
@@ -117,11 +138,11 @@
           </div>
           <div class="pg-stat">
             <div class="pg-stat-num"><em id="gh-years">5</em>y</div>
-            <div class="pg-stat-label">on github · since 2021</div>
+            <div class="pg-stat-label">on github · since <span id="gh-joined">2021-11-08</span></div>
           </div>
           <div class="pg-stat">
-            <div class="pg-stat-num"><em>1M+</em></div>
-            <div class="pg-stat-label">users on telegram bots</div>
+            <div class="pg-stat-num"><em>16</em></div>
+            <div class="pg-stat-label">years old · class +1 bio</div>
           </div>
         </div>
       </section>
@@ -131,12 +152,12 @@
         <div class="pg-sec-head">
           <div>
             <div class="pg-sec-num pg-reveal">/01 · about</div>
-            <h2 class="pg-sec-title pg-reveal" data-delay="100">A self-taught <em>tech nerd</em>.</h2>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">A small introduction.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
-            Anyone can spot I’m a tech nerd easily. I’m the kid who turns a friend’s
-            bricked OnePlus 10T back on at 1 AM, then writes a Pyrogram bot that
-            mass-rebroadcasts movies to a million people before sunrise.
+            I’m a self-taught developer from a hill town in Kerala. Most of what I’ve learned
+            came from broken file-share bots, late-night flashing sessions, and a stubborn
+            need to understand <em>why</em> something didn’t work the first time.
           </p>
         </div>
 
@@ -144,45 +165,68 @@
           <div class="pg-prose pg-reveal" data-delay="100">
             <p>
               I’m <strong>Abhishek Issac</strong> — sixteen, based in
-              <span class="pg-highlight">Kerala, India</span>, somewhere between Wayanad’s two
-              cell towers and a Kollam couriered package. I’ve been writing code since I was
-              twelve, mostly in Python, mostly via <em class="pg-serif">Termux</em> on a phone,
-              long before I owned a real laptop.
+              <span class="pg-highlight">Wayanad, Kerala</span> in southern India.
+              I work mostly in <strong>Python</strong> using
+              <em class="pg-serif">Pyrogram</em> for Telegram, with
+              <em class="pg-serif">Motor</em> on top of <strong>MongoDB</strong> and
+              <em class="pg-serif">asyncpg</em> on top of <strong>PostgreSQL</strong> when a
+              project needs to keep its data around.
             </p>
             <p>
-              My speciality is <strong>Telegram automation</strong> at scale —
-              <em class="pg-serif">Pyrogram</em>, MongoDB caching with TTLs, PostgreSQL for the
-              long-term, asynchronous everything. I’ve shipped bots for movies,
-              voice-chat security, force-subscribe gates, file batching, scorecard
-              generators and small games — many of them still running on Easypanel,
-              Heroku, Koyeb, or my own DigitalOcean box.
+              Almost all of my code was first written on a phone — a
+              <em class="pg-serif">Poco X3 Pro</em> running <em class="pg-serif">Termux</em>.
+              That constraint shaped how I think: prefer plain text, keep dependencies small,
+              avoid anything that needs more than 6&nbsp;GB of RAM to run, and assume the
+              network might drop mid-deploy. Every project here is built with that mindset.
             </p>
             <p>
-              When I’m not pushing commits I’m flashing a custom ROM (currently
-              <strong>crDroid Android 16</strong> with KernelSU root), benchmarking phones I
-              shouldn’t be buying, beating <em class="pg-serif">Wuthering Waves</em> on an SD860,
-              or cramming for my <strong>+1 BioScience</strong> exams. I’m really bad at
-              knowing people — “a black sheep in a white farm” — but I’m really good at
-              knowing systems.
+              When I’m not pushing commits I’m usually flashing a custom ROM on the same Poco
+              X3 Pro (currently a <strong>OxygenOS 15 port</strong> for vayu/bhima, before that
+              <em class="pg-serif">crDroid</em>, <em class="pg-serif">HyperOS</em> ports, and
+              the original MIUI), recovering a friend’s bricked OnePlus over fastboot, or
+              cramming chapters of <strong>+1 BioScience</strong> — Botany, Zoology, Physics,
+              Chemistry, Maths, English and Hindi.
             </p>
             <p>
-              I read code the way other people read novels, and I’d rather minify a
-              two-thousand-line plugin than write a five-line cover letter. This site is
-              that minify.
+              I keep this site small on purpose. No frameworks, no build step, no tracking —
+              just hand-written HTML, CSS and a single JavaScript file that talks to the
+              GitHub API and animates the things you’re scrolling past.
             </p>
           </div>
 
           <div class="pg-facts pg-reveal" data-delay="200">
             <div class="pg-fact"><div class="pg-fact-label">name</div><div class="pg-fact-value">Abhishek Issac</div></div>
-            <div class="pg-fact"><div class="pg-fact-label">based in</div><div class="pg-fact-value">Kerala · India</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">based in</div><div class="pg-fact-value">Wayanad · Kerala</div></div>
             <div class="pg-fact"><div class="pg-fact-label">age</div><div class="pg-fact-value">16</div></div>
-            <div class="pg-fact"><div class="pg-fact-label">studies</div><div class="pg-fact-value">+1 BioScience</div></div>
-            <div class="pg-fact"><div class="pg-fact-label">speaks</div><div class="pg-fact-value">Malayalam · English</div></div>
-            <div class="pg-fact"><div class="pg-fact-label">daily phone</div><div class="pg-fact-value">Poco X3 Pro</div></div>
-            <div class="pg-fact"><div class="pg-fact-label">main shell</div><div class="pg-fact-value">Termux + Ubuntu</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">studies</div><div class="pg-fact-value">NCERT +1 BioScience</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">subjects</div><div class="pg-fact-value">Bio · Phy · Chem · Maths · Eng · Hindi</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">daily phone</div><div class="pg-fact-value">Poco X3 Pro · 6/128</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">current rom</div><div class="pg-fact-value">OxygenOS 15 port</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">main shell</div><div class="pg-fact-value">Termux · Ubuntu</div></div>
             <div class="pg-fact"><div class="pg-fact-label">timezone</div><div class="pg-fact-value">Asia/Kolkata · IST</div></div>
-            <div class="pg-fact"><div class="pg-fact-label">writing in</div><div class="pg-fact-value">Python · Pyrogram</div></div>
-            <div class="pg-fact"><div class="pg-fact-label">favourite db</div><div class="pg-fact-value">Mongo &nbsp;⇆&nbsp; Postgres</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">writes in</div><div class="pg-fact-value">Python · Pyrogram</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">stores in</div><div class="pg-fact-value">Mongo &nbsp;⇆&nbsp; Postgres</div></div>
+            <div class="pg-fact"><div class="pg-fact-label">github</div><div class="pg-fact-value">@Abhishek-Issac</div></div>
+          </div>
+        </div>
+
+        <!-- mini stat tiles -->
+        <div class="pg-mini-stats pg-reveal">
+          <div class="pg-mini-stat">
+            <div class="pg-mini-stat-num">129</div>
+            <div class="pg-mini-stat-label">public repos on github</div>
+          </div>
+          <div class="pg-mini-stat">
+            <div class="pg-mini-stat-num">~70%</div>
+            <div class="pg-mini-stat-label">repos are python</div>
+          </div>
+          <div class="pg-mini-stat">
+            <div class="pg-mini-stat-num">5</div>
+            <div class="pg-mini-stat-label">custom ROMs flashed in 2026</div>
+          </div>
+          <div class="pg-mini-stat">
+            <div class="pg-mini-stat-num">3</div>
+            <div class="pg-mini-stat-label">phones in active rotation</div>
           </div>
         </div>
       </section>
@@ -202,66 +246,75 @@
 
 <span class="v">me</span> = <span class="n">Person</span>(
     <span class="p">name</span>=<span class="s">"Abhishek Issac"</span>,
-    <span class="p">from_</span>=<span class="s">"Kerala, India"</span>,
+    <span class="p">from_</span>=<span class="s">"Wayanad, Kerala, India"</span>,
     <span class="p">age</span>=<span class="n">16</span>,
+    <span class="p">school</span>=<span class="s">"NCERT +1 BioScience"</span>,
+    <span class="p">subjects</span>=[<span class="s">"biology"</span>, <span class="s">"physics"</span>, <span class="s">"chemistry"</span>,
+              <span class="s">"maths"</span>, <span class="s">"english"</span>, <span class="s">"hindi"</span>],
     <span class="p">stack</span>=[<span class="s">"python"</span>, <span class="s">"pyrogram"</span>, <span class="s">"mongo"</span>, <span class="s">"postgres"</span>],
-    <span class="p">phones</span>=[<span class="s">"poco x3 pro"</span>, <span class="s">"redmi note 10s"</span>, <span class="s">"moto e5"</span>],
-    <span class="p">rom</span>=<span class="s">"crDroid A16 + KernelSU"</span>,
-    <span class="p">vibes</span>=<span class="s">"a black sheep in a white farm"</span>,
+    <span class="p">phones</span>=[<span class="s">"poco x3 pro"</span>, <span class="s">"moto g52"</span>, <span class="s">"moto e5"</span>],
+    <span class="p">rom</span>=<span class="s">"oxygenos 15 port (vayu/bhima)"</span>,
+    <span class="p">tools</span>=[<span class="s">"termux"</span>, <span class="s">"git"</span>, <span class="s">"orangefox"</span>, <span class="s">"kernelsu"</span>],
 )
 
 <span class="k">while</span> <span class="v">curious</span>:
-    <span class="v">me</span>.<span class="n">build</span>(<span class="s">"telegram bot"</span>)
-    <span class="v">me</span>.<span class="n">flash</span>(<span class="s">"another rom"</span>)
-    <span class="v">me</span>.<span class="n">break_</span>(<span class="s">"a phone, then fix it"</span>)
-    <span class="v">me</span>.<span class="n">study</span>(<span class="s">"+1 bioscience, somehow"</span>)
+    <span class="v">me</span>.<span class="n">build</span>(<span class="s">"a small telegram bot"</span>)
+    <span class="v">me</span>.<span class="n">flash</span>(<span class="s">"another rom, carefully"</span>)
+    <span class="v">me</span>.<span class="n">study</span>(<span class="s">"a chapter of biology"</span>)
+    <span class="v">me</span>.<span class="n">push</span>(<span class="s">"a commit to github"</span>)
 
 <span class="c"># exit code: 0 — still going.</span></pre>
           </div>
 
           <div class="pg-prose pg-reveal" data-delay="200" style="align-self: center;">
-            <p class="pg-quote">
-              I build bots, automate things, and work on android custom ROMs.
-              I use Termux, Python, Pyrogram, and do deep system tweaking.
-              <span class="pg-quote-by">— Abhishek, in his own words</span>
+            <p>
+              The block on the left is the short version of a much longer story. Most of the
+              specific numbers and names on this page — repo count, follower count, stars,
+              languages, recent commits — are fetched live from the GitHub REST API as the
+              page loads, so they’re always current.
+            </p>
+            <p>
+              Anything that <em>doesn’t</em> change live (school, age, location, devices) is
+              copied straight from notes I keep in a private file. If you spot something
+              that looks off, ping me on Telegram and I’ll fix it the same evening.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- ================== MARQUEE BAND ================== -->
     </main>
 
+    <!-- ================== MARQUEE BAND ================== -->
     <div class="pg-marquee" aria-hidden="true">
       <div class="pg-marquee-track">
         <span>Python</span><span class="star">✦</span>
         <span>Pyrogram</span><span class="star">✦</span>
-        <span>MongoDB</span><span class="star">✦</span>
-        <span>PostgreSQL</span><span class="star">✦</span>
+        <span>MongoDB · Motor</span><span class="star">✦</span>
+        <span>PostgreSQL · asyncpg</span><span class="star">✦</span>
         <span>Termux</span><span class="star">✦</span>
-        <span>crDroid · KernelSU</span><span class="star">✦</span>
-        <span>Magisk</span><span class="star">✦</span>
+        <span>OxygenOS 15 port</span><span class="star">✦</span>
+        <span>KernelSU</span><span class="star">✦</span>
+        <span>OrangeFox</span><span class="star">✦</span>
         <span>Docker</span><span class="star">✦</span>
-        <span>Easypanel</span><span class="star">✦</span>
-        <span>Heroku · Koyeb</span><span class="star">✦</span>
+        <span>Easypanel · Koyeb</span><span class="star">✦</span>
         <span>HTML · CSS · JS</span><span class="star">✦</span>
+        <span>Git · GitHub</span><span class="star">✦</span>
         <span>SQLite</span><span class="star">✦</span>
-        <span>Redis</span><span class="star">✦</span>
         <span>Linux</span><span class="star">✦</span>
         <!-- duplicate for seamless loop -->
         <span>Python</span><span class="star">✦</span>
         <span>Pyrogram</span><span class="star">✦</span>
-        <span>MongoDB</span><span class="star">✦</span>
-        <span>PostgreSQL</span><span class="star">✦</span>
+        <span>MongoDB · Motor</span><span class="star">✦</span>
+        <span>PostgreSQL · asyncpg</span><span class="star">✦</span>
         <span>Termux</span><span class="star">✦</span>
-        <span>crDroid · KernelSU</span><span class="star">✦</span>
-        <span>Magisk</span><span class="star">✦</span>
+        <span>OxygenOS 15 port</span><span class="star">✦</span>
+        <span>KernelSU</span><span class="star">✦</span>
+        <span>OrangeFox</span><span class="star">✦</span>
         <span>Docker</span><span class="star">✦</span>
-        <span>Easypanel</span><span class="star">✦</span>
-        <span>Heroku · Koyeb</span><span class="star">✦</span>
+        <span>Easypanel · Koyeb</span><span class="star">✦</span>
         <span>HTML · CSS · JS</span><span class="star">✦</span>
+        <span>Git · GitHub</span><span class="star">✦</span>
         <span>SQLite</span><span class="star">✦</span>
-        <span>Redis</span><span class="star">✦</span>
         <span>Linux</span><span class="star">✦</span>
       </div>
     </div>
@@ -273,11 +326,11 @@
         <div class="pg-sec-head">
           <div>
             <div class="pg-sec-num pg-reveal">/02 · stack</div>
-            <h2 class="pg-sec-title pg-reveal" data-delay="100">Tools I’ve <em>actually</em> shipped with.</h2>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">What I actually use, day to day.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
-            Not a logo wall. These are languages, libraries and platforms I’ve used
-            in production code that real users have hit at 3 AM.
+            Six small categories — languages, bot frameworks, storage, hosting, Android tooling,
+            and the editor I open every morning. No logo wall, no buzzwords.
           </p>
         </div>
 
@@ -285,14 +338,14 @@
           <div class="pg-card pg-reveal" data-tilt>
             <span class="pg-card-num">/lang</span>
             <h3>Languages</h3>
-            <p>Python first and always. Some Go and HTML/CSS/JS for the web layer, plus shell glue for ops.</p>
+            <p>Python first and almost always. A bit of HTML/CSS/JavaScript for the web layer, plus shell glue for ops scripts and small CLI helpers.</p>
             <div class="pg-tags" style="margin-top:14px;">
               <span class="pg-tag gold">Python 3</span>
-              <span class="pg-tag">Golang</span>
               <span class="pg-tag">JavaScript</span>
               <span class="pg-tag">HTML5</span>
               <span class="pg-tag">CSS3</span>
               <span class="pg-tag">Bash</span>
+              <span class="pg-tag">SQL</span>
               <span class="pg-tag">Dockerfile</span>
             </div>
           </div>
@@ -300,34 +353,34 @@
           <div class="pg-card pg-reveal" data-delay="100" data-tilt>
             <span class="pg-card-num">/bots</span>
             <h3>Telegram</h3>
-            <p>A million-user ecosystem of movie hubs, force-sub gates, batch generators and VC guards.</p>
+            <p>Bots and userbots in <em class="pg-serif">Pyrogram</em> on top of MTProto, with Bot-API as a fallback. Force-sub gates, batch generators, voice-chat moderation, small games.</p>
             <div class="pg-tags" style="margin-top:14px;">
               <span class="pg-tag gold">Pyrogram</span>
               <span class="pg-tag">Telethon</span>
-              <span class="pg-tag">Aiogram</span>
               <span class="pg-tag">MTProto raw</span>
-              <span class="pg-tag">Userbots</span>
               <span class="pg-tag">Bot API</span>
+              <span class="pg-tag">Userbots</span>
+              <span class="pg-tag">FloodWait-aware</span>
             </div>
           </div>
 
           <div class="pg-card pg-reveal" data-delay="200" data-tilt>
             <span class="pg-card-num">/data</span>
             <h3>Storage</h3>
-            <p>MongoDB for fast caching with TTLs, PostgreSQL for the persistent truth, Redis for queues.</p>
+            <p>MongoDB for fast cache layers with TTLs, PostgreSQL for the persistent truth, JSONB for game-state blobs, SQLite for tiny local tools.</p>
             <div class="pg-tags" style="margin-top:14px;">
               <span class="pg-tag gold">MongoDB · Motor</span>
               <span class="pg-tag green">PostgreSQL · asyncpg</span>
-              <span class="pg-tag">Redis</span>
-              <span class="pg-tag">SQLite</span>
               <span class="pg-tag">JSONB</span>
+              <span class="pg-tag">SQLite</span>
+              <span class="pg-tag">Redis</span>
             </div>
           </div>
 
           <div class="pg-card pg-reveal" data-tilt>
             <span class="pg-card-num">/host</span>
-            <h3>Hosting & Ops</h3>
-            <p>Whatever runs cheapest with the least pain. Easypanel + Koyeb for bots, GitHub Pages for sites.</p>
+            <h3>Hosting &amp; ops</h3>
+            <p>Whatever runs cheapest with the least pain. Easypanel and Koyeb for bots, GitHub Pages for static sites, plus a small VPS for things that need to stay alive.</p>
             <div class="pg-tags" style="margin-top:14px;">
               <span class="pg-tag">Easypanel</span>
               <span class="pg-tag">Koyeb</span>
@@ -341,14 +394,15 @@
 
           <div class="pg-card pg-reveal" data-delay="100" data-tilt>
             <span class="pg-card-num">/android</span>
-            <h3>Android Tinkering</h3>
-            <p>Custom ROMs, root kernels, Magisk modules, EDL unbricks and Termux as a primary IDE.</p>
+            <h3>Android tinkering</h3>
+            <p>Custom ROMs, OrangeFox recoveries, KernelSU root, the occasional Magisk module. Two phones in the testing pile and a backup that lives in fastboot.</p>
             <div class="pg-tags" style="margin-top:14px;">
-              <span class="pg-tag gold">crDroid A16</span>
+              <span class="pg-tag gold">OxygenOS 15 port</span>
               <span class="pg-tag green">KernelSU</span>
+              <span class="pg-tag">crDroid</span>
+              <span class="pg-tag">HyperOS port</span>
+              <span class="pg-tag">OrangeFox</span>
               <span class="pg-tag">Magisk</span>
-              <span class="pg-tag">TWRP / OrangeFox</span>
-              <span class="pg-tag">PixelOS</span>
               <span class="pg-tag">Fastboot · EDL</span>
               <span class="pg-tag">Termux</span>
             </div>
@@ -356,8 +410,8 @@
 
           <div class="pg-card pg-reveal" data-delay="200" data-tilt>
             <span class="pg-card-num">/tools</span>
-            <h3>Day-to-day</h3>
-            <p>Where the actual typing happens. Mostly a phone, sometimes a laptop, never a JetBrains license.</p>
+            <h3>Day-to-day tools</h3>
+            <p>Where the actual typing happens. A phone with Termux for most of it, a laptop when there’s one nearby, and the same handful of CLI tools every time.</p>
             <div class="pg-tags" style="margin-top:14px;">
               <span class="pg-tag">VS Code</span>
               <span class="pg-tag">Termux</span>
@@ -369,18 +423,266 @@
             </div>
           </div>
         </div>
+
+        <!-- Tech grid (icon row) -->
+        <h3 class="pg-serif pg-reveal" style="margin: 36px 0 16px; font-weight: 400; font-size: 24px; letter-spacing: -.01em;">
+          tools at a glance
+        </h3>
+        <div class="pg-techgrid pg-reveal" data-delay="100">
+          <a class="pg-tech" href="https://www.python.org" target="_blank" rel="noopener" title="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Python</span>
+          </a>
+          <a class="pg-tech" href="https://docs.pyrogram.org" target="_blank" rel="noopener" title="Pyrogram">
+            <img src="https://docs.pyrogram.org/_static/pyrogram.png" alt="" loading="lazy" />
+            <span class="pg-tech-name">Pyrogram</span>
+          </a>
+          <a class="pg-tech" href="https://www.mongodb.com" target="_blank" rel="noopener" title="MongoDB">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">MongoDB</span>
+          </a>
+          <a class="pg-tech" href="https://www.postgresql.org" target="_blank" rel="noopener" title="PostgreSQL">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Postgres</span>
+          </a>
+          <a class="pg-tech" href="https://redis.io" target="_blank" rel="noopener" title="Redis">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Redis</span>
+          </a>
+          <a class="pg-tech" href="https://www.docker.com" target="_blank" rel="noopener" title="Docker">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Docker</span>
+          </a>
+          <a class="pg-tech" href="https://git-scm.com" target="_blank" rel="noopener" title="Git">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Git</span>
+          </a>
+          <a class="pg-tech" href="https://github.com/Abhishek-Issac" target="_blank" rel="noopener" title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">GitHub</span>
+          </a>
+          <a class="pg-tech" href="https://termux.dev" target="_blank" rel="noopener" title="Termux">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Termux</span>
+          </a>
+          <a class="pg-tech" href="https://www.linux.org" target="_blank" rel="noopener" title="Linux">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Linux</span>
+          </a>
+          <a class="pg-tech" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" title="JavaScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">JS</span>
+          </a>
+          <a class="pg-tech" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" title="HTML5">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">HTML5</span>
+          </a>
+          <a class="pg-tech" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" title="CSS3">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">CSS3</span>
+          </a>
+          <a class="pg-tech" href="https://www.android.com" target="_blank" rel="noopener" title="Android">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Android</span>
+          </a>
+          <a class="pg-tech" href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener" title="Bash">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">Bash</span>
+          </a>
+          <a class="pg-tech" href="https://code.visualstudio.com" target="_blank" rel="noopener" title="VS Code">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" loading="lazy" />
+            <span class="pg-tech-name">VS Code</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ================== SKILLS (with progress bars) ================== -->
+      <section class="pg-section" id="skills">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/03 · skills</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">An honest comfort-level chart.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            These bars try to be honest. “Comfortable” means I’ve shipped real code with it
+            and I can debug it without Stack Overflow. “Learning” means I’ve broken things
+            with it but I’m still mid-curve.
+          </p>
+        </div>
+
+        <div class="pg-skillgrid">
+          <div class="pg-skill pg-reveal" style="--w: 88%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Python · async, typing, packaging</span><span class="pg-skill-pct">88%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 92%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Pyrogram + Telegram MTProto</span><span class="pg-skill-pct">92%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 80%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">MongoDB · Motor · TTL caches</span><span class="pg-skill-pct">80%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 72%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">PostgreSQL · asyncpg · JSONB</span><span class="pg-skill-pct">72%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 78%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Linux / Termux / Bash</span><span class="pg-skill-pct">78%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 85%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Custom ROMs · OrangeFox · KernelSU</span><span class="pg-skill-pct">85%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 70%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Git · GitHub · Actions</span><span class="pg-skill-pct">70%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 65%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Docker · Easypanel · Koyeb</span><span class="pg-skill-pct">65%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 60%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">HTML · CSS · vanilla JS</span><span class="pg-skill-pct">60%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 55%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Regex (battle-tested by forwarders)</span><span class="pg-skill-pct">55%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 45%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">FFmpeg / video pipelines</span><span class="pg-skill-pct">45%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+          <div class="pg-skill pg-reveal" style="--w: 35%;">
+            <div class="pg-skill-row"><span class="pg-skill-name">Go · learning slowly</span><span class="pg-skill-pct">35%</span></div>
+            <div class="pg-skill-bar"><span class="pg-skill-fill"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== SERVICES / CAPABILITIES ================== -->
+      <section class="pg-section" id="services">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/04 · services</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Things I can help you with.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            I take a very small number of paid jobs at a time, mostly for friends-of-friends
+            in the Telegram community. These are the kinds of work I’m comfortable picking up.
+          </p>
+        </div>
+
+        <div class="pg-services">
+          <div class="pg-service pg-reveal" data-tilt>
+            <div class="pg-service-icon">⌁</div>
+            <div class="pg-service-meta">/01 — telegram bots</div>
+            <h3>Custom Telegram bots</h3>
+            <p>Pyrogram-based bots and userbots: force-sub gates, file batching, broadcast
+              tools, small Telegram-native games, and anti-abuse moderation for groups
+              and voice chats. Mongo or Postgres depending on what survives best.</p>
+          </div>
+          <div class="pg-service pg-reveal" data-delay="80" data-tilt>
+            <div class="pg-service-icon">⤳</div>
+            <div class="pg-service-meta">/02 — automation</div>
+            <h3>Channel forwarders &amp; cleanup</h3>
+            <p>Caption normalization, dedup against Mongo, multi-source → multi-destination
+              forwarders, scheduled re-broadcasts, and tooling that turns 10 ad-hoc admin
+              jobs into a single command.</p>
+          </div>
+          <div class="pg-service pg-reveal" data-delay="160" data-tilt>
+            <div class="pg-service-icon">⌬</div>
+            <div class="pg-service-meta">/03 — data layer</div>
+            <h3>Mongo ↔ Postgres migrations</h3>
+            <p>Moving an existing bot from MongoDB to PostgreSQL (or vice versa) without
+              downtime — sync bridges, JSONB schemas, backup &amp; restore commands,
+              and small admin panels for the people who actually run the thing.</p>
+          </div>
+          <div class="pg-service pg-reveal" data-tilt>
+            <div class="pg-service-icon">▤</div>
+            <div class="pg-service-meta">/04 — small static sites</div>
+            <h3>Hand-built portfolio &amp; landing pages</h3>
+            <p>One-file HTML/CSS/JS sites, deployed on GitHub Pages or Cloudflare. No
+              frameworks, no tracking, no surprise build steps. Like this one, but yours.</p>
+          </div>
+          <div class="pg-service pg-reveal" data-delay="80" data-tilt>
+            <div class="pg-service-icon">▦</div>
+            <div class="pg-service-meta">/05 — android help</div>
+            <h3>Custom ROM &amp; recovery help</h3>
+            <p>Walking you through unlocking, flashing OrangeFox/TWRP, picking a ROM that
+              actually has an active maintainer, KernelSU setup, EDL unbricks. Mostly for
+              Snapdragon Xiaomi/Poco devices and a handful of OnePluses I’ve poked at.</p>
+          </div>
+          <div class="pg-service pg-reveal" data-delay="160" data-tilt>
+            <div class="pg-service-icon">⊕</div>
+            <div class="pg-service-meta">/06 — debug nights</div>
+            <h3>Pair-debugging your bot</h3>
+            <p>Stuck on FloodWait spam, a deploy that won’t bind to <code>$PORT</code>, or
+              a Pyrogram session that keeps logging out? I’ll sit through one stream/voice
+              chat with you and we’ll fix it together.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== SCHOOL / SUBJECTS ================== -->
+      <section class="pg-section" id="school">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/05 · school</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">+1 BioScience, in parallel.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            All of the above happens around school hours. Plus-One BioScience, NCERT syllabus,
+            with these six subjects rotating through every week.
+          </p>
+        </div>
+
+        <div class="pg-subjects">
+          <div class="pg-subject pg-reveal">
+            <div class="pg-subject-head">/sci · life</div>
+            <div class="pg-subject-name">Biology</div>
+            <div class="pg-subject-note">Botany &amp; Zoology — the whole reason this is BioScience.</div>
+          </div>
+          <div class="pg-subject pg-reveal" data-delay="60">
+            <div class="pg-subject-head">/sci · matter</div>
+            <div class="pg-subject-name">Physics</div>
+            <div class="pg-subject-note">Mechanics → electricity. The chapter I always re-read at 1 AM.</div>
+          </div>
+          <div class="pg-subject pg-reveal" data-delay="120">
+            <div class="pg-subject-head">/sci · stuff</div>
+            <div class="pg-subject-name">Chemistry</div>
+            <div class="pg-subject-note">Organic > Inorganic > Physical, in that exact order of comfort.</div>
+          </div>
+          <div class="pg-subject pg-reveal">
+            <div class="pg-subject-head">/sci · numbers</div>
+            <div class="pg-subject-name">Mathematics</div>
+            <div class="pg-subject-note">Calculus is friendly, vectors are fine, statistics is a project.</div>
+          </div>
+          <div class="pg-subject pg-reveal" data-delay="60">
+            <div class="pg-subject-head">/lang · english</div>
+            <div class="pg-subject-name">English</div>
+            <div class="pg-subject-note">Reading more than the syllabus. Writing exactly the syllabus.</div>
+          </div>
+          <div class="pg-subject pg-reveal" data-delay="120">
+            <div class="pg-subject-head">/lang · hindi</div>
+            <div class="pg-subject-name">Hindi</div>
+            <div class="pg-subject-note">Second language. Slow but improving every term.</div>
+          </div>
+        </div>
       </section>
 
       <!-- ================== PROJECTS ================== -->
       <section class="pg-section" id="projects">
         <div class="pg-sec-head">
           <div>
-            <div class="pg-sec-num pg-reveal">/03 · selected work</div>
-            <h2 class="pg-sec-title pg-reveal" data-delay="100">Things that ship, <em>at scale</em>.</h2>
+            <div class="pg-sec-num pg-reveal">/06 · selected work</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Things I’ve actually shipped.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
-            A selection of public projects. The private ones are kept private on purpose —
-            no names, no leaks. These are the ones you can actually star and clone.
+            A small selection of public projects. Private repos are kept private on
+            purpose — no names, no leaks. These are the ones you can star and clone today.
           </p>
         </div>
 
@@ -397,8 +699,8 @@
               A Telegram-based <strong>Word Grid</strong> challenge bot. Real-time word-guessing
               sessions across many groups, persistent player stats, daily-refilling
               <em>hint currency</em>, broadcast tools and a “Lightning Round” achievement for
-              clearing a grid in under 120 seconds. I migrated the whole stack from MongoDB
-              to PostgreSQL while keeping a sync bridge so nothing went down.
+              clearing a grid in under 120 seconds. Migrated end-to-end from MongoDB to
+              PostgreSQL while keeping a sync bridge so existing groups never went down.
             </p>
             <a class="pg-project-link" href="https://github.com/Abhishek-Issac/Cavin-Game" target="_blank" rel="noopener">view code →</a>
           </div>
@@ -414,10 +716,10 @@
           </div>
           <div>
             <p>
-              Automated voice-chat moderator for Telegram. A dual-client architecture
-              (Bot + Userbot) monitors group calls in real time and enforces join rules,
+              An automated voice-chat moderator for Telegram. A dual-client architecture
+              (Bot + Userbot) watches group calls in real time and enforces join rules,
               streaming permissions and anti-abuse policies. Falls back gracefully from
-              Userbot mute to Bot-API restrict, deduplicates joins in memory, and writes
+              userbot mute to Bot-API restrict, deduplicates joins in memory, and writes
               every decision to a private audit log channel.
             </p>
             <a class="pg-project-link" href="https://github.com/Abhishek-Issac/Cavin-vcguard" target="_blank" rel="noopener">view code →</a>
@@ -426,7 +728,27 @@
 
         <article class="pg-project pg-reveal">
           <div>
-            <div class="pg-project-num">003 / automation</div>
+            <div class="pg-project-num">003 / board game bot</div>
+            <h3>Cavin <em>Jackaroo</em></h3>
+            <div class="pg-project-meta">
+              <span>Python · Pyrogram</span><span>PostgreSQL · JSONB</span><span>4-player partnership</span>
+            </div>
+          </div>
+          <div>
+            <p>
+              A full Telegram implementation of the <strong>Jackaroo (Tock)</strong> board game.
+              Four-player partnership matches with persistent state, CPU placeholders for
+              empty seats, special-card rules (4 backward, 7 split, etc.), compact pipe-encoded
+              callback data to fit Telegram’s 64-byte limit, and live rehydration of in-progress
+              games from PostgreSQL after every restart.
+            </p>
+            <a class="pg-project-link" href="https://github.com/Abhishek-Issac/Cavin-Jackaroo" target="_blank" rel="noopener">view code →</a>
+          </div>
+        </article>
+
+        <article class="pg-project pg-reveal">
+          <div>
+            <div class="pg-project-num">004 / automation</div>
             <h3>4Sale <em>Forwarder</em></h3>
             <div class="pg-project-meta">
               <span>Python · Pyrogram</span><span>multi-channel</span><span>regex parsing</span>
@@ -436,8 +758,8 @@
             <p>
               A high-throughput forwarder that watches source channels, normalizes captions
               and quality tags through a battery of regexes, deduplicates against a Mongo
-              index, and rebroadcasts cleanly to destination channels — keeping the people
-              I take care of well-fed without manual work.
+              index, and rebroadcasts cleanly to destination channels — keeping admin
+              workload down to almost zero.
             </p>
             <a class="pg-project-link" href="https://github.com/Abhishek-Issac/4sale-forward" target="_blank" rel="noopener">view code →</a>
           </div>
@@ -445,7 +767,7 @@
 
         <article class="pg-project pg-reveal">
           <div>
-            <div class="pg-project-num">004 / web</div>
+            <div class="pg-project-num">005 / web</div>
             <h3>This <em>Site</em></h3>
             <div class="pg-project-meta">
               <span>HTML · CSS · JS</span><span>no frameworks</span><span>GitHub Pages</span>
@@ -453,10 +775,10 @@
           </div>
           <div>
             <p>
-              The portfolio you’re reading. Hand-written HTML, a tiny premium-themed CSS
+              The portfolio you’re reading. Hand-written HTML, a small premium-themed CSS
               system, a vanilla JS file that talks live to the GitHub API, and a GitHub
-              Action that rebuilds the contributions snake every night. Zero frameworks,
-              zero build step, zero excuses.
+              Action that rebuilds the contributions snake every twelve hours. Zero
+              frameworks, zero build step, zero excuses.
             </p>
             <a class="pg-project-link" href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io" target="_blank" rel="noopener">view code →</a>
             <a class="pg-project-link" href="https://abhishek-issac.github.io" target="_blank" rel="noopener">view live →</a>
@@ -465,18 +787,18 @@
 
         <article class="pg-project pg-reveal">
           <div>
-            <div class="pg-project-num">005 / experiments</div>
-            <h3>The other <em>129 repos</em></h3>
+            <div class="pg-project-num">006 / experiments</div>
+            <h3>The other <em>~120 repos</em></h3>
             <div class="pg-project-meta">
-              <span>mostly Python</span><span>some Go &amp; Docker</span><span>2021 → today</span>
+              <span>mostly Python</span><span>some shell &amp; Docker</span><span>2021 → today</span>
             </div>
           </div>
           <div>
             <p>
-              Forks I learned from, half-finished file-share bots, music players, request-
-              join handlers, stranger-things experiments. Some are great, some are
-              <em>“y”</em>, <em>“ygbhj”</em> and <em>“God”</em> — names I now refuse to explain.
-              They’re all on my GitHub if you want a tour through how I learned this craft.
+              Forks I learned from, half-finished file-share bots, music players, request-join
+              handlers, small Termux scripts, and the occasional Magisk module. Some of them
+              are great references, some are quiet experiments. They’re all on my GitHub
+              if you want a tour through how I learned this craft.
             </p>
             <a class="pg-project-link" href="https://github.com/Abhishek-Issac?tab=repositories" target="_blank" rel="noopener">browse all repos →</a>
           </div>
@@ -487,25 +809,71 @@
       <section class="pg-section" id="github">
         <div class="pg-sec-head">
           <div>
-            <div class="pg-sec-num pg-reveal">/04 · github</div>
+            <div class="pg-sec-num pg-reveal">/07 · github</div>
             <h2 class="pg-sec-title pg-reveal" data-delay="100">Live from <em>@Abhishek-Issac</em>.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
             Everything below is fetched at page-load from the GitHub REST API or rebuilt
-            nightly by a GitHub Action. Private repo names are excluded by design.
+            on a schedule by a GitHub Action. Private repository names are excluded
+            by design — only <code>!fork &amp;&amp; !private</code> repos are listed.
           </p>
         </div>
 
-        <div class="pg-github-stats pg-reveal" style="grid-template-columns: 1fr;">
+        <!-- Setup banner: one-click GitHub web editor link for snake workflow -->
+        <div class="pg-banner pg-reveal">
+          <span class="pg-banner-icon">⚙</span>
+          <span>
+            <strong>Snake not animating?</strong>
+            The GitHub Action workflow has to be added to <code>.github/workflows/snake.yml</code>
+            (this repo couldn’t push it directly — OAuth scope limit). Click&nbsp;→ paste the
+            file from <code>docs/snake-workflow.yml</code> &middot; commit. ~30 seconds.
+          </span>
+          <a class="pg-banner-cta"
+             href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io/new/main?filename=.github%2Fworkflows%2Fsnake.yml"
+             target="_blank" rel="noopener">open in github editor →</a>
+        </div>
+
+        <!-- ROW 1: streak (live) + contribution heatmap -->
+        <div class="pg-grid-2 pg-reveal">
+          <div class="pg-heatmap">
+            <div class="pg-heatmap-head">
+              <span>github streak · current &amp; longest</span>
+              <span>@Abhishek-Issac</span>
+            </div>
+            <img
+              alt="GitHub current streak for Abhishek-Issac"
+              loading="lazy"
+              src="https://streak-stats.demolab.com?user=Abhishek-Issac&hide_border=true&background=ffffff&stroke=e7e4dc&ring=b48848&fire=b48848&currStreakNum=14141a&sideNums=14141a&currStreakLabel=14141a&sideLabels=4a4a52&dates=8a8a90"
+            />
+          </div>
+          <div class="pg-heatmap" id="pg-snake-heatmap">
+            <div class="pg-heatmap-head">
+              <span>contributions · last year</span>
+              <span>auto-rendered</span>
+            </div>
+            <img
+              alt="GitHub contribution heatmap for Abhishek-Issac"
+              loading="lazy"
+              src="https://ghchart.rshah.org/b48848/Abhishek-Issac"
+            />
+          </div>
+        </div>
+
+        <!-- ROW 2: activity graph (sparkline) -->
+        <div class="pg-heatmap pg-reveal" data-delay="80" style="margin-top: 18px;">
+          <div class="pg-heatmap-head">
+            <span>activity sparkline · last 31 days</span>
+            <span>commits + reviews</span>
+          </div>
           <img
-            alt="GitHub current streak for Abhishek-Issac"
+            alt="GitHub activity graph for Abhishek-Issac"
             loading="lazy"
-            src="https://streak-stats.demolab.com?user=Abhishek-Issac&hide_border=true&background=ffffff&stroke=e7e4dc&ring=b48848&fire=b48848&currStreakNum=14141a&sideNums=14141a&currStreakLabel=14141a&sideLabels=4a4a52&dates=8a8a90"
+            src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek-Issac&theme=minimal&hide_border=true&bg_color=ffffff&color=14141a&line=b48848&point=1f3b2d&area=true&area_color=b48848&radius=8"
           />
         </div>
 
         <!-- Snake -->
-        <div class="pg-snake pg-reveal" data-delay="100" id="snake">
+        <div class="pg-snake pg-reveal" data-delay="100" id="snake" style="margin-top: 18px;">
           <div class="pg-snake-head">
             <span>contribution snake · auto-updated by github actions</span>
             <span>@Abhishek-Issac</span>
@@ -517,17 +885,17 @@
               id="pg-snake-img"
               alt="Abhishek-Issac's GitHub contribution graph as a snake game"
               src="https://raw.githubusercontent.com/Abhishek-Issac/Abhishek-Issac.github.io/output/github-snake.svg"
-              onerror="this.onerror=null; document.getElementById('pg-snake-fallback').style.display='block'; this.style.display='none';"
             />
           </picture>
           <div id="pg-snake-fallback" style="display:none; padding: 30px 18px; text-align: center; font-family: var(--pg-font-mono); font-size: 13px; color: var(--pg-muted); border: 1px dashed var(--pg-line); border-radius: 10px;">
-            🐍 snake.svg will appear here after the first GitHub Action run (every 12h, or run manually from the Actions tab).
+            🐍 the snake will appear here after the first GitHub Action run (every 12h, or run manually from the Actions tab).
+            Use the “open in github editor” button above to add the workflow file.
           </div>
         </div>
 
         <!-- Live counters + langs -->
-        <div class="pg-grid-2" style="margin-top: 22px;">
-          <div class="pg-card pg-reveal">
+        <div class="pg-grid-2 pg-reveal" style="margin-top: 22px;">
+          <div class="pg-card">
             <span class="pg-card-num">/profile</span>
             <h3>by the numbers</h3>
             <div class="pg-stats-strip" style="margin: 16px 0 0; border: 0;">
@@ -541,18 +909,21 @@
               </div>
               <div class="pg-stat" style="padding: 16px 0; border-right: 1px solid var(--pg-line);">
                 <div class="pg-stat-num"><em>129</em></div>
-                <div class="pg-stat-label">public</div>
+                <div class="pg-stat-label">public repos</div>
               </div>
               <div class="pg-stat" style="padding: 16px 0;">
                 <div class="pg-stat-num"><em>2021</em></div>
-                <div class="pg-stat-label">joined</div>
+                <div class="pg-stat-label">joined GitHub</div>
               </div>
             </div>
           </div>
 
-          <div class="pg-card pg-reveal" data-delay="100">
+          <div class="pg-card" data-delay="100">
             <span class="pg-card-num">/langs</span>
-            <h3>language mix</h3>
+            <h3>language mix · live</h3>
+            <p style="margin-top: 6px; font-size: 13px; color: var(--pg-muted);">
+              Computed at page load by counting each public, non-fork repo’s primary language.
+            </p>
             <div class="pg-tags" id="gh-langs" style="margin-top: 14px;">
               <span class="pg-tag gold">Python · 70%</span>
               <span class="pg-tag">Dockerfile</span>
@@ -577,75 +948,82 @@
         </div>
       </section>
 
-      <!-- ================== INTERESTS / DEVICES / PERSONAL ================== -->
-      <section class="pg-section" id="interests">
+      <!-- ================== DEVICES (real, owned) ================== -->
+      <section class="pg-section" id="devices">
         <div class="pg-sec-head">
           <div>
-            <div class="pg-sec-num pg-reveal">/05 · interests</div>
-            <h2 class="pg-sec-title pg-reveal" data-delay="100">Outside the <em>terminal</em>.</h2>
+            <div class="pg-sec-num pg-reveal">/08 · devices</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">The phones I actually own.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
-            Phones I’ve owned, games I burn nights on, and a few details that don’t fit
-            anywhere else. Treat this as the changelog of a person.
+            A short and honest list. Three phones, one daily driver, two helpers. No iPhones,
+            no flagships — Snapdragon mid-range from end to end.
           </p>
         </div>
 
         <div class="pg-grid-2">
           <div class="pg-reveal">
-            <h3 class="pg-serif" style="font-weight: 400; font-size: 26px; margin: 0 0 14px;">phones I’ve actually used</h3>
+            <h3 class="pg-serif" style="font-weight: 400; font-size: 26px; margin: 0 0 14px;">phones in rotation</h3>
             <ul class="pg-list">
-              <li><span class="pg-li-num">01</span><span class="pg-li-name">Poco X3 Pro</span><span class="pg-li-meta">SD860 · 6/128 · daily driver</span></li>
-              <li><span class="pg-li-num">02</span><span class="pg-li-name">Redmi Note 10s</span><span class="pg-li-meta">8/128 · spare</span></li>
-              <li><span class="pg-li-num">03</span><span class="pg-li-name">Redmi Note 9 Pro Max</span><span class="pg-li-meta">household lineup</span></li>
-              <li><span class="pg-li-num">04</span><span class="pg-li-name">Redmi Note 13 Pro</span><span class="pg-li-meta">studied for hours</span></li>
-              <li><span class="pg-li-num">05</span><span class="pg-li-name">OnePlus 10R / 10T</span><span class="pg-li-meta">friend’s · I unbrick the bricks</span></li>
-              <li><span class="pg-li-num">06</span><span class="pg-li-name">Moto G52 / E5</span><span class="pg-li-meta">family fleet · 24/7 wifi</span></li>
-              <li><span class="pg-li-num">07</span><span class="pg-li-name">iPhone 11 / 15</span><span class="pg-li-meta">benchmarked, never bought</span></li>
-              <li><span class="pg-li-num">08</span><span class="pg-li-name">Redmi 7A</span><span class="pg-li-meta">bootloop survivor</span></li>
+              <li><span class="pg-li-num">01</span><span class="pg-li-name">Poco X3 Pro · 6/128</span><span class="pg-li-meta">SD860 · 5120mAh · daily driver · vayu</span></li>
+              <li><span class="pg-li-num">02</span><span class="pg-li-name">Moto G52 · 8/128</span><span class="pg-li-meta">SD680 · backup · primarily testing</span></li>
+              <li><span class="pg-li-num">03</span><span class="pg-li-name">Moto E5 · 2/16</span><span class="pg-li-meta">small SoC · dedicated 24/7 wifi node</span></li>
             </ul>
+            <p style="margin-top: 16px; font-size: 14px; color: var(--pg-ink-soft);">
+              The Poco X3 Pro is where almost all the code happens — Termux, tmux, git, a
+              Pyrogram session, and JetBrains Mono at a slightly-too-big size. The Moto G52
+              is for ROM testing without bricking my main phone. The Moto E5 lives next to
+              the router and runs a couple of low-traffic background bots.
+            </p>
           </div>
 
           <div class="pg-reveal" data-delay="150">
-            <h3 class="pg-serif" style="font-weight: 400; font-size: 26px; margin: 0 0 14px;">games &amp; series</h3>
+            <h3 class="pg-serif" style="font-weight: 400; font-size: 26px; margin: 0 0 14px;">games &amp; downtime</h3>
             <ul class="pg-list">
-              <li><span class="pg-li-num">01</span><span class="pg-li-name">Wuthering Waves</span><span class="pg-li-meta">SD860 · medium 60fps</span></li>
-              <li><span class="pg-li-num">02</span><span class="pg-li-name">Genshin Impact</span><span class="pg-li-meta">on and off · main account</span></li>
-              <li><span class="pg-li-num">03</span><span class="pg-li-name">BGMI / PUBG Mobile</span><span class="pg-li-meta">DDR-bus L3 + GameEnhancer</span></li>
-              <li><span class="pg-li-num">04</span><span class="pg-li-name">Arknights</span><span class="pg-li-meta">currently fritzing on Enfield</span></li>
-              <li><span class="pg-li-num">05</span><span class="pg-li-name">Minecraft · Roblox · Free Fire</span><span class="pg-li-meta">retired, mostly</span></li>
-              <li><span class="pg-li-num">06</span><span class="pg-li-name">Stranger Things · Dark</span><span class="pg-li-meta">slow-burn rewatcher</span></li>
-              <li><span class="pg-li-num">07</span><span class="pg-li-name">Hotstar / Prime / Netflix</span><span class="pg-li-meta">+ a homemade movie hub</span></li>
-              <li><span class="pg-li-num">08</span><span class="pg-li-name">Anime &amp; series in general</span><span class="pg-li-meta">binge enthusiast</span></li>
+              <li><span class="pg-li-num">01</span><span class="pg-li-name">Wuthering Waves</span><span class="pg-li-meta">SD860 · medium · 60fps</span></li>
+              <li><span class="pg-li-num">02</span><span class="pg-li-name">Genshin Impact</span><span class="pg-li-meta">on and off</span></li>
+              <li><span class="pg-li-num">03</span><span class="pg-li-name">BGMI / PUBG Mobile</span><span class="pg-li-meta">tuned with overlay modules</span></li>
+              <li><span class="pg-li-num">04</span><span class="pg-li-name">Minecraft · Roblox</span><span class="pg-li-meta">retired most weekends</span></li>
+              <li><span class="pg-li-num">05</span><span class="pg-li-name">Series &amp; films</span><span class="pg-li-meta">slow-burn rewatcher · long-format anime</span></li>
+              <li><span class="pg-li-num">06</span><span class="pg-li-name">Reading the +1 NCERT books</span><span class="pg-li-meta">for the third time, properly this time</span></li>
             </ul>
           </div>
         </div>
 
-        <div class="pg-grid-3" style="margin-top: 36px;">
-          <div class="pg-card pg-reveal" data-tilt>
-            <span class="pg-card-num">/rom</span>
-            <h3>Custom ROMs</h3>
-            <p>
-              Currently on <strong>crDroid Android 16</strong> with KernelSU. I’ve flashed
-              PixelOS, AOSP, MIUI/HyperOS variants, and recovered more bootloops than I
-              can count. EDL mode is my second home.
-            </p>
+        <!-- ROM JOURNEY -->
+        <h3 class="pg-serif pg-reveal" style="margin: 36px 0 16px; font-weight: 400; font-size: 26px; letter-spacing: -.01em;">
+          ROM journey on the Poco X3 Pro
+        </h3>
+        <div class="pg-rom-journey pg-reveal" data-delay="100">
+          <div class="pg-rom-step">
+            <span class="pg-rom-when">stock · 2021–25</span>
+            <div><span class="pg-rom-name">MIUI 12 / 13</span> &nbsp;<span class="pg-muted-text">— factory baseline before custom-ROM era</span></div>
+            <span class="pg-rom-state">retired</span>
           </div>
-          <div class="pg-card pg-reveal" data-delay="100" data-tilt>
-            <span class="pg-card-num">/network</span>
-            <h3>Networking at home</h3>
-            <p>
-              Two cell towers in Wayanad, one stubborn concrete wall, and a D-Link DIR-600M
-              repurposed as a repeater for my Archer C20. 30 Mbps over 4G is my benchmark.
-            </p>
+          <div class="pg-rom-step">
+            <span class="pg-rom-when">jan · 2026</span>
+            <div><span class="pg-rom-name">HyperOS 3 port (vayu / bhima)</span> &nbsp;<span class="pg-muted-text">— first big jump off MIUI · ran into camera issues</span></div>
+            <span class="pg-rom-state">tested</span>
           </div>
-          <div class="pg-card pg-reveal" data-delay="200" data-tilt>
-            <span class="pg-card-num">/study</span>
-            <h3>School Life</h3>
-            <p>
-              <strong>+1 BioScience</strong> at the time of writing — biology in the
-              morning, regex in the evening. I’ve “studied full cybersecurity on YouTube,”
-              which is a slightly different curriculum.
-            </p>
+          <div class="pg-rom-step">
+            <span class="pg-rom-when">mar · 2026</span>
+            <div><span class="pg-rom-name">crDroid A15</span> &nbsp;<span class="pg-muted-text">— clean AOSP base · first proper KernelSU setup</span></div>
+            <span class="pg-rom-state">retired</span>
+          </div>
+          <div class="pg-rom-step">
+            <span class="pg-rom-when">mar · 2026</span>
+            <div><span class="pg-rom-name">Project Infinity X (A16)</span> &nbsp;<span class="pg-muted-text">— gaming-tuned · ROG kernel + smooth thermal modules</span></div>
+            <span class="pg-rom-state">tested</span>
+          </div>
+          <div class="pg-rom-step">
+            <span class="pg-rom-when">apr · 2026</span>
+            <div><span class="pg-rom-name">crDroid A16 + KernelSU</span> &nbsp;<span class="pg-muted-text">— dirty-flashed from A15 · NikGapps + elite package</span></div>
+            <span class="pg-rom-state">retired</span>
+          </div>
+          <div class="pg-rom-step current">
+            <span class="pg-rom-when">apr · 2026 · now</span>
+            <div><span class="pg-rom-name">OxygenOS 15 port (vayu / bhima)</span> &nbsp;<span class="pg-muted-text">— two-part stable build · OrangeFox sideload</span></div>
+            <span class="pg-rom-state">current</span>
           </div>
         </div>
       </section>
@@ -654,78 +1032,83 @@
       <section class="pg-section" id="journey">
         <div class="pg-sec-head">
           <div>
-            <div class="pg-sec-num pg-reveal">/06 · journey</div>
-            <h2 class="pg-sec-title pg-reveal" data-delay="100">A short, <em>non-linear</em> timeline.</h2>
+            <div class="pg-sec-num pg-reveal">/09 · journey</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">A short, honest timeline.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
-            Most of these dates are approximate — I learned by jumping between things,
-            not by following a syllabus.
+            I’ve only kept verifiable dates. Pre-2021 is intentionally blank — I was learning
+            then, but nothing public, so I’m not going to invent dates.
           </p>
         </div>
 
         <div class="pg-timeline">
-          <div class="pg-tli pg-reveal">
-            <div class="pg-tli-date">EARLY · ~2019</div>
-            <h4>First lines of code, on a phone.</h4>
-            <p>Started writing tiny Python scripts inside Termux, before I had a real computer. Half of it was copy-paste; the other half was confusion-driven learning.</p>
-          </div>
           <div class="pg-tli pg-reveal gold">
             <div class="pg-tli-date">NOV · 2021</div>
             <h4>Joined GitHub as @Abhishek-Issac.</h4>
-            <p>Account created on 2021-11-08. Pushed shell scripts, half-broken file-share bots, and a frankly absurd number of forks I used to read other people’s code.</p>
+            <p>Account created on <strong>2021-11-08</strong>. Early commits were shell scripts, half-broken file-share bots, and a long list of forks used to read other people’s code.</p>
           </div>
           <div class="pg-tli pg-reveal">
-            <div class="pg-tli-date">2022</div>
-            <h4>Pyrogram pilled.</h4>
-            <p>First real Telegram bots — an EvaMaria fork, an autobatch generator, and a series-fetcher that taught me regex the hard way.</p>
+            <div class="pg-tli-date">2022 — 2024</div>
+            <h4>Pyrogram, Mongo, deploys.</h4>
+            <p>Years of small-to-medium Telegram bots — autobatch, request-handlers, file-share variants, a series-fetcher that taught me regex the hard way. MongoDB with TTL caches became the default. Most of these repos are still on the profile.</p>
           </div>
           <div class="pg-tli pg-reveal">
-            <div class="pg-tli-date">2023</div>
-            <h4>Mongo, Motor, and millions.</h4>
-            <p>Channels and bots crossed enough users that I had to actually <em>think</em> about caching, TTLs, indexes and rate-limiting. Telegram’s flood errors became my mortal enemy.</p>
+            <div class="pg-tli-date">JAN — FEB · 2026</div>
+            <h4>Cavin Game · Mongo → Postgres.</h4>
+            <p>Migrated the whole word-grid bot to PostgreSQL with a sync bridge. JSONB settings, score-log tables, and the first proper backup/restore commands.</p>
+          </div>
+          <div class="pg-tli pg-reveal">
+            <div class="pg-tli-date">FEB · 2026</div>
+            <h4>+1 BioScience exams · NCERT.</h4>
+            <p>Mid-term exams. Most of the codebase work paused while biology, physics, chemistry, maths, English and Hindi took over the calendar.</p>
           </div>
           <div class="pg-tli pg-reveal gold">
-            <div class="pg-tli-date">2024</div>
-            <h4>Postgres + production hygiene.</h4>
-            <p>Migrated Cavin Game from MongoDB to PostgreSQL with a sync bridge. Wrote my first proper backup/restore commands, JSONB settings, score-log tables.</p>
+            <div class="pg-tli-date">MAR · 2026</div>
+            <h4>Cavin VC Guard.</h4>
+            <p>Bot + userbot voice-chat moderator on top of MTProto raw. Falls back from userbot mute to Bot-API restrict, deduplicates joins, writes audit logs to a private channel.</p>
           </div>
           <div class="pg-tli pg-reveal">
-            <div class="pg-tli-date">2025</div>
-            <h4>Custom ROMs as a lifestyle.</h4>
-            <p>crDroid A16 + KernelSU on the Poco X3 Pro becomes my daily setup. Magisk modules for school apps. EDL flashes for friends’ bricked OnePluses at midnight.</p>
+            <div class="pg-tli-date">MAR — APR · 2026</div>
+            <h4>Custom ROM journey on the X3 Pro.</h4>
+            <p>From MIUI 13 → HyperOS 3 port → crDroid A15 → Project Infinity X → crDroid A16 → OxygenOS 15 port. Five custom ROMs in two months without losing a kernel.</p>
+          </div>
+          <div class="pg-tli pg-reveal">
+            <div class="pg-tli-date">APR · 2026</div>
+            <h4>Cavin Jackaroo.</h4>
+            <p>4-player partnership board game on Telegram. PostgreSQL JSONB for game state, compact pipe-encoded callback data, and live rehydration of in-progress games on every restart.</p>
           </div>
           <div class="pg-tli pg-reveal gold">
-            <div class="pg-tli-date">2026 · NOW</div>
-            <h4>+1 BioScience &nbsp;&middot;&nbsp; this site.</h4>
-            <p>Cramming biology in one window, refactoring bots in another, redesigning my portfolio in a third. Still 16. Still going.</p>
+            <div class="pg-tli-date">MAY · 2026 — NOW</div>
+            <h4>Portfolio rebuild &amp; +1 second-term prep.</h4>
+            <p>This site, from scratch — hand-written HTML, CSS and JS, live GitHub data, a contributions snake, and a quiet effort to keep my +1 grades from sliding while bots keep shipping.</p>
           </div>
         </div>
       </section>
 
-      <!-- ================== PHILOSOPHY BAND ================== -->
     </main>
 
+    <!-- ================== PHILOSOPHY BAND ================== -->
     <section class="pg-band">
       <div class="pg-wrap pg-band-inner">
         <div class="pg-reveal">
-          <div class="pg-sec-num">/07 · how I work</div>
+          <div class="pg-sec-num">/10 · how I work</div>
           <h2 class="pg-sec-title" style="margin-top: 14px;">Build small. <em>Ship fast.</em> Refactor in public.</h2>
         </div>
         <div class="pg-prose pg-reveal" data-delay="150">
           <p>
-            I don’t believe in waiting for the perfect architecture. I’d rather have a working
-            <em>version one</em> in production tonight than a beautiful diagram on Monday. The
-            commit graph is my notebook.
+            I’d rather have a working <em>version one</em> in production tonight than a beautiful
+            diagram on Monday. The commit graph is my notebook — features land in tiny pieces,
+            and refactors happen out in the open instead of in a long-lived branch.
           </p>
           <p>
-            I optimize for two things: <strong>uptime for the users I take care of</strong>,
-            and <strong>readability for the future me</strong> who has to debug this at 2 AM
-            on a phone keyboard. Everything else is negotiable.
+            Two things get optimized first: <strong>uptime for the people using the bot</strong>,
+            and <strong>readability for whoever has to debug this at 2 AM on a phone keyboard</strong>
+            — usually a slightly-tired version of me. Everything else is negotiable.
           </p>
           <p>
-            Ask me about codes. I’m awful at small talk and I have a million users in
-            Telegram bots, groups and channels — that should give you a sense of where my
-            attention has been for the last few years.
+            I keep dependencies small, prefer plain text, and write code that I’d be okay
+            reading on a 6&nbsp;GB phone over a flaky connection. That covers most of what
+            I’ll ever need this site to do, too.
           </p>
         </div>
       </div>
@@ -733,12 +1116,41 @@
 
     <main class="pg-wrap">
 
+      <!-- ================== PRINCIPLES (3 cards instead of fake testimonials) ================== -->
+      <section class="pg-section" id="principles">
+        <div class="pg-sec-head">
+          <div>
+            <div class="pg-sec-num pg-reveal">/11 · principles</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Three rules I keep coming back to.</h2>
+          </div>
+          <p class="pg-sec-kicker pg-reveal" data-delay="200">
+            Not testimonials. Just three short sentences I’ve said out loud often enough
+            that they’ve become a working philosophy.
+          </p>
+        </div>
+
+        <div class="pg-quotes">
+          <div class="pg-quote-card pg-reveal">
+            <p>“Ship the smallest version that helps a real person, then iterate from feedback — not from a whiteboard.”</p>
+            <span class="pg-quote-author">/01 — on shipping</span>
+          </div>
+          <div class="pg-quote-card pg-reveal" data-delay="80">
+            <p>“If a script can run on a 6&nbsp;GB phone over 4G, it can probably run anywhere I’d ever deploy it. Optimize for the worst environment first.”</p>
+            <span class="pg-quote-author">/02 — on constraints</span>
+          </div>
+          <div class="pg-quote-card pg-reveal" data-delay="160">
+            <p>“The future-me reading this code at 2 AM has zero patience for cleverness. Plain functions, named variables, boring patterns.”</p>
+            <span class="pg-quote-author">/03 — on readability</span>
+          </div>
+        </div>
+      </section>
+
       <!-- ================== NOW / CURRENTLY ================== -->
       <section class="pg-section" id="now">
         <div class="pg-sec-head">
           <div>
-            <div class="pg-sec-num pg-reveal">/08 · now</div>
-            <h2 class="pg-sec-title pg-reveal" data-delay="100">What I’m on, <em>this week</em>.</h2>
+            <div class="pg-sec-num pg-reveal">/12 · now</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">What I’m on, this week.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
             A loose “now page” inspired by nownownow.com. Updated by hand whenever
@@ -750,8 +1162,9 @@
             <span class="pg-card-num">/code</span>
             <h3>building</h3>
             <p>
-              Tightening up Cavin VC Guard, fighting a $PORT bind issue on Easypanel,
-              and quietly refactoring my movie-hub forwarders to share one Mongo cache.
+              Tightening up Cavin VC Guard, fixing a stubborn <code>$PORT</code> binding
+              issue on Easypanel, and refactoring the movie-hub forwarders to share a
+              single Mongo cache layer.
             </p>
           </div>
           <div class="pg-card pg-reveal" data-delay="100">
@@ -766,32 +1179,32 @@
             <span class="pg-card-num">/play</span>
             <h3>playing</h3>
             <p>
-              Wuthering Waves on the Poco X3 Pro at medium settings. Arknights on the side.
-              Re-watching <em>Stranger Things</em> for the third time, no regrets.
+              Wuthering Waves on the Poco X3 Pro at medium settings. Long-running campaign in
+              Genshin Impact when the schedule allows.
             </p>
           </div>
           <div class="pg-card pg-reveal">
             <span class="pg-card-num">/study</span>
             <h3>studying</h3>
             <p>
-              NCERT +1 BioScience — ten chapters underlined, three understood,
-              one panic attack scheduled for the night before the exam.
+              NCERT +1 BioScience second-term — Botany, Zoology, Physics, Chemistry, Maths,
+              English, Hindi. Three chapters underlined per night, when it works.
             </p>
           </div>
           <div class="pg-card pg-reveal" data-delay="100">
             <span class="pg-card-num">/wear</span>
             <h3>running on</h3>
             <p>
-              crDroid A16 + KernelSU root, Termux as IDE, JetBrains Mono everywhere,
-              GitHub on the home screen and a router on the way home from Kollam.
+              <strong>OxygenOS 15 port</strong> on the Poco X3 Pro, KernelSU root, OrangeFox
+              recovery on standby, Termux as the IDE, JetBrains Mono everywhere.
             </p>
           </div>
           <div class="pg-card pg-reveal" data-delay="200">
             <span class="pg-card-num">/open-to</span>
             <h3>open to</h3>
             <p>
-              Paid bot edits, weird automation problems, kind humans, and contests where I
-              can lose gracefully. DM me on Telegram before you DM me anywhere else.
+              Small paid Telegram-bot edits, weird automation problems, kind humans, and any
+              contest where I can lose gracefully. DM me on Telegram before anywhere else.
             </p>
           </div>
         </div>
@@ -801,8 +1214,8 @@
       <section class="pg-section" id="contact">
         <div class="pg-sec-head">
           <div>
-            <div class="pg-sec-num pg-reveal">/09 · contact</div>
-            <h2 class="pg-sec-title pg-reveal" data-delay="100">Easier than you think to <em>reach me</em>.</h2>
+            <div class="pg-sec-num pg-reveal">/13 · contact</div>
+            <h2 class="pg-sec-title pg-reveal" data-delay="100">Easier than you think to reach me.</h2>
           </div>
           <p class="pg-sec-kicker pg-reveal" data-delay="200">
             Telegram is fastest. GitHub is best for code. Instagram is mostly memes.
@@ -833,27 +1246,29 @@
             </div>
             <span class="pg-contact-arrow">open →</span>
           </a>
-          <a href="https://t.me/SflixBots" target="_blank" rel="noopener">
-            <span class="pg-mono">tg</span>
+          <a href="mailto:m01812176@gmail.com">
+            <span class="pg-mono">@</span>
             <div>
-              <div class="pg-contact-label">telegram · movie hub group</div>
-              <div class="pg-contact-value">t.me/SflixBots</div>
+              <div class="pg-contact-label">email · slow but works</div>
+              <div class="pg-contact-value">m01812176@gmail.com</div>
             </div>
-            <span class="pg-contact-arrow">open →</span>
+            <span class="pg-contact-arrow">compose →</span>
           </a>
         </div>
       </section>
 
       <!-- ================== FOOTER ================== -->
       <footer class="pg-footer" role="contentinfo">
-        <div>© <span id="pg-year">2026</span> · Abhishek Issac · Kerala, India</div>
-        <div>handcrafted in vanilla HTML / CSS / JS · no frameworks</div>
+        <div>© <span id="pg-year">2026</span> · Abhishek Issac · Wayanad, Kerala, India</div>
+        <div>handcrafted in vanilla HTML / CSS / JS · no frameworks · no tracking</div>
         <div>
           <a href="https://github.com/Abhishek-Issac/Abhishek-Issac.github.io" target="_blank" rel="noopener">source</a>
           &nbsp;·&nbsp;
           <a href="about.html">extended about</a>
           &nbsp;·&nbsp;
           <a href="projects.html">all projects</a>
+          &nbsp;·&nbsp;
+          <a href="#top">back to top ↑</a>
         </div>
       </footer>
     </main>
